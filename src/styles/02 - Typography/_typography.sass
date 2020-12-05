@@ -1,0 +1,197 @@
+/*==============================================*/
+/*=             Imports & Variables            =*/
+/*==============================================*/
+
+/*----------  Import Mixins  ----------*/
+@import './_text-sizes'
+@import './_fonts'
+@import '../03 - Spacing/_space-sizes'
+
+\:root 
+
+    /*----------  Define Primary & Secondary Font  ----------*/
+
+    /* Note: fonts must be imported in _font */
+    --font-primary: 'Open Sans', sans
+    --font-secondary: 'Merriweather', serif
+
+    /* ---------  Vertical Rhythm Grid (used for testing purposes) ----------*/    
+    // body
+    //     background-image: linear-gradient(#bbb 1px, transparent 1px)
+    //     background-size: 100% 9px   
+
+
+html, * 
+    font-family: var(--font-primary)
+    line-height: 1.8
+    color: var(--color-t)
+
+b, strong 
+    font-weight: bold
+
+h1, h2, h3, h4, h5, h6
+    font-family: var(--font-secondary)
+    color: var(--color-t-h)
+    line-height: var(--d-multiplier) // The Typographic Scale multiplier defined in _text-sizes
+
+
+/*=============================================*/
+/*=      Main Text Styles (h1-h6, p)          =*/
+/*=============================================*/
+
+h1 
+    @include text(3xl)
+    font-weight: 400
+    // line-height: 4rem
+    margin-bottom: var(--space-sm) //trial
+
+h2 
+    @include text(2xl)
+    font-weight: 400
+    // line-height: 3rem
+    margin-bottom: var(--space-sm) //trial
+
+h3 
+    @include text(xl)
+    font-weight: 400
+    // line-height: 2.5rem
+    margin-bottom: var(--space-sm) //trial
+
+h4 
+    @include text(lg)
+    font-weight: 600
+    // line-height: 2rem
+    margin-bottom: var(--space-sm) //trial
+
+h5 
+    @include text(lg)
+    font-weight: 600
+    // line-height: 2rem
+    margin-bottom: var(--space-sm) //trial
+
+h6 
+    @include text(lg)
+    font-weight: 600
+    // line-height: 2rem
+    margin-bottom: var(--space-sm) //trial
+
+p
+    @include text(md)
+    font-weight: 400
+    max-width: 40em //based on research
+    margin-bottom: var(--space-xs)
+
+    &.large
+        @include text(lg)
+
+blockquote
+    max-width: 40em
+    
+
+/*=============================================*/
+/*=       Additional Text Styles              =*/
+/*=============================================*/
+
+.content
+    h2, h3, h4, h5, h6
+        margin-top: var(--space-lg)
+
+
+a 
+    @include text(md)
+    text-decoration: none
+    color: var(--color-a)
+    font-weight: 600
+
+    &:hover
+        text-decoration: underline
+    
+    &:visited
+        color: var(--color-a-alt)
+
+ol,
+ul
+    padding: 0
+    margin-bottom: var(--space-sm)
+
+.article ul li
+    //if/when i revisit this, i need to be wary of the fact that <li> is just as commonly used outside articles as within. 
+    list-style: none
+
+    &::before
+        content: "•"
+        margin: 0 1rem 0 0
+        color: var(--color-t)
+
+blockquote
+    margin-bottom: var(--space-sm)
+    padding: var(--space-3xs) 0 var(--space-3xs) var(--space-sm)
+    position: relative
+
+    &::before
+        content: ""
+        left: 0
+        top: 0
+        position: absolute
+        height: 100%
+        width: 4px
+        background: var(--color-t)
+        border-radius: 1px            
+
+    p:last-child
+        margin: 0
+
+time
+    color: var(--color-t-c)
+
+hr
+    display: block
+    height: 1px
+    max-width: 500px
+    border: none
+    border-top: 1px dotted var(--color-a)
+    margin: 3.05rem auto
+
+// hr
+//     margin-top: var(--space-sm)
+//     margin-bottom: var(--space-sm)
+//     color: var(--color-a)
+//     width: 100%
+
+/*=============================================*/
+/*=              Components                   =*/
+/*=============================================*/
+// NOTE: As of version 1.0.0, src/03-Components has not yet been implemented.
+//       This section is made of mixins that will be directly injected there.
+// TODO: add secondary font for these, italics? plex serif? plex mono?
+
+// This can be included in button selectors to style button text
+@mixin text-button 
+    font-family: var(--font-secondary)
+    color: var(--color-t-h)
+    font-weight: 500
+    @include text(md)
+    letter-spacing: 0.02em
+    text-transform: uppercase
+
+// This can be included in components to add a caption style
+@mixin caption 
+    color: var(--color-t-c)
+    font-style: italic
+    @include text(md)
+
+
+
+/*----------  Idk if this will be kept in here once we build the components section ----------*/
+.text-button
+    @include text-button
+
+.caption 
+    @include caption
+
+.logo p
+    @include text(2xl)
+    font-family: var(--font-secondary)
+    font-weight: 600
+    color: var(--color-p)
+    margin-bottom: var(--space-2xs)

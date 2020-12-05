@@ -1,0 +1,52 @@
+/*===============================================*/
+/*=              1) Import Modules              =*/
+/*===============================================*/
+
+    
+@import "00 - Utility"
+@import "01 - Color"
+@import "02 - Typography"
+@import "03 - Spacing"
+@import "04 - Layout"
+@import "05 - Components"
+
+/*===============================================*/
+/*=               2) Tests                      =*/
+/*===============================================*/
+
+html
+    background-color: var(--color-b) // Check default colors exists
+    // background-color: var(--color-N030) // Check colors file exist
+    // background-color: red // Check styles are connected
+
+
+
+
+// What will eventually go into "/5-Components"
+
+.button
+    @include space-squish(27px)
+    border: 3px solid var(--color-a)
+    border-radius: 3px
+
+
+.accent-bar
+    width: 100%
+    background-color: var(--color-a)
+    height: 10px
+
+    &.sm
+        height: 4px
+
+table
+    font-size: var(--d-sm)
+    border-collapse: collapse
+    margin: 0 auto var(--space-sm)
+
+    th
+        @include space-squish(18px)
+        text-align: start
+
+    td
+        border: 1px solid var(--color-a)
+        @include space-squish(18px)

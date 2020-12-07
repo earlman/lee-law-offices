@@ -1,5 +1,5 @@
 {
-    "name": "Code",
+    "name": "LeeLawOffices",
     "private": true,
     "scripts": {
         "start": "gridsome develop",
@@ -15,7 +15,7 @@
         "gridsome": "^0.7.0",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "netlify-cms": "^2.10.74",
-        "node-sass": "^5.0.0"
+        "node-sass": "^4.0.0"
     },
     "devDependencies": {
         "eslint": "^7.15.0",
@@ -28,6 +28,7 @@
         "eslint-plugin-prettier": "^3.2.0",
         "eslint-plugin-react": "^7.20.0",
         "eslint-plugin-react-hooks": "^4.0.0",
-        "prettier": "^2.0.5"
+        "prettier": "^2.0.5",
+        "sass-loader": "7.3.1"
     }
 }

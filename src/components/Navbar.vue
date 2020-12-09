@@ -7,11 +7,11 @@
 			</div>
 			<nav class="main-nav">
 				<ul>
-					<li><g-link>Home</g-link></li>
-					<li><g-link>About</g-link></li>
-					<li><g-link>Practice Areas</g-link></li>
-					<li><g-link>Contact Us</g-link></li>
-					<li><g-link>En Espanol</g-link></li>
+					<li><g-link to="/">Home</g-link></li>
+					<!-- <li><g-link>About</g-link></li> -->
+					<li><g-link  to="/practice-areas">Practice Areas</g-link></li>
+					<li><g-link  to="/contact-us">Contact Us</g-link></li>
+					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
 				</ul>
 			</nav>
 		</header>
@@ -53,7 +53,15 @@
                 display: flex
                 list-style-type: none
 
-            li > li
-                *
-                    background-color: blue
+            li
+
+                a
+                    padding: var(--space-2xs) var(--space-sm)
+
+
+                    &:hover
+                        text-decoration: none
+                        background-color: var(--color-p)
+
+                &:last-child
 </style>

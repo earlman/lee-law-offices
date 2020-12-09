@@ -41,7 +41,6 @@
     .logo
         display: grid
         place-items: center
-        margin-top:
 
     @include md
 

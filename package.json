@@ -12,6 +12,7 @@
         "@gridsome/source-filesystem": "^0.6.2",
         "@gridsome/transformer-remark": "^0.6.1",
         "buefy": "^0.9.4",
+        "fontsource-roboto": "^3.0.3",
         "gridsome": "^0.7.0",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "netlify-cms": "^2.10.74",

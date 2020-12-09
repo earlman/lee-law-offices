@@ -2,7 +2,7 @@
 	<div class="header-container">
 		<header class="header">
 			<div class="logo">
-				<h1>Lee Law Office</h1>
+				<h1>Lee Law Offices</h1>
 				<!-- <img src="" alt="Lee Law Offices" /> -->
 			</div>
 			<nav class="main-nav">

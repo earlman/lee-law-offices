@@ -5,81 +5,158 @@
 			<div class="harassment areas-item">
 				<g-image src="@/assets/images/practice-area.png"></g-image>
 				<div class="areas-content">
-					<h3>Harassment</h3>
-					<p>
-						Are you
-						<em>
-							<b>
-								being treated in a way that is offensive, humiliating, intimidating,
-								or threatening at work</b
-							>
-						</em>
-						because of your race, color, national origin, gender, sexual orientation,
-						being pregnant, age, religion, or disability? Does your supervisor create a
-						“culture of fear” or “fraternity culture” at work? You hate to go to work
-						because you are being constantly harassed at work? Enough is enough. It is
-						time to stand up against your harasser.
-					</p>
+					<a href="/practice-areas">
+						<div class="areas-content-top">
+							<h3>Harassment</h3>
+							<p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="feather feather-chevron-right"
+								>
+									<polyline points="9 18 15 12 9 6"></polyline>
+								</svg>
+							</p>
+						</div>
+						<p>
+							Are you
+							<em>
+								<b>
+									being treated in a way that is offensive, humiliating,
+									intimidating, or threatening at work</b
+								>
+							</em>
+							because of your race, color, national origin, gender, sexual
+							orientation, being pregnant, age, religion, or disability? Does your
+							supervisor create a “culture of fear” or “fraternity culture” at work?
+							You hate to go to work because you are being constantly harassed at
+							work? Enough is enough. It is time to stand up against your harasser.
+						</p>
+					</a>
 				</div>
 			</div>
 			<div class="discrimination areas-item">
 				<g-image src="@/assets/images/practice-area.png"></g-image>
 				<div class="areas-content">
-					<h3>Discrimination</h3>
-					<p>
-						Are you being
-						<em>
-							<b> treated less favorably </b>
-						</em>
-						at work because of your race, gender, age, religion, pregnant, or
-						disability? Stop getting screwed over. It is time to stand up for your
-						rights.
-					</p>
+					<a href="/practice-areas">
+						<div class="areas-content-top">
+							<h3>Discrimination</h3>
+							<p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="feather feather-chevron-right"
+								>
+									<polyline points="9 18 15 12 9 6"></polyline>
+								</svg>
+							</p>
+						</div>
+						<p>
+							Are you being
+							<em>
+								<b> treated less favorably </b>
+							</em>
+							at work because of your race, gender, age, religion, pregnant, or
+							disability? Stop getting screwed over. It is time to stand up for your
+							rights.
+						</p>
+					</a>
 				</div>
 			</div>
 			<div class="wagehour areas-item">
 				<g-image src="@/assets/images/practice-area.png"></g-image>
 				<div class="areas-content">
-					<h3>Wage & Hour</h3>
-					<p>
-						Are you
-						<em>
-							<b> unsure if </b>
-						</em>
+					<a href="/practice-areas">
+						<div class="areas-content-top">
+							<h3>Wage & Hour</h3>
+							<p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="feather feather-chevron-right"
+								>
+									<polyline points="9 18 15 12 9 6"></polyline>
+								</svg>
+							</p>
+						</div>
+						<p>
+							Are you
+							<em>
+								<b> unsure if </b>
+							</em>
 
-						you are receiving all your wages? You are entitled to receiving the minimum
-						wage, overtime, meal and rest breaks, and back wages. It is never too late
-						to claim what you have earned.
-					</p>
+							you are receiving all your wages? You are entitled to receiving the
+							minimum wage, overtime, meal and rest breaks, and back wages. It is
+							never too late to claim what you have earned.
+						</p>
+					</a>
 				</div>
 			</div>
 			<div class="wrongfultermination areas-item">
 				<g-image src="@/assets/images/practice-area.png"></g-image>
 				<div class="areas-content">
-					<h3>Termination</h3>
-					<p>
-						Did you
-						<em>
-							<b> get fired </b>
-						</em>
+					<a href="/practice-areas">
+						<div class="areas-content-top">
+							<h3>Termination</h3>
+							<p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="feather feather-chevron-right"
+								>
+									<polyline points="9 18 15 12 9 6"></polyline>
+								</svg>
+							</p>
+						</div>
+						<p>
+							Did you
+							<em>
+								<b> get fired </b>
+							</em>
 
-						after asking for your unpaid wages, filing your worker’s compensation claim,
-						or reporting harassment? Did you
-						<em>
-							<b> quit </b>
-						</em>
-						because you could no longer tolerate harassment or discrimination? You
-						deserve better. It is time to claim your lost wages.
-					</p>
+							after asking for your unpaid wages, filing your worker’s compensation
+							claim, or reporting harassment? Did you
+							<em>
+								<b> quit </b>
+							</em>
+							because you could no longer tolerate harassment or discrimination? You
+							deserve better. It is time to claim your lost wages.
+						</p>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
 
-<script>
-export default {};
-</script>
 
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
@@ -100,9 +177,21 @@ export default {};
     .areas-content
         background-color: var(--color-b-alt-2)
         padding: var(--space-sm)
+        height: 100%
+
+        @include md
+            padding: var(--space-sm) var(--space-md)
+
+        .areas-content-top
+            justify-content: space-between
+            display: flex
+
+        a:hover
+            text-decoration: none
 
     .areas-item
         display: flex
         flex-direction: column
         min-width: 300px
+        height: 100%
 </style>

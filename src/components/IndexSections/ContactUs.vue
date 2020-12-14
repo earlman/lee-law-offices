@@ -60,7 +60,7 @@ export default {
             margin: 0
 
         .info-section
-            margin-top: var(--space-sm)
+            // margin-top: var(--space-sm)
             margin-bottom: var(--space-sm)
 
     .contact-us--inner
@@ -74,6 +74,7 @@ export default {
 
         @include md
             padding: var(--space-sm)
+            margin: 0
 
         @include lg
             display: grid

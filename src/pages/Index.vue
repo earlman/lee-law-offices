@@ -3,8 +3,14 @@
 		<section class="hero-container">
 			<div class="hero">
 				<div class="content">
-					<h1>The law is on your side. We are here to protect you.</h1>
-					<p>Call us today for a free consultation! 630-444-5656. Se habla español.</p>
+					<h1 class="hero--title">
+						The law is on your side.<br />
+						We are here to protect you.
+					</h1>
+					<p class="hero--text">
+						Call us today for a free consultation! <br />
+						630-444-5656. Se habla español.
+					</p>
 					<button class="contact-us">Contact Us</button>
 				</div>
 			</div>
@@ -56,11 +62,17 @@ section
     grid-template-rows: 1fr 3fr 1fr
     max-width: var(--layout-max-width)
 
+    .hero--text
+        color: var(--color-t-c)
+
 .content
     margin: auto
     background-color: var(--color-b-alt-2)
     padding: var(--space-sm)
     // opacity: .6
+
+    h1
+        margin-bottom: var(--space-sm)
 
     @include md
         padding: var(--space-md)

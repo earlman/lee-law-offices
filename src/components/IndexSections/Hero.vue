@@ -24,40 +24,42 @@ export default {};
 .hero-container
     background-image: url(~@/assets/images/hero.png)
     background-position: 50% 0
-    height: min-content
+    height: 70vh
     background-repeat: no-repeat
-    background-size: auto 100%
-    padding: var(--space-sm)
+    background-size: cover
+    padding: var(--space-lg) var(--space-sm)
     display: flex
     flex-direction: column
 
-    @include landscape
-        background-size: 100% auto
+    @include lg
+        background-position: 100% 0
+        background-size: 70%
 
     .hero
         margin: auto
+        width: 100%
+        max-width: var(--layout-max-width)
+
+        // @include lg
+        //     margin: 0
+        //     width: max-content
 
         .content
             border-radius: 3px
             padding: var(--space-sm)
             background-color: var(--color-b-alt-2)
+            width: max-content
+
+            @include md
+                padding: var(--space-sm)
+
+            @include lg
+                padding: var(--space-md)
 
             h1, p
                 margin-bottom: var(--space-sm)
             button
-                margin: auto
-
-// .content
-//     margin: auto
-//     background-color: var(--color-b-alt-2)
-//     padding: var(--space-sm)
-//     // opacity: .6
-
-//     @include md
-//         padding: var(--space-md)
-//         min-width: 300px
-//         max-width: 800px
-//         grid-row: 2
+                margin-bottom: var(--space-xs)
 
 button.contact-us
     width: max-content

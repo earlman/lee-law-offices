@@ -8,7 +8,7 @@
 				</h1>
 				<p class="hero--text">
 					Call us today for a free consultation! <br />
-					630-444-5656. Se habla español.
+					630-444-5656. <em> Se habla español. </em>
 				</p>
 				<button class="contact-us">Contact Us</button>
 			</div>
@@ -46,6 +46,13 @@ export default {};
         // @include lg
         //     margin: 0
         //     width: max-content
+
+        &--title
+            color: var(--color-t)
+
+        &--text, em
+            font-size: var(--d-lg)
+            color: var(--color-t-c)
 
         .content
             border-radius: 3px

@@ -29,10 +29,14 @@ html, *
 b, strong 
     font-weight: bold
 
-h1, h2, h3, h4, h5, h6
+h1, h2
     font-family: var(--font-secondary)
     color: var(--color-t-h)
     line-height: var(--d-multiplier) // The Typographic Scale multiplier defined in _text-sizes
+
+h3, h4, h5, h6
+    font-family: var(--font-primary)
+    color: var(--color-t-h)
 
 
 /*=============================================*/
@@ -42,38 +46,27 @@ h1, h2, h3, h4, h5, h6
 h1 
     @include text(3xl)
     font-weight: 400
-    // line-height: 4rem
-    margin-bottom: var(--space-sm) //trial
 
 h2 
     @include text(2xl)
-    font-weight: 400
-    // line-height: 3rem
-    margin-bottom: var(--space-sm) //trial
+    font-weight: 600
+    color: var(--color-t-h-alt)
 
 h3 
     @include text(xl)
     font-weight: 400
-    // line-height: 2.5rem
-    margin-bottom: var(--space-sm) //trial
 
 h4 
     @include text(lg)
-    font-weight: 600
-    // line-height: 2rem
-    margin-bottom: var(--space-sm) //trial
+    font-weight: 400
 
 h5 
     @include text(lg)
-    font-weight: 600
-    // line-height: 2rem
-    margin-bottom: var(--space-sm) //trial
+    font-weight: 400
 
 h6 
     @include text(lg)
-    font-weight: 600
-    // line-height: 2rem
-    margin-bottom: var(--space-sm) //trial
+    font-weight: 400
 
 p
     @include text(md)

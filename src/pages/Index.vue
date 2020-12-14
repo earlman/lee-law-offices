@@ -10,36 +10,22 @@
 			</div>
 		</section>
 
-		<section class="practice-areas">
-			<practice-areas-grid />
-		</section>
-		<section class="free-consultation">
-			<h2>Free Consultation</h2>
-			<form action="">
-				<input type="text" name="name" placeholder="Name" />
-				<input type="text" name="phone" placeholder="Phone" />
-				<input type="text" name="email" placeholder="Name" />
-				<textarea
-					name="message"
-					id=""
-					cols="30"
-					rows="10"
-					placeholder="Briefly Explain your situation."
-				></textarea>
-				<button type="submit" class="contact-us">Contact Us</button>
-			</form>
-		</section>
-		<section class="contact-us">
-			<h2>Contact Us</h2>
-		</section>
+		<practice-areas-grid />
+		<section class="practice-areas"></section>
+		<free-consultation />
+		<section class="free-consultation"></section>
+		<contact-us />
+		<section class="contact-us"></section>
 	</Layout>
 </template>
 
 
 <script>
-import PracticeAreasGrid from '../components/PracticeAreasGrid.vue';
+import PracticeAreasGrid from '../components/IndexSections/PracticeAreasGrid.vue';
+import FreeConsultation from '../components/IndexSections/FreeConsultation.vue';
+import ContactUs from '../components/IndexSections/ContactUs.vue';
 export default {
-	components: { PracticeAreasGrid },
+	components: { PracticeAreasGrid, FreeConsultation, ContactUs },
 	metaInfo: {
 		title: 'Home',
 	},
@@ -82,20 +68,4 @@ section
 
 button.contact-us
     width: max-content
-
-.free-consultation
-    max-width: var(--layout-max-width)
-    margin: 0 auto var(--space-lg)
-
-.practice-areas
-    max-width: var(--layout-max-width)
-    margin: 0 auto var(--space-lg)
-
-//this is the section lol
-.contact-us
-    max-width: var(--layout-max-width)
-    margin: 0 auto var(--space-lg)
-form
-    display: grid
-    max-width: 600px
 </style>

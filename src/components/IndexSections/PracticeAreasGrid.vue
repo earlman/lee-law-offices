@@ -1,10 +1,10 @@
 <template>
-	<div>
-		<h2>Practice Areas</h2>
+	<div class="practice-areas">
+		<h2 class="section-title">Practice Areas</h2>
 		<div class="areas-grid">
 			<div class="harassment areas-item">
-				<g-image src="../assets/images/practice-area.png"></g-image>
-				<div class="content">
+				<g-image src="@/assets/images/practice-area.png"></g-image>
+				<div class="areas-content">
 					<h3>Harassment</h3>
 					<p>
 						Are you
@@ -23,8 +23,8 @@
 				</div>
 			</div>
 			<div class="discrimination areas-item">
-				<g-image src="../assets/images/practice-area.png"></g-image>
-				<div class="content">
+				<g-image src="@/assets/images/practice-area.png"></g-image>
+				<div class="areas-content">
 					<h3>Discrimination</h3>
 					<p>
 						Are you being
@@ -38,8 +38,8 @@
 				</div>
 			</div>
 			<div class="wagehour areas-item">
-				<g-image src="../assets/images/practice-area.png"></g-image>
-				<div class="content">
+				<g-image src="@/assets/images/practice-area.png"></g-image>
+				<div class="areas-content">
 					<h3>Wage & Hour</h3>
 					<p>
 						Are you
@@ -54,8 +54,8 @@
 				</div>
 			</div>
 			<div class="wrongfultermination areas-item">
-				<g-image src="../assets/images/practice-area.png"></g-image>
-				<div class="content">
+				<g-image src="@/assets/images/practice-area.png"></g-image>
+				<div class="areas-content">
 					<h3>Termination</h3>
 					<p>
 						Did you
@@ -84,6 +84,10 @@ export default {};
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
+.practice-areas
+    max-width: var(--layout-max-width)
+    margin: 0 auto var(--space-lg)
+
 .areas-grid
     display: grid
     @include md
@@ -91,9 +95,9 @@ export default {};
         grid-gap: var(--space-md)
 
     h3
-        margin: 0
+        margin-bottom: var(--space-sm)
 
-    .content
+    .areas-content
         background-color: var(--color-b-alt-2)
         padding: var(--space-sm)
 

@@ -194,4 +194,6 @@
         flex-direction: column
         min-width: 300px
         height: 100%
+        border: 1px solid white
+        border-radius: 3px
 </style>

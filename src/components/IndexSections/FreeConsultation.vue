@@ -14,11 +14,14 @@
 					placeholder="Briefly Explain your situation."
 				></textarea>
 				<div class="disclaimer">
-					<p>
-						This is the placeholder text for the free consultation disclaimer. This text
-						will be replaced once we receive the actual text for the consultation
-						disclaimer.
-					</p>
+					<input type="checkbox" name="disclaimer" id="disclaimer" />
+					<label for="disclaimer">
+						<p>
+							This is the placeholder text for the free consultation disclaimer. This
+							text will be replaced once we receive the actual text for the
+							consultation disclaimer.
+						</p>
+					</label>
 				</div>
 				<button type="submit" class="contact-us">Contact Us</button>
 			</div>
@@ -42,4 +45,10 @@ export default {};
 
         *
             margin-bottom: var(--space-xs)
+
+        .disclaimer
+            display: flex
+
+            *
+                margin-right: var(--space-xs)
 </style>

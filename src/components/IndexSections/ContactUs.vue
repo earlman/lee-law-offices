@@ -81,7 +81,7 @@ export default {
             grid-gap: var(--space-md)
 
             .gmap
-                height: 100%
+                height: 500px
 
     .hours-table
         display: grid

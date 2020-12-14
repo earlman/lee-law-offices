@@ -29,7 +29,13 @@ html
 .section-title
     display: grid
     place-items: center
-    margin-bottom: var(--space-md)
+    max-width: var(--layout-max-width)
+    margin: 0 auto var(--space-md)
+
+    @include md
+        place-items: start
+        margin-left: var(--space-sm)
+        margin-right: var(--space-sm)
 
 .button
     @include space-squish(27px)

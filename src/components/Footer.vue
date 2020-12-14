@@ -59,17 +59,29 @@
     border-top: 30px solid var(--color-p)
 
 footer
-    margin: var(--space-md) var(--layout-margin) 0 var(--space-md)
+    margin: var(--space-sm) var(--layout-margin) 0 var(--space-md)
 
     *
         color: white
         margin: 0
+
     .logo
+        margin-right: var(--space-md)
         margin-bottom: var(--space-sm)
 
+        width: 200px
+
     nav
+        margin: 0 auto var(--space-md)
+        max-width: var(--layout-max-width)
+
+        .our-services, .quick-links, .contact
+            margin-top: var(--space-sm)
+
         @include lg
-            display: flex
+            display: grid
+            grid-template-rows: 1fr
+            grid-template-columns: 1fr 1fr 1fr 1fr
 
             ul
                 margin-right: var(--space-lg)
@@ -80,12 +92,14 @@ footer
             margin-bottom: var(--space-sm)
             list-style-type: none
 
+            *
+                font-size: var(--d-sm)
+
             a
                 font-weight: 400
 
     hr
         margin: auto
-        width: 60%
         max-width: var(--layout-max-width)
         margin-bottom: var(--space-sm)
         opacity: .1

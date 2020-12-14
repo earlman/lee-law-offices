@@ -1,6 +1,6 @@
 <template>
 	<div class="contact-us">
-		<h2>Contact Us</h2>
+		<h2 class="section-title">Contact Us</h2>
 		<div class="map">THIS IS WHERE THE MAP WILL GO</div>
 		<div class="info">
 			<div class="info-section">

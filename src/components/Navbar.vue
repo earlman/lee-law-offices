@@ -66,7 +66,7 @@ ul
 
 .header-container
     background-color: var(--color-b-alt)
-    padding: var(--space-lg) 0 var(--space-sm)
+    padding: var(--space-md) 0 var(--space-sm)
     border-bottom: 12px solid var(--color-p)
 
 .header

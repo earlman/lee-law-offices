@@ -3,7 +3,11 @@
 		<h2 class="section-title">Practice Areas</h2>
 		<div class="areas-grid">
 			<div class="harassment areas-item">
-				<g-image height="800" src="@/assets/images/harrassment.png"></g-image>
+				<g-image
+					height="800"
+					class="areas--image"
+					src="@/assets/images/harrassment.png"
+				></g-image>
 				<div class="areas-content">
 					<a href="/practice-areas">
 						<div class="areas-content-top">
@@ -209,4 +213,11 @@
         min-width: 300px
         height: 100%
         overflow: hidden
+
+        &:hover .areas--image
+            filter: grayscale(0)
+
+        .areas--image
+            transition: filter .4s,.4s ease
+            filter: grayscale(100%)
 </style>

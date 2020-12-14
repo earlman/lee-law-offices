@@ -52,15 +52,14 @@ export default {
         background-color: var(--color-b-alt-2)
 
         h4
-            margin-bottom: var(--space-2xs)
             text-transform: uppercase
+            font-size: var(--d-md)
 
         p
             color: var(--color-t-c)
             margin: 0
 
         .info-section
-            // margin-top: var(--space-sm)
             margin-bottom: var(--space-sm)
 
     .contact-us--inner

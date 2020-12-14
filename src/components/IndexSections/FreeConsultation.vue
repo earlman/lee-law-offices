@@ -36,7 +36,8 @@ export default {};
     // margin: 0 var(--space-sm)
 
     .form
-        padding: var(--space-sm)
+        margin: var(--space-xs)
+        padding: var(--space-sm) var(--space-xs)
         background-color: var(--color-b-alt-2)
 
         *

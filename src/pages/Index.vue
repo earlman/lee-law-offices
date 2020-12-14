@@ -9,13 +9,15 @@
 				</div>
 			</div>
 		</section>
-
-		<practice-areas-grid />
-		<section class="practice-areas"></section>
-		<free-consultation />
-		<section class="free-consultation"></section>
-		<contact-us />
-		<section class="contact-us"></section>
+		<section>
+			<practice-areas-grid />
+		</section>
+		<section>
+			<free-consultation />
+		</section>
+		<section>
+			<contact-us />
+		</section>
 	</Layout>
 </template>
 

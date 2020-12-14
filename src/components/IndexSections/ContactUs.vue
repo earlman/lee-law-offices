@@ -1,46 +1,59 @@
 <template>
 	<div class="contact-us">
 		<h2 class="section-title">Contact Us</h2>
-		<div class="map">
-			<GmapMap
-				:center="{ lat: 10, lng: 10 }"
-				:zoom="7"
-				map-type-id="terrain"
-				style="width: 500px; height: 300px"
-			>
-				<GmapMarker
-					:key="index"
-					v-for="(m, index) in markers"
-					:position="m.position"
-					:clickable="true"
-					:draggable="true"
-					@click="center = m.position"
-				/>
-			</GmapMap>
-		</div>
+		<Gmap />
 		<div class="info">
 			<div class="info-section">
 				<h4>Phone</h4>
-				<p>XXX-XXX-XXXX</p>
+				<p>660-518-6008</p>
 			</div>
 			<div class="info-section">
 				<h4>Address</h4>
-				<p>XXX-XXX-XXXX</p>
+				<p>2345 Avenue Street <br />Los Angeles, CA 61111</p>
 			</div>
 			<div class="info-section">
 				<h4>Business Hours</h4>
-				<p>XXX-XXX-XXXX</p>
+				<div class="hours-table">
+					<p>Mon - Fri</p>
+					<p>9 am - 6 pm</p>
+					<p>Sat</p>
+					<p>9 am - 1 pm</p>
+					<p>Holidays</p>
+					<p>Closed</p>
+				</div>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-export default {};
+import Gmap from '@/components/Gmap';
+
+export default {
+	components: {
+		Gmap,
+	},
+};
 </script>
 
 <style lang="sass" scoped>
 .contact-us
     max-width: var(--layout-max-width)
-    margin: 0 auto var(--space-lg)
+
+    .info
+        margin: var(--space-xs)
+        background-color: var(--color-b-alt-2)
+        padding: var(--space-xs) var(--space-xs) var(--space-lg)
+
+        h4
+            margin-bottom: var(--space-2xs)
+            text-transform: uppercase
+
+        p
+            color: var(--color-t-c)
+
+    .hours-table
+        display: grid
+        grid-template-rows: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr
 </style>

@@ -3,7 +3,7 @@
 		<h2 class="section-title">Practice Areas</h2>
 		<div class="areas-grid">
 			<div class="harassment areas-item">
-				<g-image src="@/assets/images/practice-area.png"></g-image>
+				<g-image height="800" src="@/assets/images/harrassment.png"></g-image>
 				<div class="areas-content">
 					<a href="/practice-areas">
 						<div class="areas-content-top">
@@ -42,79 +42,13 @@
 					</a>
 				</div>
 			</div>
-			<div class="discrimination areas-item">
-				<g-image src="@/assets/images/practice-area.png"></g-image>
-				<div class="areas-content">
-					<a href="/practice-areas">
-						<div class="areas-content-top">
-							<h3>Discrimination</h3>
-							<p>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="36"
-									height="36"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									class="feather feather-chevron-right"
-								>
-									<polyline points="9 18 15 12 9 6"></polyline>
-								</svg>
-							</p>
-						</div>
-						<p>
-							Are you being
-							<em>
-								<b> treated less favorably </b>
-							</em>
-							at work because of your race, gender, age, religion, pregnant, or
-							disability? Stop getting screwed over. It is time to stand up for your
-							rights.
-						</p>
-					</a>
-				</div>
-			</div>
-			<div class="wagehour areas-item">
-				<g-image src="@/assets/images/practice-area.png"></g-image>
-				<div class="areas-content">
-					<a href="/practice-areas">
-						<div class="areas-content-top">
-							<h3>Wage & Hour</h3>
-							<p>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="36"
-									height="36"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									class="feather feather-chevron-right"
-								>
-									<polyline points="9 18 15 12 9 6"></polyline>
-								</svg>
-							</p>
-						</div>
-						<p>
-							Are you
-							<em>
-								<b> unsure if </b>
-							</em>
 
-							you are receiving all your wages? You are entitled to receiving the
-							minimum wage, overtime, meal and rest breaks, and back wages. It is
-							never too late to claim what you have earned.
-						</p>
-					</a>
-				</div>
-			</div>
 			<div class="wrongfultermination areas-item">
-				<g-image src="@/assets/images/practice-area.png"></g-image>
+				<g-image
+					height="800"
+					class="areas--image"
+					src="@/assets/images/termination.png"
+				></g-image>
 				<div class="areas-content">
 					<a href="/practice-areas">
 						<div class="areas-content-top">
@@ -149,6 +83,85 @@
 							</em>
 							because you could no longer tolerate harassment or discrimination? You
 							deserve better. It is time to claim your lost wages.
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="discrimination areas-item">
+				<g-image
+					height="800"
+					class="areas--image"
+					src="@/assets/images/discrimination.png"
+				></g-image>
+				<div class="areas-content">
+					<a href="/practice-areas">
+						<div class="areas-content-top">
+							<h3>Discrimination</h3>
+							<p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="feather feather-chevron-right"
+								>
+									<polyline points="9 18 15 12 9 6"></polyline>
+								</svg>
+							</p>
+						</div>
+						<p>
+							Are you being
+							<em>
+								<b> treated less favorably </b>
+							</em>
+							at work because of your race, gender, age, religion, pregnant, or
+							disability? Stop getting screwed over. It is time to stand up for your
+							rights.
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="wagehour areas-item">
+				<g-image
+					height="800"
+					class="areas--image"
+					src="@/assets/images/wage_hour.png"
+				></g-image>
+				<div class="areas-content">
+					<a href="/practice-areas">
+						<div class="areas-content-top">
+							<h3>Wage & Hour</h3>
+							<p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="feather feather-chevron-right"
+								>
+									<polyline points="9 18 15 12 9 6"></polyline>
+								</svg>
+							</p>
+						</div>
+						<p>
+							Are you
+							<em>
+								<b> unsure if </b>
+							</em>
+
+							you are receiving all your wages? You are entitled to receiving the
+							minimum wage, overtime, meal and rest breaks, and back wages. It is
+							never too late to claim what you have earned.
 						</p>
 					</a>
 				</div>
@@ -190,10 +203,10 @@
             text-decoration: none
 
     .areas-item
+        border-radius: 3px
         display: flex
         flex-direction: column
         min-width: 300px
         height: 100%
-        border: 1px solid white
-        border-radius: 3px
+        overflow: hidden
 </style>

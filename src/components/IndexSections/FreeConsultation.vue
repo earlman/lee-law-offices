@@ -36,17 +36,24 @@ export default {};
 </script>
 
 <style lang="sass" scoped>
+@import '@/styles/04 - Layout/_media.sass'
+
 .free-consultation
-    // max-width: var(--layout-max-width)
-    // margin: 0 var(--space-sm)
+    @include lg
+        max-width: var(--layout-max-width)
+        margin: 0 auto var(--space-lg)
 
     .form
         margin: var(--space-xs)
         padding: var(--space-sm) var(--space-xs)
         background-color: var(--color-b-alt-2)
 
+        @include md
+            padding: var(--space-sm)
+
         *
             margin-bottom: var(--space-xs)
+            width: 100%
 
         .disclaimer .label
             font-weight: 400

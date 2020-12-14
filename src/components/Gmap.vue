@@ -40,5 +40,5 @@ export default {
 <style lang="sass" scoped>
 .map
     width: 100%
-    height: 60vh
+    height: 100%
 </style>

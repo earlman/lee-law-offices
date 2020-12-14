@@ -1,7 +1,23 @@
 <template>
 	<div class="contact-us">
 		<h2 class="section-title">Contact Us</h2>
-		<div class="map">THIS IS WHERE THE MAP WILL GO</div>
+		<div class="map">
+			<GmapMap
+				:center="{ lat: 10, lng: 10 }"
+				:zoom="7"
+				map-type-id="terrain"
+				style="width: 500px; height: 300px"
+			>
+				<GmapMarker
+					:key="index"
+					v-for="(m, index) in markers"
+					:position="m.position"
+					:clickable="true"
+					:draggable="true"
+					@click="center = m.position"
+				/>
+			</GmapMap>
+		</div>
 		<div class="info">
 			<div class="info-section">
 				<h4>Phone</h4>

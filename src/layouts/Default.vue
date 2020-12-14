@@ -31,5 +31,5 @@ export default {
 
 <style lang="sass">
 main
-    background-color: var(--color-b-alt-2)
+    background-color: var(--color-b)
 </style>

@@ -70,7 +70,7 @@ section
 
 .content
     margin: auto
-    background-color: var(--color-b)
+    background-color: var(--color-b-alt-2)
     padding: var(--space-sm)
     // opacity: .6
 

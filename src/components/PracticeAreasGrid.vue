@@ -94,7 +94,7 @@ export default {};
         margin: 0
 
     .content
-        background-color: var(--color-b)
+        background-color: var(--color-b-alt-2)
         padding: var(--space-sm)
 
     .areas-item

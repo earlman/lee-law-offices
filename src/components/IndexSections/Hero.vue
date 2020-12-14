@@ -32,8 +32,11 @@ export default {};
     flex-direction: column
 
     @include lg
+        height: unset
+        margin: auto
+        max-width: var(--layout-max-width)
         background-position: 100% 0
-        background-size: 70%
+        background-size: 80% auto
 
     .hero
         margin: auto
@@ -48,6 +51,7 @@ export default {};
             border-radius: 3px
             padding: var(--space-sm)
             background-color: var(--color-b-alt-2)
+            margin: auto
             width: max-content
 
             @include md
@@ -55,6 +59,7 @@ export default {};
 
             @include lg
                 padding: var(--space-md)
+                margin: 0
 
             h1, p
                 margin-bottom: var(--space-sm)

@@ -10,35 +10,12 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'content/posts/**/*.md',
-                typeName: 'Post',
-                refs: {
-                    tags: {
-                        typeName: 'Tag',
-                        create: true,
-                    },
-                    author: {
-                        typeName: 'Author',
-                    },
-                },
+                path: 'content/practice-areas/*.md',
+                typeName: 'PracticeAreas',
             },
         },
 
-        // Load Authors from file system
-        {
-            use: '@gridsome/source-filesystem',
-            options: {
-                path: 'content/authors/**/*.md',
-                typeName: 'Author',
-                refs: {
-                    posts: {
-                        typeName: 'Post',
-                    },
-                },
-            },
-        },
         // Netlify CMS Plugin
-
         {
             use: `gridsome-plugin-netlify-cms`,
             options: {
@@ -46,27 +23,6 @@ module.exports = {
             },
         },
     ],
-
-    templates: {
-        Post: [
-            {
-                path: '/blog/:year/:month/:day/:title',
-                componenent: '~/templates/Post.vue',
-            },
-        ],
-        Tag: [
-            {
-                path: '/tag/:title',
-                componenent: '~/templates/Tag.vue',
-            },
-        ],
-        Author: [
-            {
-                path: '/author/:title',
-                componenent: '~/templates/Author.vue',
-            },
-        ],
-    },
 
     transformers: {
         remark: {

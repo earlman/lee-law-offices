@@ -1,6 +1,6 @@
 <template>
 	<div class="free-consultation">
-		<h2 class="section-title">Free Consultation</h2>
+		<h2 class="section-title">{{ sectionTitle }}</h2>
 		<form
 			class="form"
 			name="contact"
@@ -81,6 +81,12 @@ export default {
 			},
 		};
 	},
+	props: {
+		sectionTitle: {
+			type: String,
+			default: null,
+		},
+	},
 	methods: {
 		encode(data) {
 			return Object.keys(data)
@@ -88,16 +94,20 @@ export default {
 				.join('&');
 		},
 		handleSubmit(e) {
-			fetch('/', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-				body: this.encode({
-					'form-name': e.target.getAttribute('name'),
-					...this.formData,
-				}),
-			})
-				.then(() => this.$router.push('/success'))
-				.catch((error) => alert(error));
+			if (this.form.disclaimer) {
+				fetch('/', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+					body: this.encode({
+						'form-name': e.target.getAttribute('name'),
+						...this.formData,
+					}),
+				})
+					.then(() => this.$router.push('/success'))
+					.catch((error) => alert(error));
+			} else {
+				alert('Please read the Disclaimer.');
+			}
 		},
 	},
 };

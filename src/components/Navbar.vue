@@ -34,7 +34,7 @@
 				</ul>
 				<ul class="md-nav">
 					<li><g-link to="/">Home</g-link></li>
-					<!-- <li><g-link>About</g-link></li> -->
+					<li><g-link to="/about">About</g-link></li>
 					<li><g-link to="/practice-areas">Practice Areas</g-link></li>
 					<li><g-link to="/contact-us">Contact Us</g-link></li>
 					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->

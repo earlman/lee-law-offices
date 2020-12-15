@@ -1,11 +1,41 @@
 <template>
 	<div class="free-consultation">
 		<h2 class="section-title">Free Consultation</h2>
-		<form class="form" action="">
+		<form
+			class="form"
+			name="contact"
+			method="post"
+			v-on:submit.prevent="handleSubmit"
+			action="/success"
+			data-netlify="true"
+			data-netlify-honeypot="bot-field"
+		>
+			<input type="hidden" name="form-name" value="contact" />
+			<p hidden>
+				<label> Don’t fill this out: <input name="bot-field" /> </label>
+			</p>
 			<div class="form-container">
-				<input type="text" name="name" placeholder="Name" class="name" />
-				<input type="text" name="phone" placeholder="Phone" class="phone" />
-				<input type="text" name="email" placeholder="Email" class="email" />
+				<input
+					type="text"
+					name="name"
+					placeholder="Name"
+					class="name"
+					v-model="form.name"
+				/>
+				<input
+					type="text"
+					name="phone"
+					placeholder="Phone"
+					class="phone"
+					v-model="form.phone"
+				/>
+				<input
+					type="text"
+					name="email"
+					placeholder="Email"
+					class="email"
+					v-model="form.email"
+				/>
 				<textarea
 					name="message"
 					id=""
@@ -13,6 +43,7 @@
 					rows="10"
 					placeholder="Briefly Explain your situation."
 					class="message"
+					v-model="form.message"
 				></textarea>
 				<div class="disclaimer">
 					<p>
@@ -21,7 +52,12 @@
 						will be replaced once we receive the actual text for the consultation
 						disclaimer.
 					</p>
-					<input type="checkbox" name="disclaimer" id="disclaimer" />
+					<input
+						type="checkbox"
+						name="disclaimer"
+						id="disclaimer"
+						v-model="form.disclaimer"
+					/>
 					<label for="disclaimer">
 						<span class="label"> I have read the Disclaimer </span>
 					</label>
@@ -33,7 +69,38 @@
 </template>
 
 <script>
-export default {};
+export default {
+	data() {
+		return {
+			form: {
+				name: '',
+				phone: '',
+				email: '',
+				message: '',
+				disclaimer: '',
+			},
+		};
+	},
+	methods: {
+		encode(data) {
+			return Object.keys(data)
+				.map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+				.join('&');
+		},
+		handleSubmit(e) {
+			fetch('/', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: this.encode({
+					'form-name': e.target.getAttribute('name'),
+					...this.formData,
+				}),
+			})
+				.then(() => this.$router.push('/success'))
+				.catch((error) => alert(error));
+		},
+	},
+};
 </script>
 
 <style lang="sass" scoped>

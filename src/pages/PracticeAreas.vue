@@ -1,6 +1,6 @@
 <template>
-	<Layout title="Practice Areas">
-		<div class="practiceareas">
+	<PageLayout title="Practice Areas">
+		<template slot="sidebar">
 			<nav class="practiceareas--menu">
 				<ul>
 					<li v-for="edge in $page.areas.edges" :key="edge.node.title">
@@ -10,6 +10,8 @@
 					</li>
 				</ul>
 			</nav>
+		</template>
+		<div class="practiceareas">
 			<div
 				v-for="edge in $page.areas.edges"
 				:key="edge.node.title"
@@ -20,7 +22,7 @@
 				<div v-html="edge.node.content" />
 			</div>
 		</div>
-	</Layout>
+	</PageLayout>
 </template>
 
 <page-query>
@@ -38,49 +40,46 @@ query {
 </page-query>
 
 <script>
-import Layout from '@/layouts/Page';
+import PageLayout from '@/layouts/Page';
 
 export default {
 	metaInfo: {
 		title: 'Practice Areas',
 	},
 	components: {
-		Layout,
+		PageLayout,
 	},
 };
 </script>
 
 <style lang="sass" scoped>
+@import '@/styles/04 - Layout/_media.sass'
+
 .practiceareas
     display: flex
     flex-direction: column
     margin: var(--space-xs)
     border-radius: 3px
 
-    &--menu
-
-        ul
-            margin: var(--space-sm) 0
-
-        li
-            padding: var(--space-2xs) var(--space-md)
-
-            a
-                font-weight: 400
-                font-size: var(--d-md)
-                color: var(--color-t-c)
-
     nav li
-        list-style-type: none
 
     ::v-deep //fix bullet points in practice-area on mobile
         list-style-position: inside
 
-    .area, nav
+        @include md
+            li
+                margin-left: var(--space-md)
+                list-style-position: outside
+                width: 80%
+
+    .area
         background-color: var(--color-b-alt-2)
 
     .area
         padding: var(--space-xs)
+
+        @include md
+            padding: var(--space-md)
 
     .area--title
         margin-top: var(--space-xs)

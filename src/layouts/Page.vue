@@ -1,14 +1,20 @@
 <template>
 	<div class="layout">
 		<Navbar />
-		<div class="header">
-			<g-image class="header--image" fit="contain" src="@/assets/images/practiceareas.png" />
-			<div class="pagetitle">
-				<h1>{{ title }}</h1>
+		<div class="hero">
+			<div class="pagetitle--container">
+				<div class="pagetitle">
+					<h1>{{ title }}</h1>
+				</div>
 			</div>
 		</div>
-		<main>
-			<slot />
+		<main class="main">
+			<div class="sidebar" v-if="$slots.sidebar">
+				<slot name="sidebar"></slot>
+			</div>
+			<div class="mainbar">
+				<slot />
+			</div>
 		</main>
 		<Footer />
 	</div>
@@ -34,25 +40,88 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang="sass" style="scoped">
+@import '@/styles/04 - Layout/_media.sass'
+
 main
     background-color: var(--color-b)
-
-.header
-    z-index: 999
-
-.pagetitle
-    background-color: var(--color-b-alt-2)
-    margin-top: calc(-1 * var(--space-md))
-    margin-left: var(--space-xs)
-    margin-right: var(--space-xs)
-    margin-bottom: var(--space-xs)
-    padding: var(--space-xs)
-    border-radius: 3px
-
-.header--image
-    height: 100px
-    width: auto
     position: relative
-    z-index: -1
+
+.hero
+    background-image: url(~@/assets/images/practiceareas.png)
+    min-height: 150px
+    background-position: center
+    background-size: cover
+    position: relative
+    margin-bottom: var(--space-lg)
+    padding: var(--space-xs)
+
+    .pagetitle--container
+        width: 100%
+        position: relative
+        bottom: -6rem
+
+    .pagetitle
+        background-color: var(--color-b-alt-2)
+        margin-bottom: var(--space-xs)
+        padding: var(--space-xs)
+        border-radius: 3px
+        z-index: 10
+        position: absolute
+        width: 100%
+
+        @include md
+            padding-left: var(--space-md)
+
+.sidebar
+    background-color: var(--color-b-alt-2)
+    margin: var(--space-xs)
+    padding: var(--space-2xs) 0
+    height: min-content
+
+    ul
+        margin: var(--space-sm) 0
+
+    li
+        padding: var(--space-2xs) var(--space-md)
+        list-style-type: none
+
+        a
+            font-weight: 400
+            font-size: var(--d-md)
+            color: var(--color-t-c)
+
+@include lg
+
+    .main
+        display: grid
+        grid-template-columns: 3fr 1fr
+        max-width: var(--layout-max-width)
+        margin: auto
+
+        .sidebar
+            grid-column: 2
+
+        .mainbar
+            grid-column: 1
+            grid-row: 1
+
+    .hero
+        height: 250px
+        grid-column: 1 / -1
+        display: grid
+        grid-template-columns: 1fr 1200px 1fr
+        overflow: visible
+        margin-bottom: var(--space-md)
+
+        .pagetitle--container
+            grid-column: 2
+            display: grid
+            place-items: end
+        .pagetitle
+            width: 50%
+            margin-right: var(--space-xs)
+
+            bottom: 2rem
+            padding: var(--space-xs) var(--space-sm)
 </style>

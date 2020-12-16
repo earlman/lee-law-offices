@@ -1,6 +1,6 @@
 <template>
 	<div class="free-consultation">
-		<h2 class="section-title">{{ sectionTitle }}</h2>
+		<h2 v-if="sectionTitle" class="section-title">{{ sectionTitle }}</h2>
 		<form
 			class="form"
 			name="contact"
@@ -117,6 +117,7 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .free-consultation
+
     @include lg
         max-width: var(--layout-max-width)
         margin: 0 auto var(--space-lg)

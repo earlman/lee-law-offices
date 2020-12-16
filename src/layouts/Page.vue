@@ -76,7 +76,7 @@ main
 .sidebar
     background-color: var(--color-b-alt-2)
     margin: var(--space-xs)
-    padding: var(--space-2xs) 0
+    padding: var(--space-2xs) var(--space-xs)
     height: min-content
 
     ul
@@ -91,6 +91,14 @@ main
             font-size: var(--d-md)
             color: var(--color-t-c)
 
+@include md
+    .mainbar
+        margin-left: var(--space-xs)
+        margin-right: var(--space-xs)
+
+    .sidebar
+        padding: var(--space-sm)
+
 @include lg
 
     .main
@@ -101,6 +109,8 @@ main
 
         .sidebar
             grid-column: 2
+            margin: 0
+            min-height: 500px
 
         .mainbar
             grid-column: 1
@@ -120,7 +130,7 @@ main
             place-items: end
         .pagetitle
             width: 50%
-            margin-right: var(--space-xs)
+            // margin-right: var(--space-xs)
 
             bottom: 2rem
             padding: var(--space-xs) var(--space-sm)

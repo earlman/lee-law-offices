@@ -7,7 +7,7 @@
 					We are here to protect you.
 				</h1>
 				<p class="hero--text">
-					Call us today for a free consultation! <br />
+					Call us today for a free consultation. <br />
 					630-444-5656. <em> Se habla español. </em>
 				</p>
 				<button class="contact-us">Contact Us</button>

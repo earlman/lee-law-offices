@@ -40,7 +40,7 @@
 							because of your race, color, national origin, gender, sexual
 							orientation, being pregnant, age, religion, or disability? Does your
 							supervisor create a “culture of fear” or “fraternity culture” at work?
-							You hate to go to work because you are being constantly harassed at
+							Do you hate to go to work because you are being constantly harassed at
 							work? Enough is enough. It is time to stand up against your harasser.
 						</p>
 					</a>

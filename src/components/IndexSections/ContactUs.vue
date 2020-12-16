@@ -8,19 +8,26 @@
 			<div class="info">
 				<div class="info-section">
 					<h4>Phone</h4>
-					<p>660-518-6008</p>
+					<p>323-289-2260</p>
+				</div>
+				<div class="info-section">
+					<h4>Fax</h4>
+					<p>323-289-2261</p>
 				</div>
 				<div class="info-section">
 					<h4>Address</h4>
-					<p>2345 Avenue Street <br />Los Angeles, CA 61111</p>
+					<p>
+						Address: 725 S. Figueroa Street, Suite 3065 <br />
+						Los Angeles, CA 90017
+					</p>
 				</div>
 				<div class="info-section">
 					<h4>Business Hours</h4>
 					<div class="hours-table">
-						<p>Mon - Fri</p>
-						<p>9 am - 6 pm</p>
-						<p>Sat</p>
-						<p>9 am - 1 pm</p>
+						<p>Weekdays</p>
+						<p>9 am - 5pm</p>
+						<p>Weekends</p>
+						<p>Closed</p>
 						<p>Holidays</p>
 						<p>Closed</p>
 					</div>

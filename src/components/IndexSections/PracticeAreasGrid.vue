@@ -38,10 +38,8 @@
 								>
 							</em>
 							because of your race, color, national origin, gender, sexual
-							orientation, being pregnant, age, religion, or disability? Does your
-							supervisor create a “culture of fear” or “fraternity culture” at work?
-							Do you hate to go to work because you are being constantly harassed at
-							work? Enough is enough. It is time to stand up against your harasser.
+							orientation, being pregnant, age, religion, or disability? <br />
+							Enough is enough. It's time to stand up against your harasser.
 						</p>
 					</a>
 				</div>
@@ -81,12 +79,14 @@
 							</em>
 
 							after asking for your unpaid wages, filing your worker’s compensation
-							claim, or reporting harassment? Did you
+							claim, or reporting harassment?
+							<br />
+							Did you
 							<em>
 								<b> quit </b>
 							</em>
-							because you could no longer tolerate harassment or discrimination? You
-							deserve better. It is time to claim your lost wages.
+							because you could no longer tolerate harassment or discrimination?
+							<br />You deserve better. It is time to claim your lost wages.
 						</p>
 					</a>
 				</div>
@@ -124,8 +124,8 @@
 								<b> treated less favorably </b>
 							</em>
 							at work because of your race, gender, age, religion, pregnant, or
-							disability? Stop getting screwed over. It is time to stand up for your
-							rights.
+							disability?<br />
+							Stop getting screwed over. It is time to stand up for your rights.
 						</p>
 					</a>
 				</div>
@@ -163,8 +163,8 @@
 								<b> unsure if </b>
 							</em>
 
-							you are receiving all your wages? You are entitled to receiving the
-							minimum wage, overtime, meal and rest breaks, and back wages. It is
+							you are receiving all your wages? <br />You are entitled to receiving
+							the minimum wage, overtime, meal and rest breaks, and back wages. It is
 							never too late to claim what you have earned.
 						</p>
 					</a>

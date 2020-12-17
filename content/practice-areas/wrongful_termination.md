@@ -14,5 +14,3 @@ If you ever experienced any of the following, you were wrongfully terminated fro
 * Did you get fired after you took family or medical leave?
 * Did you get fired after you reported suspected criminal activity by your employer to a government or law enforcement agency?
 * Did you have no choice but to quit because you could no longer tolerate harassment or discrimination at work?
-
-You deserve better. It is time to claim your lost wages. We are here to protect you. No legal fees unless we win for you. Contact us for a free consultation.

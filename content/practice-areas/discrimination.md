@@ -13,5 +13,3 @@ The law protects you from being discriminated based on race, sex/gender, sexual 
 * You are being excluded or isolated by your co-workers. For instance, after your co-workers recently found out you are gay, they started calling you “princess”.
 * You are given impossible tasks no matter how hard you try.
 * Your supervisor deliberately withholds information you need to do your job.  
-
-Enough is enough. It is time to stand up for your rights. We are here to protect you. No legal fees unless we win for you. Contact us for a free consultation.

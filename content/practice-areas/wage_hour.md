@@ -20,5 +20,3 @@ subtitle: "Claim What You Have Earned"
 **Timecard:** Who makes your timecard? Have you ever seen your timecard? Are you forced to sign your timecard?   
 
 **Misclassification:** Are you (mis)classified as an exempt employee and not getting overtime wages? Are you (mis)classified as an independent contractor and not getting any benefits?
-
-It is never too late to claim what you have earned. We will deliver what belongs to you. No legal fees unless we win for you. Contact us for a free consultation.

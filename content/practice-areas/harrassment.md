@@ -17,5 +17,3 @@ Harassment can be verbal or physical.  Your harasser can be your co-worker and s
 * Your supervisor/co-worker touches your body parts behind you.
 * Your supervisor/co-worker constantly stares at your body parts. 
 * Your supervisor/co-worker removes or tries to remove your hijab. 
-
-Enough is enough. It is time to stand up against your harasser. We are here to protect you. No legal fees unless we win for you. Contact us for a free consultation.

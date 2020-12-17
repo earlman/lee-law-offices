@@ -4,7 +4,7 @@
 			<div class="content">
 				<h1 class="hero--title">
 					The law is on your side.<br />
-					We are here to protect you.
+					No legal fees until we win.
 				</h1>
 				<p class="hero--text">
 					Call us today for a free consultation. <br />

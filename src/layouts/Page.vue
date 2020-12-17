@@ -40,7 +40,7 @@ export default {
 };
 </script>
 
-<style lang="sass" style="scoped">
+<style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
 main

@@ -3,12 +3,13 @@
 		<div class="hero">
 			<div class="content">
 				<h1 class="hero--title">
-					The law is on your side.<br />
-					No legal fees until we win.
+					The law is on your side<br />
+					No legal fees until we win
 				</h1>
 				<p class="hero--text">
-					Call us today for a free consultation. <br />
-					630-444-5656. <em> Se habla español. </em>
+					Call us today for a free consultation <br />
+					<em> Se habla español </em><br />
+					(323) 289-2260
 				</p>
 				<button class="contact-us">Contact Us</button>
 			</div>

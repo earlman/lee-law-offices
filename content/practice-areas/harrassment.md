@@ -5,12 +5,12 @@ subtitle: "Enough is Enough!"
 
 ---
 
-Harassment can be verbal or physical.  Your harasser can be your co-worker and supervisor, or even a non-employee like a customer or contractor.  If you have ever experienced any of the following, you are being harassed: 
+Harassment can be verbal or physical.  Your harasser can be your co-worker, supervisor, or even a non-employee like a customer or contractor.  If you have ever experienced any of the following, you are being harassed: 
 
 * “Mexicans are rapists.” 
-* “Blacks are lazy.” 
+* “Black people are lazy.” 
 * “Why do you keep getting pregnant? Control yourself.”
-*  “Go back to your country.”
+* “Go back to your country.”
 * “Open your slanted eyes.”  
 * “You’re too old to get this job done.”
 * “I can’t understand your accent.” 

@@ -10,6 +10,8 @@ import '~/styles/index.sass'
 
 // Import Fonts
 import "fontsource-roboto"
+import "fontsource-raleway"
+import "fontsource-open-sans"
 
 export default function (Vue, { router, head, isClient }) {
     // Set default layout as a global component

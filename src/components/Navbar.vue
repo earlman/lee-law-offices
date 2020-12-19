@@ -13,7 +13,7 @@
 						height="36"
 						viewBox="0 0 24 24"
 						fill="none"
-						stroke="white"
+						stroke="var(--color-t)"
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
@@ -75,7 +75,7 @@ ul
     margin: auto
 
     *
-        color: var(--color-t-alt)
+        color: var(--color-t)
 
     a
         font-size: var(--d-lg)

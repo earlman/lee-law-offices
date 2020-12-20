@@ -1,8 +1,10 @@
 <template>
 	<div class="header-container">
 		<header class="header">
-			<div class="logo">
-				<g-link to="/"> Lee Law Offices </g-link>
+			<div>
+				<g-link to="/">
+					<img src="@/assets/images/logo.png" alt="logo" class="logo" />
+				</g-link>
 				<!-- <img src="" alt="Lee Law Offices" /> -->
 			</div>
 			<nav class="main-nav">
@@ -66,16 +68,24 @@ ul
 
 .header-container
     background-color: var(--color-b-alt)
-    padding: var(--space-md) 0 var(--space-sm)
-    border-bottom: 12px solid var(--color-p)
+    padding: var(--space-md) var(--space-sm) var(--space-sm)
+    // border-bottom: 8px solid var(--color-p)
 
 .header
-    display: grid
+    display: flex
+    flex-direction: column
     max-width: var(--layout-max-width)
     margin: auto
+    justify-content: space-between
+    align-items: center
 
-    *
-        color: var(--color-t)
+    @include md
+        // margin-top: var(--space-sm)
+
+    @include lg
+        flex-direction: row
+        padding-top: var(--space-xs)
+        padding-bottom: var(--space-2xs)
 
     a
         font-size: var(--d-lg)
@@ -84,6 +94,12 @@ ul
     .logo
         display: grid
         place-items: center
+        padding: 0 var(--space-xs)
+        max-width: 350px
+        margin-bottom: var(--space-md)
+
+        @include lg
+            margin-bottom: 0
 
     .main-nav
         display: grid
@@ -108,6 +124,7 @@ ul
 
             .md-nav
                 display: flex
+
             li
                 a
                     padding: var(--space-2xs) var(--space-sm)

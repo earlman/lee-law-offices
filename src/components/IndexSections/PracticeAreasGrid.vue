@@ -192,7 +192,7 @@
         margin-bottom: var(--space-sm)
 
     .areas-content
-        background-color: var(--color-b-alt-2)
+        background-color: var(--color-b-alt)
         padding: var(--space-sm)
         height: 100%
 

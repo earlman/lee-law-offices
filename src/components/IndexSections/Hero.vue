@@ -8,8 +8,7 @@
 				</h1>
 				<p class="hero--text">
 					Call us today for a free consultation <br />
-					<em> Se habla español </em><br />
-					(323) 289-2260
+					Se habla español &nbsp; <em>(323) 289-2260</em>&nbsp;
 				</p>
 				<button class="contact-us">Contact Us</button>
 			</div>
@@ -44,21 +43,21 @@ export default {};
         width: 100%
         max-width: var(--layout-max-width)
 
-        // @include lg
-        //     margin: 0
-        //     width: max-content
-
         &--title
-            color: var(--color-t)
+            color: var(--color-t-h)
+            font-weight: 400
+            line-height: 1.6
+            font-size: var(--d-2xl)
+            margin-bottom: var(--space-xs)
 
         &--text, em
-            font-size: var(--d-lg)
+            // font-size: var(--d-lg)
             color: var(--color-t-c)
 
         .content
             border-radius: 3px
             padding: var(--space-sm)
-            background-color: var(--color-b-alt-2)
+            background-color: var(--color-b-alt)
             margin: auto
             width: max-content
 
@@ -68,11 +67,6 @@ export default {};
             @include lg
                 padding: var(--space-md)
                 margin: 0
-
-            h1, p
-                margin-bottom: var(--space-sm)
-            button
-                margin-bottom: var(--space-xs)
 
 button.contact-us
     width: max-content

@@ -2,7 +2,7 @@
 	<div class="footer-container">
 		<footer class="footer">
 			<nav>
-				<div class="logo">Lee Law Offices</div>
+				<div><img src="@/assets/images/logo.png" alt="logo" class="logo" /></div>
 				<div class="our-services">
 					<h4>Our Services</h4>
 					<ul>
@@ -55,7 +55,7 @@
 @import '@/styles/04 - Layout/_media.sass'
 
 .footer-container
-    background-color: var(--color-b-alt)
+    background-color: var(--color-b-f)
     border-top: 30px solid var(--color-p)
 
 footer

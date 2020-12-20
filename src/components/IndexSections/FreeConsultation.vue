@@ -136,7 +136,7 @@ export default {
     .form
         margin: var(--space-xs)
         padding: var(--space-sm) var(--space-xs)
-        background-color: var(--color-b-alt-2)
+        background-color: var(--color-b-alt)
 
         @include md
             margin: 0

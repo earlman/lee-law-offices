@@ -4,7 +4,7 @@
 		<div class="areas-grid">
 			<div class="harassment areas-item">
 				<g-image
-					height="800"
+					height="600"
 					class="areas--image"
 					src="@/assets/images/harrassment.png"
 				></g-image>
@@ -38,16 +38,16 @@
 								>
 							</em>
 							because of your race, color, national origin, gender, sexual
-							orientation, being pregnant, age, religion, or disability? <br />
-							Enough is enough. It's time to stand up against your harasser.
+							orientation, being pregnant, age, religion, or disability?
 						</p>
+						<p>Enough is enough. It's time to stand up against your harasser.</p>
 					</a>
 				</div>
 			</div>
 
 			<div class="wrongfultermination areas-item">
 				<g-image
-					height="800"
+					height="600"
 					class="areas--image"
 					src="@/assets/images/termination.png"
 				></g-image>
@@ -80,20 +80,21 @@
 
 							after asking for your unpaid wages, filing your worker’s compensation
 							claim, or reporting harassment?
-							<br />
+						</p>
+						<p>
 							Did you
 							<em>
 								<b> quit </b>
 							</em>
 							because you could no longer tolerate harassment or discrimination?
-							<br />You deserve better. It is time to claim your lost wages.
 						</p>
+						<p>You deserve better. It is time to claim your lost wages.</p>
 					</a>
 				</div>
 			</div>
 			<div class="discrimination areas-item">
 				<g-image
-					height="800"
+					height="600"
 					class="areas--image"
 					src="@/assets/images/discrimination.png"
 				></g-image>
@@ -124,15 +125,15 @@
 								<b> treated less favorably </b>
 							</em>
 							at work because of your race, gender, age, religion, pregnant, or
-							disability?<br />
-							Stop getting screwed over. It is time to stand up for your rights.
+							disability?
 						</p>
+						<p>Stop getting screwed over. It is time to stand up for your rights.</p>
 					</a>
 				</div>
 			</div>
 			<div class="wagehour areas-item">
 				<g-image
-					height="800"
+					height="600"
 					class="areas--image"
 					src="@/assets/images/wage_hour.png"
 				></g-image>
@@ -163,9 +164,13 @@
 								<b> unsure if </b>
 							</em>
 
-							you are receiving all your wages? <br />You are entitled to receiving
-							the minimum wage, overtime, meal and rest breaks, and back wages. It is
-							never too late to claim what you have earned.
+							you are receiving all your wages?
+						</p>
+
+						<p>
+							You are entitled to receiving the minimum wage, overtime, meal and rest
+							breaks, and back wages. It is never too late to claim what you have
+							earned.
 						</p>
 					</a>
 				</div>
@@ -189,7 +194,8 @@
         grid-gap: var(--space-md)
 
     h3
-        margin-bottom: var(--space-sm)
+        font-family: var(--font-secondary)
+        margin-bottom: var(--space-xs)
 
     .areas-content
         background-color: var(--color-b-alt)
@@ -198,6 +204,9 @@
 
         @include md
             padding: var(--space-sm) var(--space-md)
+
+        p
+            margin-bottom: var(--space-xs)
 
         .areas-content-top
             justify-content: space-between

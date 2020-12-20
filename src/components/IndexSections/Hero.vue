@@ -35,8 +35,8 @@ export default {};
         height: unset
         margin: auto
         max-width: var(--layout-max-width)
-        background-position: 100% 0
-        background-size: 80% auto
+        background-position: 100% 40%
+        background-size: 70% auto
 
     .hero
         margin: auto
@@ -49,6 +49,7 @@ export default {};
             line-height: 1.6
             font-size: var(--d-2xl)
             margin-bottom: var(--space-xs)
+            font-family: var(--font-primary)
 
         &--text, em
             // font-size: var(--d-lg)

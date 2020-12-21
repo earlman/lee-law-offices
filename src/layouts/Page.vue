@@ -62,10 +62,9 @@ main
         bottom: -6rem
 
     .pagetitle
-        background-color: var(--color-b-alt-2)
+        background-color: var(--color-b-alt)
         margin-bottom: var(--space-xs)
         padding: var(--space-xs)
-        border-radius: 3px
         z-index: 10
         position: absolute
         width: 100%
@@ -74,7 +73,7 @@ main
             padding-left: var(--space-md)
 
 .sidebar
-    background-color: var(--color-b-alt-2)
+    background-color: var(--color-b-alt)
     margin: var(--space-xs)
     padding: var(--space-2xs) var(--space-xs)
     height: min-content

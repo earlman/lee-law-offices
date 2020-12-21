@@ -59,7 +59,6 @@ export default {};
             color: var(--color-t-c)
 
         .content
-            border-radius: 3px
             padding: var(--space-sm)
             background-color: var(--color-b-alt)
             margin: auto

@@ -59,7 +59,6 @@ export default {
     display: flex
     flex-direction: column
     margin: var(--space-xs)
-    border-radius: 3px
 
     nav li
 
@@ -73,7 +72,7 @@ export default {
                 width: 80%
 
     .area
-        background-color: var(--color-b-alt-2)
+        background-color: var(--color-b-alt)
 
     .area
         padding: var(--space-xs)

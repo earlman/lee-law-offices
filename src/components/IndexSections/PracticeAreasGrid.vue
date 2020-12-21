@@ -224,7 +224,6 @@
             text-decoration: none
 
     .areas-item
-        border-radius: 3px
         display: flex
         flex-direction: column
         min-width: 300px

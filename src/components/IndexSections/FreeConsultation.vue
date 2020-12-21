@@ -115,8 +115,14 @@ export default {
 
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
+.section-title
+    @include md
+        margin-left: var(--space-sm)
+        margin-right: var(--space-sm)
 
 .free-consultation
+    @include md
+        margin: 0 var(--space-sm)
 
     @include lg
         max-width: var(--layout-max-width)

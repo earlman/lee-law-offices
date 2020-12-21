@@ -56,7 +56,6 @@ export default {
         margin: 0 auto var(--space-lg)
 
     .info
-        // background-color: var(--color-b-alt-2)
 
         h4
             text-transform: uppercase
@@ -71,7 +70,7 @@ export default {
 
     .contact-us--inner
         max-width: var(--layout-max-width)
-        background-color: var(--color-b-alt-2)
+        background-color: var(--color-b-alt)
         margin: var(--space-xs)
         padding: var(--space-xs)
 

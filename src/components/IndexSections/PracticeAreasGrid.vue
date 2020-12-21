@@ -197,6 +197,9 @@
         grid-template-columns: 1fr 1fr
         grid-gap: var(--space-sm)
 
+    @include lg
+        margin: 0
+
     h3
         font-family: var(--font-secondary)
         margin-bottom: var(--space-xs)

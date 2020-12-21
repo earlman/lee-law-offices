@@ -189,13 +189,18 @@
 
 .areas-grid
     display: grid
+    margin: var(--space-xs)
+    grid-gap: var(--space-xs)
+
     @include md
+        margin: var(--space-sm)
         grid-template-columns: 1fr 1fr
-        grid-gap: var(--space-md)
+        grid-gap: var(--space-sm)
 
     h3
         font-family: var(--font-secondary)
         margin-bottom: var(--space-xs)
+        font-weight: 600
 
     .areas-content
         background-color: var(--color-b-alt)

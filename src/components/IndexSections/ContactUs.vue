@@ -56,7 +56,7 @@ export default {
         margin: 0 auto var(--space-lg)
 
     .info
-        background-color: var(--color-b-alt-2)
+        // background-color: var(--color-b-alt-2)
 
         h4
             text-transform: uppercase

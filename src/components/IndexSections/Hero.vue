@@ -47,9 +47,12 @@ export default {};
             color: var(--color-t-h)
             font-weight: 400
             line-height: 1.6
-            font-size: var(--d-2xl)
+            font-size: var(--d-lg)
             margin-bottom: var(--space-xs)
             font-family: var(--font-primary)
+
+            @include md
+                font-size: var(--d-2xl)
 
         &--text, em
             // font-size: var(--d-lg)
@@ -63,7 +66,7 @@ export default {};
             width: max-content
 
             @include md
-                padding: var(--space-sm)
+                padding: var(--space-md)
 
             @include lg
                 padding: var(--space-md)

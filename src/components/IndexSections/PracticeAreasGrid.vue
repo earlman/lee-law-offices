@@ -230,8 +230,9 @@
         height: 100%
         overflow: hidden
 
-        &:hover .areas--image
-            filter: grayscale(0)
+        &:hover
+            .areas--image
+                filter: grayscale(0)
 
         .areas--image
             transition: filter .4s,.4s ease

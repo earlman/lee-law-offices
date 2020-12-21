@@ -49,19 +49,44 @@ main
 
 .hero
     background-image: url(~@/assets/images/practiceareas.png)
-    min-height: 150px
-    background-position: center
-    background-size: cover
+    min-height: 180px
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: auto 80%
     position: relative
-    margin-bottom: var(--space-lg)
     padding: var(--space-xs)
+    width: 100%
+
+    @include md
+        min-height: 270px
+
+    @include lg
+        background-size: cover
+        margin-bottom: var(--space-lg)
+        padding: 0
 
     .pagetitle--container
         width: 100%
         position: relative
         bottom: -6rem
+        height: min-content
+
+        @include md
+            bottom: -8rem
+
+        @include lg
+            bottom: -12rem
+            display: grid
+            grid-template-columns: 1fr 1fr
+            max-width: 1200px
+            margin: auto
+            padding: 0 var(--space-md)
+
+        @include xl
+            padding: 0
 
     .pagetitle
+        grid-column: 2
         background-color: var(--color-b-alt)
         margin-bottom: var(--space-xs)
         padding: var(--space-xs)
@@ -70,13 +95,24 @@ main
         width: 100%
 
         @include md
-            padding-left: var(--space-md)
+            // margin-right: var(--space-md)
+            padding: var(--space-sm) var(--space-md)
+
+        @include lg
+            position: static
+
+.mainbar
+    margin-left: var(--space-xs)
+    margin-right: var(--space-xs)
 
 .sidebar
     background-color: var(--color-b-alt)
     margin: var(--space-xs)
     padding: var(--space-2xs) var(--space-xs)
     height: min-content
+
+    @include md
+        padding: var(--space-sm)
 
     ul
         margin: var(--space-sm) 0
@@ -90,21 +126,12 @@ main
             font-size: var(--d-md)
             color: var(--color-t-c)
 
-@include md
-    .mainbar
-        margin-left: var(--space-xs)
-        margin-right: var(--space-xs)
-
-    .sidebar
-        padding: var(--space-sm)
-
-@include lg
-
-    .main
+.main
+    @include lg
         display: grid
         grid-template-columns: 3fr 1fr
         max-width: var(--layout-max-width)
-        margin: auto
+        margin: var(--space-md)
 
         .sidebar
             grid-column: 2
@@ -115,22 +142,6 @@ main
             grid-column: 1
             grid-row: 1
 
-    .hero
-        height: 250px
-        grid-column: 1 / -1
-        display: grid
-        grid-template-columns: 1fr 1200px 1fr
-        overflow: visible
-        margin-bottom: var(--space-md)
-
-        .pagetitle--container
-            grid-column: 2
-            display: grid
-            place-items: end
-        .pagetitle
-            width: 50%
-            // margin-right: var(--space-xs)
-
-            bottom: 2rem
-            padding: var(--space-xs) var(--space-sm)
+    @include xl
+        margin: auto
 </style>

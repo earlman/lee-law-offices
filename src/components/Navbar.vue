@@ -128,8 +128,10 @@ ul
             li
                 a
                     padding: var(--space-2xs) var(--space-sm)
+
                     &:hover
+                        border-top: 2px solid var(--color-p)
+                        border-bottom: 2px solid var(--color-p)
                         text-decoration: none
-                        background-color: var(--color-p)
-                &:last-child
+                        color: var(--color-p)
 </style>

@@ -58,7 +58,6 @@ export default {
 .practiceareas
     display: flex
     flex-direction: column
-    margin: var(--space-xs)
 
     nav li
 

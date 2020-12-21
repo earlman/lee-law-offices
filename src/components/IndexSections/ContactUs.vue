@@ -76,12 +76,15 @@ export default {
 
         .gmap
             height: 50vh
+            margin-bottom: var(--space-sm)
 
         @include md
             padding: var(--space-sm)
-            margin: 0
+            margin: var(--space-sm)
 
         @include lg
+            padding: var(--space-md)
+            margin: 0
             display: grid
             grid-template-columns: 2fr 1fr
             grid-gap: var(--space-md)

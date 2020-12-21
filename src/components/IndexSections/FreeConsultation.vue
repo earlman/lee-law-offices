@@ -148,6 +148,9 @@ export default {
             margin: 0
             padding: var(--space-sm)
 
+        @include lg
+            padding: var(--space-md)
+
         .form-container > *
             margin-bottom: var(--space-xs)
             width: 100%

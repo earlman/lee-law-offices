@@ -12,7 +12,7 @@
 			}"
 			:center="center"
 			:zoom="15"
-			style="width: 100%; min-height: 300px"
+			style="width: 100%; min-height: 300px; height: 100%"
 		>
 			<GmapMarker
 				:key="index"

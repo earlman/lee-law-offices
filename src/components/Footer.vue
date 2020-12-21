@@ -2,7 +2,7 @@
 	<div class="footer-container">
 		<footer class="footer">
 			<nav>
-				<div><img src="@/assets/images/logo.png" alt="logo" class="logo" /></div>
+				<div><img src="@/assets/images/logo-white.png" alt="logo" class="logo" /></div>
 				<div class="our-services">
 					<h4>Our Services</h4>
 					<ul>
@@ -56,20 +56,19 @@
 
 .footer-container
     background-color: var(--color-b-f)
-    border-top: 30px solid var(--color-p)
+    border-top: 18px solid var(--color-p)
 
 footer
     margin: var(--space-sm) var(--layout-margin) 0 var(--space-md)
 
     *
         color: white
-        margin: 0
 
     .logo
-        margin-right: var(--space-md)
-        margin-bottom: var(--space-sm)
-
+        margin: var(--space-sm) 0 0
         width: 200px
+        @include lg
+            margin-top: var(--space-md)
 
     nav
         margin: 0 auto var(--space-md)
@@ -81,7 +80,7 @@ footer
         @include lg
             display: grid
             grid-template-rows: 1fr
-            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-template-columns: 3fr 2fr 2fr 2fr
 
             ul
                 margin-right: var(--space-lg)

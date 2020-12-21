@@ -124,7 +124,7 @@ export default {
     @include md
         margin: 0 var(--space-sm)
 
-    @include lg
+    @include xl
         max-width: var(--layout-max-width)
         margin: 0 auto var(--space-lg)
 

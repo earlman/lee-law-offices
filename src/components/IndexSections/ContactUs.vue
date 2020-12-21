@@ -82,7 +82,7 @@ export default {
             padding: var(--space-sm)
             margin: var(--space-sm)
 
-        @include lg
+        @include xl
             padding: var(--space-md)
             margin: 0
             display: grid

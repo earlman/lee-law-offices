@@ -46,12 +46,6 @@
 					v-model="form.message"
 				></textarea>
 				<div class="disclaimer">
-					<p>
-						<strong> Disclaimer: </strong>
-						This is the placeholder text for the free consultation disclaimer. This text
-						will be replaced once we receive the actual text for the consultation
-						disclaimer.
-					</p>
 					<input
 						type="checkbox"
 						name="disclaimer"
@@ -59,7 +53,10 @@
 						v-model="form.disclaimer"
 					/>
 					<label for="disclaimer">
-						<span class="label"> I have read the Disclaimer </span>
+						<span class="label">
+							I have read the
+							<g-link class="link" to="/disclaimer">Disclaimer</g-link>
+						</span>
 					</label>
 				</div>
 				<button type="submit" class="submit">Contact Us</button>
@@ -167,6 +164,9 @@ export default {
                 margin-left: var(--space-xs)
                 text-transform: none
                 color: var(--color-t-c)
+
+            .link
+                text-decoration: underline
 
         button
             max-width: 30ch

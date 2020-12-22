@@ -2,7 +2,9 @@
 	<div class="footer-container">
 		<footer class="footer">
 			<nav>
-				<div><img src="@/assets/images/logo-white.png" alt="logo" class="logo" /></div>
+				<div class="logo-container">
+					<h1>Lee Law Offices</h1>
+				</div>
 				<div class="our-services">
 					<h4>Our Services</h4>
 					<ul>
@@ -59,6 +61,9 @@
 </template>
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
+
+.logo-container
+    margin-top: var(--space-md)
 
 .footer-container
     background-color: var(--color-b-f)

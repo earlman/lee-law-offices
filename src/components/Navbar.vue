@@ -72,6 +72,9 @@ ul
     min-width: 300px
     text-align: center
 
+    @include lg
+        margin-bottom: 0
+
 .header-container
     background-color: var(--color-b-alt)
     padding: var(--space-md) var(--space-sm) var(--space-sm)

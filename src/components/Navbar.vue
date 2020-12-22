@@ -29,7 +29,7 @@
 
 				<ul v-if="displayNav" class="sm-nav">
 					<li><g-link to="/">Home</g-link></li>
-					<!-- <li><g-link>About</g-link></li> -->
+					<li><g-link>About</g-link></li>
 					<li><g-link to="/practice-areas">Practice Areas</g-link></li>
 					<li><g-link to="/contact-us">Contact Us</g-link></li>
 					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
@@ -104,13 +104,13 @@ ul
     .main-nav
         display: grid
         place-items: center
+        width: 100%
 
         .sm-nav
             list-style-type: none
             width: 100%
 
             li
-                padding-left: var(--space-sm)
                 padding-top: var(--space-2xs)
                 padding-bottom: var(--space-2xs)
 

@@ -30,7 +30,7 @@
 			<Gmap />
 		</div>
 
-		<contact-us :title="null"> </contact-us>
+		<contact-us class="contact-us" :title="null"> </contact-us>
 	</PageLayout>
 </template>
 
@@ -64,10 +64,15 @@ export default {
         .sidebar--item
             margin-bottom: var(--space-sm)
 
+.contact-us ::v-deep
+    margin-left: 0
+    margin-right: 0
+
 .gmap
-    background-color: var(--color-b-alt-2)
+    margin-bottom: var(--space-sm)
+    background-color: var(--color-b-alt)
     padding: var(--space-xs)
-    margin: var(--space-xs)
+    // margin: var(--space-xs)
 
     @include md
         margin-left: 0

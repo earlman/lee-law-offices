@@ -102,8 +102,10 @@ main
             position: static
 
 .mainbar
-    margin-left: var(--space-xs)
-    margin-right: var(--space-xs)
+    margin: 0 var(--space-xs)
+
+    @include lg
+        margin: 0
 
 .sidebar
     background-color: var(--color-b-alt)
@@ -128,6 +130,7 @@ main
 
 .main
     @include lg
+        grid-gap: var(--space-sm)
         display: grid
         grid-template-columns: 3fr 1fr
         max-width: var(--layout-max-width)

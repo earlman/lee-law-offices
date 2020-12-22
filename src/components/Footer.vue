@@ -24,10 +24,13 @@
 					<h4>Quick Links</h4>
 					<ul>
 						<li>
-							<g-link> Business Litigation </g-link>
+							<g-link to="/about"> About </g-link>
 						</li>
 						<li>
-							<g-link> Employment Law Defense </g-link>
+							<g-link to="/practice-areas"> Practice Areas </g-link>
+						</li>
+						<li>
+							<g-link to="/contact-us"> Contact Us </g-link>
 						</li>
 					</ul>
 				</div>

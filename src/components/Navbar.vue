@@ -1,9 +1,10 @@
 <template>
 	<div class="header-container">
 		<header class="header">
-			<div>
+			<div class="logo-container">
 				<g-link to="/">
-					<img src="@/assets/images/logo.png" alt="logo" class="logo" />
+					<h1>Lee Law Offices</h1>
+					<!-- <img src="@/assets/images/logo.png" alt="logo" class="logo" /> -->
 				</g-link>
 				<!-- <img src="" alt="Lee Law Offices" /> -->
 			</div>
@@ -66,6 +67,11 @@ export default {
 ul
     margin-bottom: 0
 
+.logo-container
+    margin-bottom: var(--space-sm)
+    min-width: 300px
+    text-align: center
+
 .header-container
     background-color: var(--color-b-alt)
     padding: var(--space-md) var(--space-sm) var(--space-sm)
@@ -119,6 +125,7 @@ ul
             list-style-type: none
 
         @include md
+
             .nav-icon
                 display: none
 
@@ -134,4 +141,7 @@ ul
                         border-bottom: 2px solid var(--color-p)
                         text-decoration: none
                         color: var(--color-p)
+
+        @include lg
+            place-items: end
 </style>

@@ -14,6 +14,13 @@ module.exports = {
                 typeName: 'PracticeAreas',
             },
         },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: 'content/*.md',
+                typeName: 'PageContent',
+            },
+        },
 
         // Netlify CMS Plugin
         {

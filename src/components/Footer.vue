@@ -32,6 +32,9 @@
 						<li>
 							<g-link to="/contact-us"> Contact Us </g-link>
 						</li>
+						<li>
+							<g-link to="/disclaimer"> Disclaimer </g-link>
+						</li>
 					</ul>
 				</div>
 				<div class="contact">

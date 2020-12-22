@@ -7,7 +7,7 @@
 			<practice-areas-grid />
 		</section>
 		<section>
-			<free-consultation sectionTitle="Free Consultation" />
+			<free-consultation sectionTitle="Free Case Evaluation Form" />
 		</section>
 		<section>
 			<contact-us />

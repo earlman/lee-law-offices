@@ -37,8 +37,8 @@
 				<div class="contact">
 					<h4>Contact</h4>
 					<ul>
-						<li><strong>Phone: </strong>&nbsp;323-289-2260</li>
-						<li><strong>Fax: </strong>&nbsp;323-289-2261</li>
+						<li><strong>Phone: </strong>&nbsp;(323) 289-2260</li>
+						<li><strong>Fax: </strong>&nbsp;(323) 289-2261</li>
 						<li>
 							<strong>Address: </strong>&nbsp;725 S. Figueroa Street, Suite 3065, Los
 							Angeles, CA 90017

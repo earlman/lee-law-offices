@@ -79,10 +79,7 @@
 							</em>
 
 							after asking for your unpaid wages, filing your worker’s compensation
-							claim, or reporting harassment?
-						</p>
-						<p>
-							Did you
+							claim, or reporting harassment? Did you
 							<em>
 								<b> quit </b>
 							</em>
@@ -164,14 +161,11 @@
 								<b> unsure if </b>
 							</em>
 
-							you are receiving all your wages?
+							you are receiving all your wages? You are entitled to receiving the
+							minimum wage, overtime, meal and rest breaks, and back wages.
 						</p>
 
-						<p>
-							You are entitled to receiving the minimum wage, overtime, meal and rest
-							breaks, and back wages. It is never too late to claim what you have
-							earned.
-						</p>
+						<p>It is never too late to claim what you have earned.</p>
 					</a>
 				</div>
 			</div>

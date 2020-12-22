@@ -7,8 +7,8 @@
 					No legal fees until we win
 				</h1>
 				<p class="hero--text">
-					Call us today for a free consultation <br />
-					Se habla español &nbsp; <em>(323) 289-2260</em>&nbsp;
+					Call us today for a free case evaluation Se habla español<br />
+					(323) 289-2260
 				</p>
 				<button class="contact-us">Contact Us</button>
 			</div>
@@ -49,7 +49,7 @@ export default {};
             line-height: 1.6
             font-size: var(--d-lg)
             margin-bottom: var(--space-xs)
-            font-family: var(--font-primary)
+            font-family: var(--font-secondary)
 
             @include md
                 font-size: var(--d-2xl)

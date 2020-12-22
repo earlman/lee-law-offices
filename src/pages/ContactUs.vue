@@ -4,7 +4,9 @@
 			<div class="sidebar--inner">
 				<div class="sidebar--item">
 					<h4>Phone</h4>
-					<p>660-518-6008</p>
+					<p>(323) 289-2260</p>
+					<h4>Fax</h4>
+					<p>(323) 289-2261</p>
 				</div>
 				<div class="sidebar--item">
 					<h4>Address</h4>

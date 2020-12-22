@@ -1,9 +1,10 @@
 <template>
-	<Layout title="Disclaimer">
+	<Layout title="About">
 		<div class="disclaimer--container">
-			<h1 class="title">Disclaimer</h1>
+			<h1 class="title">About</h1>
 			<div class="disclaimer">
-				<div v-html="$page.pageContent.content"></div>
+				<p>This page is under construction</p>
+				<!-- <div v-html="$page.pageContent.content"></div> -->
 			</div>
 		</div>
 	</Layout>

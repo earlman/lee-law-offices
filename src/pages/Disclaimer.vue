@@ -1,6 +1,7 @@
 <template>
 	<Layout title="Disclaimer">
 		<div class="disclaimer--container">
+			<h1 class="title">Disclaimer</h1>
 			<div class="disclaimer">
 				<div v-html="$page.pageContent.content"></div>
 			</div>
@@ -26,16 +27,31 @@ query {
 @import '@/styles/04 - Layout/_media.sass'
 
 .disclaimer--container
-    padding-top: var(--space-sm)
+    margin: auto
+    @include xl
+        width: 1200px
 
-.disclaimer
+.title
     background-color: var(--color-b-alt)
     padding: var(--space-xs)
-    margin: var(--space-xs)
+    margin: var(--space-xs) var(--space-xs)
+    max-width: min-content
 
     @include md
         margin: var(--space-sm)
         padding: var(--space-sm)
+
+.disclaimer
+    background-color: var(--color-b-alt)
+    padding: var(--space-xs)
+    margin: 0 var(--space-xs)
+
+    @include md
+        margin: var(--space-sm)
+        padding: var(--space-sm)
+
+    @include lg
+        width: max-content
 
     ::v-deep h2
         margin-top: var(--space-sm)

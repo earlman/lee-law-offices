@@ -6,10 +6,13 @@
 					The law is on your side<br />
 					No legal fees until we win
 				</h1>
-				<p class="hero--text">
-					Call us today for a free case evaluation Se habla español<br />
-					(323) 289-2260
-				</p>
+				<div class="hero--text">
+					<p class="hero--text">
+						Call us today for a free case evaluation<br />Se habla Español<br />(323)
+						289-2260
+					</p>
+					<p></p>
+				</div>
 				<button class="contact-us">Contact Us</button>
 			</div>
 		</div>
@@ -54,9 +57,11 @@ export default {};
             @include md
                 font-size: var(--d-2xl)
 
-        &--text, em
-            // font-size: var(--d-lg)
-            color: var(--color-t-c)
+        &--text
+
+            p
+                color: var(--color-t-c)
+                margin-bottom: var(--space-2xs)
 
         .content
             padding: var(--space-sm)

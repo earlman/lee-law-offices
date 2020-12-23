@@ -231,4 +231,8 @@
         .areas--image
             transition: filter .4s,.4s ease
             filter: grayscale(100%)
+
+        @include sm
+            .areas--image
+                filter: grayscale(0)
 </style>

@@ -41,7 +41,7 @@
 					id=""
 					cols="30"
 					rows="10"
-					placeholder="Briefly Explain your situation."
+					placeholder="Briefly explain your situation."
 					class="message"
 					v-model="form.message"
 				></textarea>

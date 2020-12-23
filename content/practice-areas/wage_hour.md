@@ -5,7 +5,7 @@ subtitle: "Claim What You Have Earned"
 
 ---
 
-**Minimum Wage:** As of January 1, 2020, the minimum wage in California is $12.00 per hour for employers with twenty-five or fewer, and $13.00 per hour for employers with twenty-six (26) or more. That minimum wage is scheduled to rise annually until it reaches $15 per hour for all employers in 2022. Please refer to the following link for the minimum wage for workers in the unincorporated areas of Los Angeles County.  (Link)[https://lacounty.gov/minimum-wage/]
+**Minimum Wage:** As of January 1, 2020, the minimum wage in California is $12.00 per hour for employers with twenty-five or fewer, and $13.00 per hour for employers with twenty-six (26) or more. That minimum wage is scheduled to rise annually until it reaches $15 per hour for all employers in 2022. Please refer to the following link for the minimum wage for workers in the unincorporated areas of Los Angeles County:  [lacounty.gov](https://lacounty.gov/minimum-wage/)
 
 **Overtime: ** 
 * *Time & A Half Overtime:* You must get paid “one and a half times” your regular wage for any work either (i) exceeding eight (8) hours in one workday or (ii) exceeding forty (40) hours in one workweek. For example, your hourly wage is $20. If you work 10 hours in a workday, your wage for that day is $220 as follows: $20 x 8 hours ($160 – regular wage) plus $20 x 2 hours x 1.5 ($60 – overtime wage). 

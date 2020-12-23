@@ -65,6 +65,9 @@
 .logo-container
     margin-top: var(--space-md)
 
+    h1
+        font-variant: small-caps
+
 .footer-container
     background-color: var(--color-b-f)
     border-top: 18px solid var(--color-p)

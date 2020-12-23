@@ -26,12 +26,14 @@ div
     display: grid
     place-items: center
     max-width: var(--layout-max-width)
-    margin: 0 auto var(--space-xs)
+    margin: 0 var(--space-md) var(--space-xs)
+    text-align: center
 
     @include md
         place-items: start
-        margin-left: var(--space-md)
-        margin-right: var(--space-md)
+
+    @include lg
+        text-align: left
 
     @include xl
         margin-left: 0

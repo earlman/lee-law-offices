@@ -62,7 +62,7 @@ export default {};
             padding: var(--space-sm)
             background-color: var(--color-b-alt)
             margin: auto
-            width: max-content
+            max-width: max-content
 
             @include md
                 padding: var(--space-md)

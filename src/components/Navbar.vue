@@ -75,6 +75,9 @@ ul
     @include lg
         margin-bottom: 0
 
+    h1
+        font-variant: small-caps
+
 .header-container
     background-color: var(--color-b-alt)
     padding: var(--space-md) var(--space-sm) var(--space-sm)

@@ -8,8 +8,9 @@
 				</h1>
 				<div class="hero--text">
 					<p class="hero--text">
-						Call us today for a free case evaluation<br />Se habla Español<br />(323)
-						289-2260
+						Call us today for a free case evaluation<br />(323) 289-2260<br /><em
+							>Se habla Español</em
+						>
 					</p>
 					<p></p>
 				</div>
@@ -59,7 +60,7 @@ export default {};
 
         &--text
 
-            p
+            p, em
                 color: var(--color-t-c)
                 margin-bottom: var(--space-2xs)
 

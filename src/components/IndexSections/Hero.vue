@@ -13,7 +13,7 @@
 					</p>
 					<p></p>
 				</div>
-				<button class="contact-us">Contact Us</button>
+				<button class="contact-us">Submit</button>
 			</div>
 		</div>
 	</div>

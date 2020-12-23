@@ -14,7 +14,9 @@
 					</p>
 					<p></p>
 				</div>
-				<button class="contact-us">Submit</button>
+				<g-link to="/contact-us">
+					<button class="contact-us">Contact Us</button>
+				</g-link>
 			</div>
 		</div>
 	</div>
@@ -39,8 +41,8 @@ export default {};
         height: unset
         margin: auto
         max-width: var(--layout-max-width)
-        background-position: 100% 40%
-        background-size: 70% auto
+        background-position: 100% 0%
+        background-size: 80% auto
 
     .hero
         margin: auto

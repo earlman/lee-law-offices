@@ -59,7 +59,7 @@
 						</span>
 					</label>
 				</div>
-				<button type="submit" class="submit">Contact Us</button>
+				<button type="submit" class="submit">Submit</button>
 			</div>
 		</form>
 	</div>

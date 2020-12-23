@@ -27,7 +27,7 @@ export default {};
 .hero-container
     background-image: url(~@/assets/images/hero.png)
     background-position: 50% 0
-    height: 70vh
+    min-height: 70vh
     background-repeat: no-repeat
     background-size: cover
     padding: var(--space-lg) var(--space-sm)

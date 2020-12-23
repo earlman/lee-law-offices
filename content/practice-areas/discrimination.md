@@ -1,6 +1,7 @@
 ---
 
 title: "Discrimination"
+link: "discrimination"
 subtitle: "Stop Getting Screwed Over"
 
 ---

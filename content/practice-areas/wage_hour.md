@@ -1,6 +1,7 @@
 ---
 
 title: "Wage & Hour"
+link: "wage"
 subtitle: "Claim What You Have Earned"
 
 ---

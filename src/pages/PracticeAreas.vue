@@ -4,9 +4,9 @@
 			<nav class="practiceareas--menu">
 				<ul>
 					<li v-for="edge in $page.areas.edges" :key="edge.node.title">
-						<g-link to="/">
+						<a :href="'#' + edge.node.link">
 							{{ edge.node.title }}
-						</g-link>
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -17,6 +17,7 @@
 				:key="edge.node.title"
 				:class="edge.node.title"
 				class="area"
+				:id="edge.node.link"
 			>
 				<h2 class="area--title">{{ edge.node.title }}</h2>
 				<div v-html="edge.node.content" />
@@ -33,6 +34,7 @@ query {
               title
               subtitle
               content
+              link
             }
         }
     }

@@ -1,6 +1,7 @@
 ---
 
 title: "Wrongful Termination"
+link: "termination"
 subtitle: "Stand Up to Protect Yourself"
 
 ---

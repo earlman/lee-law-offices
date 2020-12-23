@@ -4,9 +4,9 @@
 		<div class="areas-grid">
 			<div class="harassment areas-item">
 				<g-image
-					height="700"
+					height="400"
 					class="areas--image"
-					src="@/assets/images/harrassment.png"
+					src="@/assets/images/harassment.png"
 				></g-image>
 				<div class="areas-content">
 					<a href="/practice-areas">
@@ -47,7 +47,7 @@
 
 			<div class="wrongfultermination areas-item">
 				<g-image
-					height="700"
+					height="400"
 					class="areas--image"
 					src="@/assets/images/termination.png"
 				></g-image>
@@ -91,7 +91,7 @@
 			</div>
 			<div class="discrimination areas-item">
 				<g-image
-					height="700"
+					height="400"
 					class="areas--image"
 					src="@/assets/images/discrimination.png"
 				></g-image>
@@ -130,7 +130,7 @@
 			</div>
 			<div class="wagehour areas-item">
 				<g-image
-					height="700"
+					height="400"
 					class="areas--image"
 					src="@/assets/images/wage_hour.png"
 				></g-image>

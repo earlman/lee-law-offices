@@ -29,23 +29,29 @@ export default {};
 
 .hero-container
     background-image: url(~@/assets/images/hero.png)
-    background-position: 50% 0
-    min-height: 70vh
+    background-position: 30% -130px
+    min-height: 500px
     background-repeat: no-repeat
-    background-size: cover
-    padding: var(--space-lg) var(--space-sm)
+    background-size: auto 130%
+    padding: 200px var(--space-md) var(--space-sm) var(--space-xs)
     display: flex
     flex-direction: column
 
-    @include lg
-        height: unset
+    @include md
+        padding: var(--space-lg) var(--space-md)
         margin: auto
         max-width: var(--layout-max-width)
         background-position: 100% 0%
-        background-size: 80% auto
+        background-size: 75% auto
+        overflow: hidden
+        width: 120vw //lol
+
+    @include lg
+        padding: var(--space-lg) var(--space-sm) var(--space-xl)
+        margin: auto
 
     .hero
-        margin: auto
+        // margin: auto
         width: 100%
         max-width: var(--layout-max-width)
 
@@ -53,11 +59,14 @@ export default {};
             color: var(--color-t-h)
             font-weight: 400
             line-height: 1.6
-            font-size: var(--d-lg)
+            font-size: 20px
             margin-bottom: var(--space-xs)
             font-family: var(--font-secondary)
 
             @include md
+                font-size: var(--d-xl)
+
+            @include lg
                 font-size: var(--d-2xl)
 
         &--text
@@ -69,11 +78,11 @@ export default {};
         .content
             padding: var(--space-sm)
             background-color: var(--color-b-alt)
-            margin: auto
+            // margin: auto
             max-width: max-content
 
             @include md
-                padding: var(--space-md)
+                padding: var(--space-sm)
 
             @include lg
                 padding: var(--space-md)

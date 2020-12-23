@@ -37,5 +37,6 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 section
+    overflow: hidden
     margin-bottom: var(--space-lg)
 </style>

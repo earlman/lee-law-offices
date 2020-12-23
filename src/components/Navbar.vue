@@ -12,8 +12,8 @@
 				<i class="nav-icon" @click="toggleNav">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						width="36"
-						height="36"
+						width="30"
+						height="30"
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="var(--color-t)"
@@ -66,6 +66,9 @@ export default {
 
 ul
     margin-bottom: 0
+
+.nav-icon
+    height: 30px
 
 .logo-container
     margin-bottom: var(--space-sm)

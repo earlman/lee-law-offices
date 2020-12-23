@@ -1,7 +1,7 @@
 <template>
 	<div class="layout">
 		<Navbar />
-		<div class="hero">
+		<div class="hero" :style="{ 'background-image': 'url(' + bgImage + ')' }">
 			<div class="pagetitle--container">
 				<div class="pagetitle">
 					<h1>{{ title }}</h1>
@@ -32,7 +32,15 @@ query {
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 export default {
-	props: { title: '', pageSubtitle: '', color: '' },
+	data() {
+		return {};
+	},
+	props: {
+		title: '',
+		pageSubtitle: '',
+		color: '',
+		bgImage: '',
+	},
 	components: {
 		Navbar,
 		Footer,
@@ -48,14 +56,15 @@ main
     position: relative
 
 .hero
-    background-image: url(~@/assets/images/practiceareas.png)
+    // background-image: url(~@/assets/images/practiceareas.png)
     min-height: 180px
-    background-position: center top
+    background-position: center 40%
     background-repeat: no-repeat
-    background-size: auto 80%
+    background-size: cover
     position: relative
     padding: var(--space-xs)
     width: 100%
+    margin-bottom: var(--space-md)
 
     @include md
         min-height: 270px
@@ -68,11 +77,11 @@ main
     .pagetitle--container
         width: 100%
         position: relative
-        bottom: -6rem
+        bottom: -8rem
         height: min-content
 
         @include md
-            bottom: -8rem
+            bottom: -10rem
 
         @include lg
             bottom: -12rem

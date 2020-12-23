@@ -1,5 +1,5 @@
 <template>
-	<PageLayout title="Practice Areas">
+	<PageLayout title="Practice Areas" :bgImage="bgImage">
 		<template slot="sidebar">
 			<nav class="practiceareas--menu">
 				<ul>
@@ -41,8 +41,14 @@ query {
 
 <script>
 import PageLayout from '@/layouts/Page';
+import img from '@/assets/images/practiceareas.png';
 
 export default {
+	data() {
+		return {
+			bgImage: img,
+		};
+	},
 	metaInfo: {
 		title: 'Practice Areas',
 	},

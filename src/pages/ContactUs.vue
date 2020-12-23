@@ -1,5 +1,5 @@
 <template>
-	<PageLayout title="Contact Us">
+	<PageLayout title="Contact Us" :bgImage="bgImage">
 		<template slot="sidebar">
 			<div class="sidebar--inner">
 				<div class="sidebar--item">
@@ -40,8 +40,14 @@
 import PageLayout from '@/layouts/Page';
 import ContactUs from '@/components/IndexSections/FreeConsultation';
 import Gmap from '@/components/Gmap';
+import img from '@/assets/images/contactus.png';
 
 export default {
+	data() {
+		return {
+			bgImage: img,
+		};
+	},
 	metaInfo: {
 		title: 'Contact Us',
 	},

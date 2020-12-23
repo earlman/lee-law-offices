@@ -73,7 +73,7 @@ ul
     text-align: center
 
     @include lg
-        margin-bottom: 0
+        margin-bottom: var(--space-2xs)
 
     h1
         font-variant: small-caps
@@ -102,6 +102,9 @@ ul
     a
         font-size: var(--d-lg)
         font-weight: 400
+        color: var(--color-t-h)
+        font-family: var(--font-secondary)
+        text-decoration: none
 
     .logo
         display: grid
@@ -143,10 +146,9 @@ ul
                     padding: var(--space-2xs) var(--space-sm)
 
                     &:hover
+                        color: var(--color-p)
                         border-top: 2px solid var(--color-p)
                         border-bottom: 2px solid var(--color-p)
-                        text-decoration: none
-                        color: var(--color-p)
 
         @include lg
             place-items: end

@@ -197,7 +197,8 @@
     h3
         font-family: var(--font-secondary)
         margin-bottom: var(--space-xs)
-        font-weight: 600
+        font-weight: 500
+        color: var(--color-t)
 
     .areas-content
         background-color: var(--color-b-alt)

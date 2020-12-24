@@ -229,11 +229,8 @@
             .areas--image
                 filter: grayscale(0)
 
-        .areas--image
-            transition: filter .4s,.4s ease
-            filter: grayscale(100%)
-
-        @include sm
+        @include lg
             .areas--image
-                filter: grayscale(0)
+                transition: filter .4s,.4s ease
+                filter: grayscale(100%)
 </style>

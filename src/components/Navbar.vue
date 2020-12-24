@@ -100,8 +100,6 @@ ul
 
     @include lg
         flex-direction: row
-        padding-top: var(--space-xs)
-        padding-bottom: var(--space-2xs)
 
     a
         font-size: var(--d-lg)
@@ -114,11 +112,12 @@ ul
         display: grid
         place-items: center
         padding: 0 var(--space-xs)
-        max-width: 350px
-        margin-bottom: var(--space-xs)
+        max-width: 400px
+        // margin-bottom: var(--space-xs)
 
         @include lg
-            margin-bottom: 0
+            max-width: 500px
+            margin: 0
 
     .main-nav
         display: grid
@@ -156,4 +155,6 @@ ul
 
         @include lg
             place-items: end
+            align-self: flex-end
+            margin-bottom: var(--space-sm)
 </style>

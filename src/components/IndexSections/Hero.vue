@@ -28,16 +28,17 @@ export default {};
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    background-image: url(~@/assets/images/hero.png)
-    background-position: 30% -130px
-    min-height: 500px
+    background-image: url(~@/assets/images/practiceareas.png)
+    background-position: 30% 100%
+    // min-height: 500px
     background-repeat: no-repeat
     background-size: auto 130%
-    padding: 200px var(--space-md) var(--space-sm) var(--space-xs)
+    padding: var(--space-lg) var(--space-sm)
     display: flex
     flex-direction: column
 
     @include md
+        background-image: url(~@/assets/images/hero.png)
         padding: var(--space-lg) var(--space-md)
         margin: auto
         max-width: var(--layout-max-width)
@@ -78,10 +79,11 @@ export default {};
         .content
             padding: var(--space-sm)
             background-color: var(--color-b-alt)
-            // margin: auto
+            margin: auto
             max-width: max-content
 
             @include md
+                margin: unset
                 padding: var(--space-sm)
 
             @include lg

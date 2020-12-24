@@ -3,7 +3,9 @@
 		<footer class="footer">
 			<nav>
 				<div class="logo-container">
-					<h1>Lee Law Offices</h1>
+					<img src="@/assets/images/logo.png" alt="logo" class="logo" />
+
+					<!-- <h1>Lee Law Offices</h1> -->
 				</div>
 				<div class="our-services">
 					<h4>Our Services</h4>

@@ -3,8 +3,8 @@
 		<header class="header">
 			<div class="logo-container">
 				<g-link to="/">
-					<h1>Lee Law Offices</h1>
-					<!-- <img src="@/assets/images/logo.png" alt="logo" class="logo" /> -->
+					<!-- <h1>Lee Law Offices</h1> -->
+					<img src="@/assets/images/logo.png" alt="logo" class="logo" />
 				</g-link>
 				<!-- <img src="" alt="Lee Law Offices" /> -->
 			</div>
@@ -71,19 +71,20 @@ ul
     height: 30px
 
 .logo-container
-    margin-bottom: var(--space-sm)
-    min-width: 300px
+    // margin-bottom: var(--space-sm)
+    // min-width: 300px
     text-align: center
+    overflow: hidden
 
     @include lg
-        margin-bottom: var(--space-2xs)
+        // margin-bottom: var(--space-2xs)
 
     h1
         font-variant: small-caps
 
 .header-container
     background-color: var(--color-b-alt)
-    padding: var(--space-md) var(--space-sm) var(--space-sm)
+    padding: var(--space-xs) var(--space-sm) var(--space-sm)
     // border-bottom: 8px solid var(--color-p)
 
 .header
@@ -114,7 +115,7 @@ ul
         place-items: center
         padding: 0 var(--space-xs)
         max-width: 350px
-        margin-bottom: var(--space-md)
+        margin-bottom: var(--space-xs)
 
         @include lg
             margin-bottom: 0

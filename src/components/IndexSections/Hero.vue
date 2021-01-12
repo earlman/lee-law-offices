@@ -28,7 +28,7 @@ export default {};
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    background-image: url(~@/assets/images/practiceareas.png)
+    background-image: url(~@/assets/images/hero-mobile.png)
     background-position: 30% 100%
     // min-height: 500px
     background-repeat: no-repeat

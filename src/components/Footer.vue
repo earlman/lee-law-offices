@@ -3,7 +3,7 @@
 		<footer class="footer">
 			<nav>
 				<div class="logo-container">
-					<img src="@/assets/images/logo.png" alt="logo" class="logo" />
+					<img src="@/assets/images/logo-footer.png" alt="logo" class="logo" />
 
 					<!-- <h1>Lee Law Offices</h1> -->
 				</div>
@@ -65,7 +65,9 @@
 @import '@/styles/04 - Layout/_media.sass'
 
 .logo-container
-    margin-top: var(--space-md)
+    margin-top: var(--space-sm)
+    margin-left: -.5rem
+    opacity: .8
 
     h1
         font-variant: small-caps
@@ -81,10 +83,11 @@ footer
         color: white
 
     .logo
-        margin: var(--space-sm) 0 0
+        margin: 0
+        // margin: var(--space-sm) 0 0
         width: 200px
         @include lg
-            margin-top: var(--space-md)
+            // margin-top: var(--space-md)
 
     nav
         margin: 0 auto var(--space-md)

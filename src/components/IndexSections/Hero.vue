@@ -92,6 +92,7 @@ export default {};
 
 button.contact-us
     width: 100%
+    margin-top: var(--space-xs)
     @include md
         width: max-content
 </style>

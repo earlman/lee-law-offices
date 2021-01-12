@@ -35,7 +35,7 @@
 					<li><g-link to="/contact-us">Contact Us</g-link></li>
 					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
 				</ul>
-				<ul class="md-nav">
+				<ul class="lg-nav">
 					<li><g-link to="/">Home</g-link></li>
 					<li><g-link to="/about">About</g-link></li>
 					<li><g-link to="/practice-areas">Practice Areas</g-link></li>
@@ -84,12 +84,12 @@ ul
 
 .header-container
     background-color: var(--color-b-alt)
-    padding: var(--space-xs) var(--space-sm) var(--space-sm)
+    padding: var(--space-xs) var(--space-sm) var(--space-xs)
     // border-bottom: 8px solid var(--color-p)
 
 .header
     display: flex
-    flex-direction: column
+    // flex-direction: column
     max-width: var(--layout-max-width)
     margin: auto
     justify-content: space-between
@@ -110,8 +110,9 @@ ul
 
     .logo
         display: grid
-        place-items: center
-        padding: 0 var(--space-xs)
+        place-items: start
+        min-width: 200px
+        // padding: 0 var(--space-xs)
         max-width: 400px
         // margin-bottom: var(--space-xs)
 
@@ -121,7 +122,7 @@ ul
 
     .main-nav
         display: grid
-        place-items: center
+        place-items: end
         width: 100%
 
         .sm-nav
@@ -132,16 +133,16 @@ ul
                 padding-top: var(--space-2xs)
                 padding-bottom: var(--space-2xs)
 
-        .md-nav
+        .lg-nav
             display: none
             list-style-type: none
 
-        @include md
+        @include lg
 
             .nav-icon
                 display: none
 
-            .md-nav
+            .lg-nav
                 display: flex
 
             li

@@ -112,12 +112,12 @@ ul
         display: grid
         place-items: start
         min-width: 200px
-        // padding: 0 var(--space-xs)
+        padding: var(--space-2xs)
         max-width: 400px
         // margin-bottom: var(--space-xs)
 
         @include lg
-            max-width: 500px
+            max-width: 350px
             margin: 0
 
     .main-nav
@@ -157,5 +157,5 @@ ul
         @include lg
             place-items: end
             align-self: flex-end
-            margin-bottom: var(--space-sm)
+            margin-bottom: var(--space-sm) 0 var(--space-xs)
 </style>

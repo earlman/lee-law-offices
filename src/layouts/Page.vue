@@ -138,6 +138,7 @@ main
             color: var(--color-t-c)
 
 .main
+
     @include lg
         grid-gap: var(--space-sm)
         display: grid

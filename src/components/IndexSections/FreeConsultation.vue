@@ -20,21 +20,21 @@
 					name="name"
 					placeholder="Name"
 					class="name"
-					v-model="form.name"
+					v-model="formData.name"
 				/>
 				<input
 					type="text"
 					name="phone"
 					placeholder="Phone"
 					class="phone"
-					v-model="form.phone"
+					v-model="formData.phone"
 				/>
 				<input
 					type="text"
 					name="email"
 					placeholder="Email"
 					class="email"
-					v-model="form.email"
+					v-model="formData.email"
 				/>
 				<textarea
 					name="message"
@@ -43,14 +43,14 @@
 					rows="10"
 					placeholder="Briefly explain your situation."
 					class="message"
-					v-model="form.message"
+					v-model="formData.message"
 				></textarea>
 				<div class="disclaimer">
 					<input
 						type="checkbox"
 						name="disclaimer"
 						id="disclaimer"
-						v-model="form.disclaimer"
+						v-model="formData.disclaimer"
 					/>
 					<label for="disclaimer">
 						<span class="label">
@@ -69,7 +69,7 @@
 export default {
 	data() {
 		return {
-			form: {
+			formData: {
 				name: '',
 				phone: '',
 				email: '',

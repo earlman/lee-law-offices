@@ -91,7 +91,7 @@ export default {
 				.join('&');
 		},
 		handleSubmit(e) {
-			if (this.form.disclaimer) {
+			if (this.formData.disclaimer) {
 				fetch('/', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },

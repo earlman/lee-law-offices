@@ -124,7 +124,7 @@
 							at work because of your race, gender, age, religion, pregnant, or
 							disability?
 						</p>
-						<p>Stop getting screwed over. It is time to stand up for your rights.</p>
+						<p>Stop getting screwed over. It's time to stand up for your rights.</p>
 					</a>
 				</div>
 			</div>
@@ -165,7 +165,7 @@
 							minimum wage, overtime, meal and rest breaks, and back wages.
 						</p>
 
-						<p>It is never too late to claim what you have earned.</p>
+						<p>It's time to claim what you earned.</p>
 					</a>
 				</div>
 			</div>

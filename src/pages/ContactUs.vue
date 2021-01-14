@@ -11,8 +11,9 @@
 				<div class="sidebar--item">
 					<h4>Address</h4>
 					<p>
-						2345 Avenue Street <br />
-						Los Angeles, CA 61111
+						725 S. Figueroa Street <br />
+						Suite 3065<br />
+						Los Angeles, CA 90017
 					</p>
 				</div>
 				<div class="sidebar--item">

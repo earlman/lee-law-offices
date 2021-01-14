@@ -89,14 +89,14 @@ ul
 
 .header
     display: flex
-    // flex-direction: column
     max-width: var(--layout-max-width)
     margin: auto
     justify-content: space-between
     align-items: center
 
     @include md
-        // margin-top: var(--space-sm)
+        margin-top: var(--space-xs)
+        margin-bottom: var(--space-)
 
     @include lg
         flex-direction: row
@@ -147,6 +147,7 @@ ul
 
             li
                 a
+                    font-size: var(--d-lg)
                     padding: var(--space-2xs) var(--space-sm)
 
                     &:hover

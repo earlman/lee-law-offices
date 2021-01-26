@@ -129,7 +129,7 @@ main
         margin: var(--space-sm) 0
 
     li
-        padding: var(--space-2xs) var(--space-md)
+        padding: var(--space-2xs) var(--space-xs)
         list-style-type: none
 
         a

@@ -9,7 +9,7 @@
 					src="@/assets/images/harassment.png"
 				></g-image>
 				<div class="areas-content">
-					<a href="/practice-areas">
+					<a href="/practice-areas#harassment">
 						<div class="areas-content-top">
 							<h3>Harassment</h3>
 							<p>
@@ -52,7 +52,7 @@
 					src="@/assets/images/termination.png"
 				></g-image>
 				<div class="areas-content">
-					<a href="/practice-areas">
+					<a href="/practice-areas#termination">
 						<div class="areas-content-top">
 							<h3>Termination</h3>
 							<p>
@@ -96,7 +96,7 @@
 					src="@/assets/images/discrimination.png"
 				></g-image>
 				<div class="areas-content">
-					<a href="/practice-areas">
+					<a href="/practice-areas#discrimination">
 						<div class="areas-content-top">
 							<h3>Discrimination</h3>
 							<p>
@@ -135,7 +135,7 @@
 					src="@/assets/images/wage_hour.png"
 				></g-image>
 				<div class="areas-content">
-					<a href="/practice-areas">
+					<a href="/practice-areas#wage">
 						<div class="areas-content-top">
 							<h3>Wage & Hour</h3>
 							<p>

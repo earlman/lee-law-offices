@@ -114,7 +114,6 @@ ul
         min-width: 200px
         padding: var(--space-2xs)
         max-width: 400px
-        // margin-bottom: var(--space-xs)
 
         @include lg
             max-width: 350px

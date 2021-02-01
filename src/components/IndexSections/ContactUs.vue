@@ -12,7 +12,7 @@
 				</div>
 				<div class="info-section">
 					<h4>Fax</h4>
-					<p>(323) 289-2261</p>
+					<p>(323) 642-5451</p>
 				</div>
 				<div class="info-section">
 					<h4>Address</h4>

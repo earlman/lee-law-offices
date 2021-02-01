@@ -149,7 +149,7 @@ main
         .sidebar
             grid-column: 2
             margin: 0
-            min-height: 500px
+            min-height: min-content
 
         .mainbar
             grid-column: 1

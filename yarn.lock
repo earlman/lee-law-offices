@@ -1021,6 +1021,21 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/open-sans@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.1.0.tgz#d44b4495bd23d78018675e4e79973894e393c0ed"
+  integrity sha512-sWDAAr6ESHJdBKXse6njvZem4sTZLILkugaEfAvpdFiaKBh2RnXTa4DJllDh5LzP0MLMUrfj/JAjMbKxWFo6pQ==
+
+"@fontsource/raleway@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.1.1.tgz#74682ff766ffa36c96f7f4ee200b993536ac357e"
+  integrity sha512-1MLn6ec7rFlkIZMOA/eYbSufp+YLmfIEsJcP0RsV1TdjFROQNMYQK4tAEbkS3iSU3Ou/BNB7NEoaNLT/BRUvLw==
+
+"@fontsource/roboto@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.1.0.tgz#28e0fb775013959df3a6b6d2c4ba0aad437f8d32"
+  integrity sha512-I4CIw73eJC/Oh83tPoRVKkySCLDwUQ2aK7O9wR5tRYc5APbsd3MrN6JhAvylIIwzn8eHQEMVoSjNGY9/sPLzyA==
+
 "@google/markerclustererplus@^5.1.0":
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/@google/markerclustererplus/-/markerclustererplus-5.1.3.tgz#dd7ddbb2a17c977e0b0252c3d8e61fcf502b1bf2"
@@ -5105,21 +5120,6 @@ focus-group@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/focus-group/-/focus-group-0.3.1.tgz#e0f32ed86b0dabdd6ffcebdf898ecb32e47fedce"
   integrity sha1-4PMu2GsNq91v/OvfiY7LMuR/7c4=
-
-fontsource-open-sans@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-open-sans/-/fontsource-open-sans-3.1.5.tgz#93d0040633d37215658d72565bd2a12d9a8fa854"
-  integrity sha512-tculQB3D6GHLPcbY1+WduZJM3bitV7GptWuKBAU7emfagJ/D5jtMCMd4i4JOGEzk0n416fdo5vLC0zYHxBYxzg==
-
-fontsource-raleway@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/fontsource-raleway/-/fontsource-raleway-3.1.6.tgz#a8d313f386c16b5911c8ea5aa8c203e937c2432e"
-  integrity sha512-tuQRSvb/iTTEswaXXRctMru2mXn7SDOAP9SNEVlB3HgPKNsZH24eMrWbakYTX67KW8mI5CcEEH3dlGhbsvxD7g==
-
-fontsource-roboto@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/fontsource-roboto/-/fontsource-roboto-3.0.3.tgz#99c312babeabce22b3e933b3edf2951d4508f4f7"
-  integrity sha512-kfsC9qAP6XhwnSDAhg2lhWeaUJfLGXZh7GcLxFiz/4lXdkV2pVhWv2Xp9ES3b3BHdc9UuPrWXXLOphzHIStcOw==
 
 for-each@^0.3.3:
   version "0.3.3"

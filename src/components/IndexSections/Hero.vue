@@ -57,7 +57,6 @@ export default {};
 
         &--title
             color: var(--color-t-h)
-            font-weight: 400
             line-height: 1.6
             font-size: 20px
             margin-bottom: var(--space-xs)

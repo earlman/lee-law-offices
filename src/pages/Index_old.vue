@@ -1,12 +1,18 @@
 <template>
-	<PageLayout title="Practice Areas" :bgImage="bgImage">
+	<Layout pageTitle="Home" pageSubtitle="">
+		<section>
+			<hero />
+		</section>
+		<section>
+			<practice-areas-grid />
+		</section>
 		<section>
 			<free-consultation sectionTitle="Free Case Evaluation Form" />
 		</section>
 		<section>
 			<contact-us />
 		</section>
-	</PageLayout>
+	</Layout>
 </template>
 
 
@@ -15,18 +21,14 @@ import PracticeAreasGrid from '../components/IndexSections/PracticeAreasGrid.vue
 import FreeConsultation from '../components/IndexSections/FreeConsultation.vue';
 import ContactUs from '../components/IndexSections/ContactUs.vue';
 import Hero from '../components/IndexSections/Hero.vue';
-import PageLayout from '@/layouts/Page';
-import img from '@/assets/images/practiceareas.png';
 
 export default {
-	components: { PracticeAreasGrid, FreeConsultation, ContactUs, Hero, PageLayout },
+	components: { PracticeAreasGrid, FreeConsultation, ContactUs, Hero },
 	metaInfo: {
 		title: 'Home',
 	},
 	data() {
-		return {
-			bgImage: img,
-		};
+		return {};
 	},
 };
 </script>

@@ -18,7 +18,7 @@
 				</p>
 			</div>
 			<div class="buttons">
-				<g-link class="button ba" to="/employees">
+				<g-link class="button ba" to="/employee">
 					<span>For Employees</span>
 					<svg
 						width="29"
@@ -33,7 +33,7 @@
 						/>
 					</svg>
 				</g-link>
-				<g-link class="button" to="/employers">
+				<g-link class="button" to="/employer">
 					<span>For Employers</span>
 					<svg
 						width="29"

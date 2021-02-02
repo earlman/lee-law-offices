@@ -25,19 +25,20 @@ div
 .responsive-container
     max-width: var(--layout-max-width)
     background-color: var(--color-b-alt)
-    padding: var(--space-xs)
-    margin: var(--space-xs)
+    padding: var(--space-sm)
+    margin: 0 var(--space-sm)
+    border-radius: 3px
 
     @include md
         padding: var(--space-sm)
-        margin: var(--space-sm)
+        margin: 0 var(--space-md)
 
     @include lg
         padding: var(--space-md)
-        margin: var(--space-md)
+        margin: 0 var(--space-md)
     
     @include xl
-        margin: auto
+        margin: 0 auto
 
 .section-title
     display: grid
@@ -57,9 +58,17 @@ div
 
 .button
     @include space-squish(27px)
-    border: 3px solid var(--color-a)
+    background-color: var(--color-p)
+    text-transform: uppercase
     border-radius: 3px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 300px
 
+    *
+        color: var(--color-t-alt)
+    
 
 .accent-bar
     width: 100%

@@ -48,7 +48,6 @@ export default {
 
         &--title
             color: var(--color-t-h)
-            line-height: 1.6
             font-size: 20px
             margin-bottom: var(--space-xs)
             font-family: var(--font-secondary)
@@ -64,7 +63,6 @@ export default {
             p, em
                 color: var(--color-t-c)
                 margin-bottom: var(--space-2xs)
-                line-height: 1.4
 
         .content
             padding: var(--space-sm)

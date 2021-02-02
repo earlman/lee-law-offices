@@ -38,7 +38,7 @@ export default {
         min-height: revert
 
     @include lg
-        padding: var(--space-lg) var(--space-sm) var(--space-xl)
+        padding: var(--space-lg) var(--space-sm) var(--space-2xl)
         margin: auto
 
     .hero

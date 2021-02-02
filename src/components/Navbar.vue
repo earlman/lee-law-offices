@@ -68,6 +68,7 @@ export default {
         display: flex
         justify-content: space-between
         max-width: var(--layout-max-width)
+        padding: var(--space-xs) 0
 
     ul
         margin: 0

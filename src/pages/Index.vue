@@ -53,7 +53,7 @@ export default {
 
 section
     overflow: hidden
-    margin-bottom: var(--space-lg)
+    margin-bottom: var(--space-md)
 
 .hero-text h1
     font-size: var(--d-lg)

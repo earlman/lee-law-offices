@@ -33,7 +33,7 @@ import ContactUs from '../components/IndexSections/ContactUs.vue';
 import Hero from '../components/IndexSections/Hero.vue';
 import LaborLaw from '../components/IndexSections/LaborLaw.vue';
 import BusinessLit from '../components/IndexSections/BusinessLit.vue';
-import img from '@/assets/images/practiceareas.png';
+import img from '@/assets/images/hero-image.png';
 
 export default {
 	components: { PracticeAreasGrid, FreeConsultation, ContactUs, Hero, LaborLaw, BusinessLit },

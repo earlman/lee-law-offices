@@ -1,67 +1,71 @@
 <template>
-	<div class="free-consultation">
-		<h2 v-if="sectionTitle" class="section-title">{{ sectionTitle }}</h2>
-		<form
-			class="form"
-			name="contact"
-			method="post"
-			v-on:submit.prevent="handleSubmit"
-			action="/success"
-			data-netlify="true"
-			data-netlify-honeypot="bot-field"
-		>
-			<input type="hidden" name="form-name" value="contact" />
-			<p hidden>
-				<label> Don’t fill this out: <input name="bot-field" /> </label>
-			</p>
-			<div class="form-container">
-				<input
-					type="text"
-					name="name"
-					placeholder="Name"
-					class="name"
-					v-model="formData.name"
-				/>
-				<input
-					type="text"
-					name="phone"
-					placeholder="Phone"
-					class="phone"
-					v-model="formData.phone"
-				/>
-				<input
-					type="text"
-					name="email"
-					placeholder="Email"
-					class="email"
-					v-model="formData.email"
-				/>
-				<textarea
-					name="message"
-					id=""
-					cols="30"
-					rows="10"
-					placeholder="Briefly explain your situation."
-					class="message"
-					v-model="formData.message"
-				></textarea>
-				<div class="disclaimer">
+	<div class="responsive-container">
+		<div class="free-consultation">
+			<h2 v-if="sectionTitle" class="section-title">{{ sectionTitle }}</h2>
+			<form
+				class="form"
+				name="contact"
+				method="post"
+				v-on:submit.prevent="handleSubmit"
+				action="/success"
+				data-netlify="true"
+				data-netlify-honeypot="bot-field"
+			>
+				<input type="hidden" name="form-name" value="contact" />
+				<p hidden>
+					<label> Don’t fill this out: <input name="bot-field" /> </label>
+				</p>
+				<div class="form-container">
 					<input
-						type="checkbox"
-						name="disclaimer"
-						id="disclaimer"
-						v-model="formData.disclaimer"
+						type="text"
+						name="name"
+						placeholder="Name"
+						class="name"
+						v-model="formData.name"
 					/>
-					<label for="disclaimer">
-						<span class="label">
-							I have read the
-							<g-link class="link" to="/disclaimer">Disclaimer</g-link>
-						</span>
-					</label>
+					<input
+						type="text"
+						name="phone"
+						placeholder="Phone"
+						class="phone"
+						v-model="formData.phone"
+					/>
+					<input
+						type="text"
+						name="email"
+						placeholder="Email"
+						class="email"
+						v-model="formData.email"
+					/>
+					<textarea
+						name="message"
+						id=""
+						cols="30"
+						rows="10"
+						placeholder="Briefly explain your situation."
+						class="message"
+						v-model="formData.message"
+					></textarea>
+					<div class="disclaimer">
+						<input
+							type="checkbox"
+							name="disclaimer"
+							id="disclaimer"
+							v-model="formData.disclaimer"
+						/>
+						<label for="disclaimer">
+							<span class="label">
+								I have read the
+								<g-link class="link" to="/disclaimer" target="_blank"
+									>Disclaimer</g-link
+								>
+							</span>
+						</label>
+					</div>
+					<button type="submit" class="submit">Submit</button>
 				</div>
-				<button type="submit" class="submit">Submit</button>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
 </template>
 
@@ -113,17 +117,10 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 .section-title
-    @include md
-        margin-left: var(--space-sm)
-        margin-right: var(--space-sm)
 
 .free-consultation
-    @include md
-        margin: 0 var(--space-sm)
 
     @include xl
-        max-width: var(--layout-max-width)
-        margin: 0 auto var(--space-lg)
 
         .form-container
             display: grid
@@ -137,16 +134,9 @@ export default {
             place-self: end
 
     .form
-        margin: var(--space-xs)
-        padding: var(--space-sm) var(--space-xs)
-        background-color: var(--color-b-alt)
-
-        @include md
-            margin: 0
-            padding: var(--space-sm)
+        margin-top: var(--space-md)
 
         @include lg
-            padding: var(--space-md)
 
         .form-container > *
             margin-bottom: var(--space-xs)

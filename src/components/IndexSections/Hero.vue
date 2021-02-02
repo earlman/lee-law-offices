@@ -1,18 +1,22 @@
 <template>
-	<div class="hero-container">
+	<div class="hero-container" :style="{ 'background-image': 'url(' + bgImage + ')' }">
 		<div class="hero">
 			<slot></slot>
 		</div>
 	</div>
 </template>
 <script>
-export default {};
+export default {
+	props: {
+		bgImage: '',
+	},
+};
 </script>
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    background-image: url(~@/assets/images/hero-mobile.png)
+    // background-image: url(~@/assets/images/hero-mobile.png)
     background-position: center
     // min-height: 500px
     background-repeat: no-repeat

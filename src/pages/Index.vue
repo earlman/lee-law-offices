@@ -1,7 +1,7 @@
 <template>
 	<Layout pageTitle="Home" pageSubtitle="">
 		<section>
-			<hero>
+			<hero :bgImage="bgImage">
 				<div class="content">
 					<p>
 						We are a boutique law firm in Los Angeles specializing in Labor and

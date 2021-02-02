@@ -94,5 +94,6 @@ export default {};
             margin-right: var(--space-2xs)
 
         @include lg
+            margin-bottom: var(--space-xs)
             margin-right: 0
 </style>

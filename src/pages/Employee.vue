@@ -1,6 +1,6 @@
 <template>
 	<Layout pageTitle="Home" pageSubtitle="" class="employee-page">
-		<section>
+		<section class="h">
 			<hero :bgImage="bgImage">
 				<div class="content">
 					<h1 class="hero--title">
@@ -36,7 +36,7 @@ import PracticeAreasGrid from '../components/IndexSections/PracticeAreasGrid.vue
 import FreeConsultation from '../components/IndexSections/FreeConsultation.vue';
 import ContactUs from '../components/IndexSections/ContactUs.vue';
 import Hero from '../components/IndexSections/Hero.vue';
-import img from '@/assets/images/practiceareas.png';
+import img from '@/assets/images/hero.png';
 
 export default {
 	components: { PracticeAreasGrid, FreeConsultation, ContactUs, Hero },

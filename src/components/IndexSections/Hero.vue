@@ -27,7 +27,7 @@ export default {
     min-height: 75vh
 
     @include md
-        background-image: url(~@/assets/images/hero.png)
+        // background-image: url(~@/assets/images/hero.png)
         padding: var(--space-lg) var(--space-md)
         margin: auto
         max-width: var(--layout-max-width)

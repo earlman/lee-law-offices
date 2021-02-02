@@ -29,9 +29,11 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 main
     background-color: var(--color-b)
     margin-bottom: var(--space-lg)
+    display: grid
+    justify-content: center
 </style>
 

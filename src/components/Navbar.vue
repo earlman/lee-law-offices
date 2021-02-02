@@ -27,14 +27,6 @@
 						<line x1="3" y1="18" x2="21" y2="18"></line>
 					</svg>
 				</i>
-
-				<ul v-if="displayNav" class="sm-nav">
-					<li><g-link to="/">Home</g-link></li>
-					<li><g-link>About</g-link></li>
-					<li><g-link to="/practice-areas">Practice Areas</g-link></li>
-					<li><g-link to="/contact-us">Contact Us</g-link></li>
-					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
-				</ul>
 				<ul class="lg-nav">
 					<li><g-link to="/">Home</g-link></li>
 					<li><g-link to="/about">About</g-link></li>
@@ -43,6 +35,13 @@
 					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
 				</ul>
 			</nav>
+			<ul v-if="displayNav" class="sm-nav">
+				<li><g-link to="/">Home</g-link></li>
+				<li><g-link>About</g-link></li>
+				<li><g-link to="/practice-areas">Practice Areas</g-link></li>
+				<li><g-link to="/contact-us">Contact Us</g-link></li>
+				<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
+			</ul>
 		</header>
 	</div>
 </template>
@@ -50,7 +49,7 @@
 export default {
 	data() {
 		return {
-			displayNav: false,
+			displayNav: true,
 		};
 	},
 	methods: {
@@ -63,99 +62,4 @@ export default {
 
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
-
-ul
-    margin-bottom: 0
-
-.nav-icon
-    height: 30px
-
-.logo-container
-    // margin-bottom: var(--space-sm)
-    // min-width: 300px
-    text-align: center
-    overflow: hidden
-
-    @include lg
-        // margin-bottom: var(--space-2xs)
-
-    h1
-        font-variant: small-caps
-
-.header-container
-    background-color: var(--color-b-alt)
-    padding: var(--space-xs) var(--space-sm) var(--space-xs)
-    // border-bottom: 8px solid var(--color-p)
-
-.header
-    display: flex
-    max-width: var(--layout-max-width)
-    margin: auto
-    justify-content: space-between
-    align-items: center
-
-    @include md
-        margin-top: var(--space-xs)
-        margin-bottom: var(--space-)
-
-    @include lg
-        flex-direction: row
-
-    a
-        font-size: var(--d-lg)
-        font-weight: 400
-        color: var(--color-t-h)
-        font-family: var(--font-secondary)
-        text-decoration: none
-
-    .logo
-        display: grid
-        place-items: start
-        min-width: 200px
-        padding: var(--space-2xs)
-        max-width: 400px
-
-        @include lg
-            max-width: 350px
-            margin: 0
-
-    .main-nav
-        display: grid
-        place-items: end
-        width: 100%
-
-        .sm-nav
-            list-style-type: none
-            width: 100%
-
-            li
-                padding-top: var(--space-2xs)
-                padding-bottom: var(--space-2xs)
-
-        .lg-nav
-            display: none
-            list-style-type: none
-
-        @include lg
-
-            .nav-icon
-                display: none
-
-            .lg-nav
-                display: flex
-
-            li
-                a
-                    font-size: var(--d-lg)
-                    padding: var(--space-2xs) var(--space-sm)
-
-                    &:hover
-                        color: var(--color-p)
-                        border-top: 2px solid var(--color-p)
-                        border-bottom: 2px solid var(--color-p)
-
-        @include lg
-            place-items: end
-            align-self: flex-end
-            margin-bottom: var(--space-sm) 0 var(--space-xs)
 </style>

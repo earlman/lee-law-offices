@@ -1,7 +1,7 @@
 <template>
 	<Layout pageTitle="Home" pageSubtitle="">
 		<section>
-			<hero>
+			<hero :bgImage="bgImage">
 				<div class="content">
 					<h1 class="hero--title">
 						The law is on your side<br />
@@ -17,6 +17,9 @@
 					</g-link>
 				</div>
 			</hero>
+		</section>
+		<section>
+			<practice-areas-grid />
 		</section>
 		<section>
 			<free-consultation sectionTitle="Free Case Evaluation Form" />

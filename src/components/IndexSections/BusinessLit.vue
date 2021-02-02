@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="businesslit responsive-container">
 		<h2>Business and Commercial Litigation</h2>
 		<p>
 			Our Business & Commercial Litigation Practice includes breach of contract, breach of

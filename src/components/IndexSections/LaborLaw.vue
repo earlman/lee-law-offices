@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="laborlaw responsive-container">
 		<h2>Labor and Employment Law</h2>
 		<p>
 			Our Labor & Employment Law Practice covers wage and hour claims, wrongful termination,

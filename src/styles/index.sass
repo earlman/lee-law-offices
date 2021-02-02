@@ -22,6 +22,23 @@ html
 div
     border-radius: 3px
 
+.responsive-container
+    max-width: var(--layout-max-width)
+    background-color: var(--color-b-alt)
+    padding: var(--space-xs)
+    margin: var(--space-xs)
+
+    @include md
+        padding: var(--space-sm)
+        margin: var(--space-sm)
+
+    @include lg
+        padding: var(--space-md)
+        margin: var(--space-md)
+    
+    @include xl
+        margin: auto
+
 .section-title
     display: grid
     place-items: center

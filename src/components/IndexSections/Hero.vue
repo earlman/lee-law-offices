@@ -1,20 +1,7 @@
 <template>
 	<div class="hero-container">
 		<div class="hero">
-			<div class="content">
-				<h1 class="hero--title">
-					The law is on your side<br />
-					No legal fees until we win
-				</h1>
-				<div class="hero--text">
-					<p class="hero--text">Call us today for a free case evaluation</p>
-
-					<p>(323) 289-2260<br /><em>Se habla Español</em></p>
-				</div>
-				<g-link to="/contact-us">
-					<button class="contact-us">Contact Us</button>
-				</g-link>
-			</div>
+			<slot></slot>
 		</div>
 	</div>
 </template>

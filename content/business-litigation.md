@@ -11,7 +11,9 @@
         - Tortious Interference with Contract
 
 ---
-
-Our Business & Commercial Litigation Practice provides a complete range of services to corporate clients.
-
-We also provide a highly specialized litigation service for church property and governance disputes.
+<h4>
+ Our Business & Commercial Litigation Practice provides a complete range of services to corporate clients.
+</h4>
+<h4>
+ We also provide a highly specialized litigation service for church property and governance disputes.
+</h4>

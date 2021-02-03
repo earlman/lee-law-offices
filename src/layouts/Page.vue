@@ -8,7 +8,7 @@
 				</div>
 			</div>
 		</div>
-		<main class="main">
+		<main class="main" :class="{ nogrid: noSidebar }">
 			<div class="sidebar" v-if="$slots.sidebar">
 				<slot name="sidebar"></slot>
 			</div>
@@ -40,6 +40,7 @@ export default {
 		pageSubtitle: '',
 		color: '',
 		bgImage: '',
+		noSidebar: false,
 	},
 	components: {
 		Navbar,
@@ -136,6 +137,9 @@ main
             font-weight: 400
             font-size: var(--d-md)
             color: var(--color-t-c)
+
+.nogrid // fill whole width with mainbar
+    display: block !important
 
 .main
 

@@ -1,40 +1,35 @@
 <template>
 	<div class="header-container">
 		<header class="header">
-			<div class="logo-container">
-				<g-link to="/">
-					<!-- <h1>Lee Law Offices</h1> -->
-					<img src="@/assets/images/logo.png" alt="logo" class="logo" />
-				</g-link>
+			<div class="logo--container">
+				<div class="logo">
+					<g-link to="/">
+						<img src="@/assets/images/logo.png" alt="logo" class="logo" />
+					</g-link>
+				</div>
 				<!-- <img src="" alt="Lee Law Offices" /> -->
+				<div class="icon">
+					<i class="nav-icon" @click="toggleNav">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="30"
+							height="30"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="var(--color-t)"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="feather feather-menu"
+						>
+							<line x1="3" y1="12" x2="21" y2="12"></line>
+							<line x1="3" y1="6" x2="21" y2="6"></line>
+							<line x1="3" y1="18" x2="21" y2="18"></line>
+						</svg>
+					</i>
+				</div>
 			</div>
-			<nav class="main-nav">
-				<i class="nav-icon" @click="toggleNav">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="30"
-						height="30"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="var(--color-t)"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="feather feather-menu"
-					>
-						<line x1="3" y1="12" x2="21" y2="12"></line>
-						<line x1="3" y1="6" x2="21" y2="6"></line>
-						<line x1="3" y1="18" x2="21" y2="18"></line>
-					</svg>
-				</i>
-
-				<ul v-if="displayNav" class="sm-nav">
-					<li><g-link to="/">Home</g-link></li>
-					<li><g-link>About</g-link></li>
-					<li><g-link to="/practice-areas">Practice Areas</g-link></li>
-					<li><g-link to="/contact-us">Contact Us</g-link></li>
-					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
-				</ul>
+			<nav class="main-nav" v-show="displayNav">
 				<ul class="lg-nav">
 					<li><g-link to="/">Home</g-link></li>
 					<li><g-link to="/about">About</g-link></li>
@@ -64,98 +59,93 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
-ul
-    margin-bottom: 0
-
-.nav-icon
-    height: 30px
-
-.logo-container
-    // margin-bottom: var(--space-sm)
-    // min-width: 300px
-    text-align: center
-    overflow: hidden
+//layout
+.header
+    margin-left: auto
+    margin-right: auto
 
     @include lg
-        // margin-bottom: var(--space-2xs)
+        display: flex
+        justify-content: space-between
+        max-width: var(--layout-max-width)
+        padding: var(--space-xs) 0
 
-    h1
-        font-variant: small-caps
+    ul
+        margin: 0
 
+.main-nav
+    @include lg
+        margin-top: var(--space-sm)
+
+    ul
+        @include lg
+            display: flex
+
+    li
+        padding-left: var(--space-md)
+        padding-top: var(--space-2xs)
+        padding-bottom: var(--space-2xs)
+
+        @include lg
+            padding-right: var(--space-xs)
+            padding-left: var(--space-xs)
+
+.logo--container
+    display: flex
+    padding: var(--space-sm)
+    align-items: center
+    justify-content: space-between
+
+    .logo
+        width: 80%
+        display: flex
+        align-items: center
+        max-width: 350px
+
+//remove icon on lg screens
+//show menu on lg screens
+@include lg
+    .icon
+        display: none
+
+    .main-nav
+        display: block !important
+
+// DISPLAY STYLES
 .header-container
     background-color: var(--color-b-alt)
-    padding: var(--space-xs) var(--space-sm) var(--space-xs)
-    // border-bottom: 8px solid var(--color-p)
 
-.header
-    display: flex
-    max-width: var(--layout-max-width)
-    margin: auto
-    justify-content: space-between
-    align-items: center
+.main-nav
+    ul
+        list-style: none
+        border-bottom: 1px solid rgba(0, 0, 0, .1)
 
-    @include md
-        margin-top: var(--space-xs)
-        margin-bottom: var(--space-)
+        @include lg
+            border: none
 
-    @include lg
-        flex-direction: row
+    li
+        border-top: 1px solid rgba(0, 0, 0, .1)
+
+        @include lg
+            border-top: 1px solid rgba(0, 0, 0, 0)
+            border-bottom: 1px solid rgba(0, 0, 0, 0)
+
+        &:hover
+            border-top: 1px solid rgba(0, 0, 0, .1)
+            border-bottom: 1px solid rgba(0, 0, 0, .1)
 
     a
         font-size: var(--d-lg)
         font-weight: 400
         color: var(--color-t-h)
         font-family: var(--font-secondary)
-        text-decoration: none
 
-    .logo
-        display: grid
-        place-items: start
-        min-width: 200px
-        padding: var(--space-2xs)
-        max-width: 400px
+        &:hover
+            text-decoration: none
 
-        @include lg
-            max-width: 350px
-            margin: 0
+.icon
+    height: 30px
 
-    .main-nav
-        display: grid
-        place-items: end
-        width: 100%
-
-        .sm-nav
-            list-style-type: none
-            width: 100%
-
-            li
-                padding-top: var(--space-2xs)
-                padding-bottom: var(--space-2xs)
-
-        .lg-nav
-            display: none
-            list-style-type: none
-
-        @include lg
-
-            .nav-icon
-                display: none
-
-            .lg-nav
-                display: flex
-
-            li
-                a
-                    font-size: var(--d-lg)
-                    padding: var(--space-2xs) var(--space-sm)
-
-                    &:hover
-                        color: var(--color-p)
-                        border-top: 2px solid var(--color-p)
-                        border-bottom: 2px solid var(--color-p)
-
-        @include lg
-            place-items: end
-            align-self: flex-end
-            margin-bottom: var(--space-sm) 0 var(--space-xs)
+    &:hover
+        cursor: pointer
 </style>

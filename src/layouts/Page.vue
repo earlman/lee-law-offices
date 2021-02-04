@@ -129,6 +129,9 @@ main
     ul
         margin: var(--space-sm) 0
 
+        @include md
+            margin: 0
+
     li
         padding: var(--space-2xs) var(--space-xs)
         list-style-type: none

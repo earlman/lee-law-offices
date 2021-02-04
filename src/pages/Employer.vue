@@ -54,10 +54,6 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
-.employee-page
-    --color-p: #39617A
-    --color-button: #39617A
-
 section
     overflow: hidden
     margin-bottom: var(--space-lg)

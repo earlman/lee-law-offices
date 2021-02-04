@@ -5,6 +5,7 @@ link: "discrimination"
 subtitle: "Stop Getting Screwed Over"
 
 ---
+
 The law protects you from being discriminated based on race, sex/gender, sexual orientation, age, religion, pregnancy, and disability.  If you have ever experienced any of the following, you are being discriminated: 
 
 <aside>

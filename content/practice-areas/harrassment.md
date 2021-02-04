@@ -28,9 +28,7 @@ Harassment can be verbal or physical.  Your harasser can be your co-worker, supe
     <li>
         “You’re too old to get this job done.”
     </li>
-    <li>
-        “I can’t understand your accent.” 
-    </li>
+    <li>“I can’t understand your accent.”</li>
     <li>
         Your supervisor/co-worker touches your body parts behind you.
     </li>

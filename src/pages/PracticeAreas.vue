@@ -69,7 +69,8 @@ export default {
 
     nav li
 
-    ::v-deep //fix bullet points in practice-area on mobile
+    ::v-deep
+        //fix bullet points in practice-area on mobile
         list-style-position: inside
 
         @include md
@@ -77,6 +78,12 @@ export default {
                 margin-left: var(--space-md)
                 list-style-position: outside
                 width: 80%
+
+        //colored background in some parts
+        aside
+            background-color: var(--color-p)
+            *
+                color: white
 
     .area
         background-color: var(--color-b-alt)
@@ -90,8 +97,6 @@ export default {
     .area--title
         margin-top: var(--space-xs)
         margin-bottom: var(--space-sm)
-
-// Layout
 
 .practiceareas
 

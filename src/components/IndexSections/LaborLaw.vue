@@ -10,11 +10,8 @@
 					termination, discrimination, and harassment. We have represented a variety of
 					clients in class actions as well as individual claims. Our practice is not
 					limited to employees (usually as plaintiffs) or employers (usually as
-					defendants).
-				</p>
-				<p>
-					We represent both sides. Having represented both sides of the case, we know how
-					to best serve our clients to meet their unique needs.
+					defendants). Having represented both sides of the case, we know how to best
+					serve our clients to meet their unique needs.
 				</p>
 			</div>
 			<div class="buttons">

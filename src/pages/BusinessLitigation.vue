@@ -49,19 +49,30 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .page-buslit
+
     ::v-deep h4
         font-family: var(--font-secondary)
+        font-weight: 500
         margin-top: 0
+        margin-bottom: var(--space-xs)
 
     .content
+        margin-bottom: var(--space-lg)
+        display: grid
+        grid-gap: var(--space-sm)
 
-        @include lg
-            display: grid
+        @include xl
             grid-template-columns: 2fr 1fr
-            grid-gap: var(--space-sm)
+            margin-bottom: var(--space-xl)
 
         &--text
+            padding: var(--space-sm)
             background-color: white
+
+            @include md
+                padding: var(--space-md)
+            @include lg
+                padding: var(--space-lg)
 
         &--allegations
             background-color: var(--color-p)

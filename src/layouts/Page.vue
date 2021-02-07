@@ -103,6 +103,7 @@ main
         z-index: 10
         position: absolute
         width: 100%
+        max-height: 100px // somehow fixes mobile title
 
         @include md
             // margin-right: var(--space-md)

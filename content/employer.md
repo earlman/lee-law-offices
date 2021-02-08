@@ -2,16 +2,7 @@
 
     id: "employer"
     img: "employer-home"
-    allegations:
-        - The employee was discriminated because of age, race, gender, or sexual orientation
-        - The employee was retaliated when she complained about harassment or discrimination
-        - You did not prevent harassment, discrimination, and/or retaliation
-        - The employee was wrongfully terminated
-        - You did not pay overtime wages
-        - You did not provide rest period
-        - You did not provide meal break
-        - You did not provide wage statements
-        - Your workplace is hostile
+
 
 ---
 <!-- <div class="content-1">

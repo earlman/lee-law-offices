@@ -1,5 +1,5 @@
 <template>
-	<Layout pageTitle="Home" pageSubtitle="" class="employee-page">
+	<Layout pageTitle="Employer Home" pageSubtitle="" class="employee-page">
 		<section class="h">
 			<hero :bgImage="bgImage">
 				<div class="content">
@@ -19,7 +19,9 @@
 			</hero>
 		</section>
 		<section>
-			<p>employer content</p>
+			<div class="employer--content responsive-container">
+				<div v-html="$page.pageContent.content"></div>
+			</div>
 		</section>
 		<section>
 			<free-consultation sectionTitle="Free Case Evaluation Form" />
@@ -30,6 +32,14 @@
 	</Layout>
 </template>
 
+<page-query>
+query {
+    pageContent(id: "employer"){
+        img
+        content
+    }
+}
+</page-query>
 
 <script>
 import PracticeAreasGrid from '../components/IndexSections/PracticeAreasGrid.vue';
@@ -57,4 +67,17 @@ export default {
 section
     overflow: hidden
     margin-bottom: var(--space-lg)
+
+.employer--content
+    background-color: var(--color-b-alt)
+
+    ::v-deep
+        //fix bullet points in practice-area on mobile
+        list-style-position: inside
+
+        @include md
+            li
+                margin-left: var(--space-md)
+                list-style-position: outside
+                width: 80%
 </style>

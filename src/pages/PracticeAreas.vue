@@ -98,8 +98,9 @@ export default {
             ul
                 margin-bottom: 0
 
-                @include lg
+                @include xl
                     column-count: 2
+                    column-gap: 0
 
                 li
                     margin-bottom: var(--space-2xs)

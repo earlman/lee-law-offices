@@ -100,6 +100,9 @@ export default {
         flex-wrap: wrap
         justify-content: space-between
         align-items: flex-end
+        border-radius: 0
+        padding-bottom: var(--space-2xs)
+        border-bottom: 1px solid rgba(77, 97, 85, .15)
 
     &--name
         min-width: 200px
@@ -114,7 +117,7 @@ export default {
     margin-bottom: var(--space-xl)
 
     .person--name
-        font-size: var(--d-4xl)
+        font-size: var(--d-3xl)
         // font-weight: 500
 
     .person--title

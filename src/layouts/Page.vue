@@ -105,9 +105,12 @@ main
         width: 100%
         max-height: 100px // somehow fixes mobile title
 
+        h1
+            font-size: var(--d-2xl)
+
         @include md
             // margin-right: var(--space-md)
-            padding: var(--space-sm) var(--space-md)
+            padding: 1.2rem var(--space-md)
 
         @include lg
             position: static

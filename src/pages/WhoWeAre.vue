@@ -110,7 +110,7 @@ export default {
     ul
         margin-bottom: var(--space-xs)
 
-    @include lg
+    @include md
         padding: var(--space-md)
 
 .people

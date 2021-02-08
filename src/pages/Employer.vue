@@ -3,7 +3,7 @@
 		<section class="h">
 			<hero :bgImage="bgImage">
 				<div class="content">
-					<h1 class="hero--title">We're here to protect you and your business</h1>
+					<h1 class="hero--title">We're here to protect you<br />and your business</h1>
 					<div class="hero--text">
 						<p class="hero--text">Call us today for a free case evaluation</p>
 

@@ -71,6 +71,7 @@ export default {
             background-color: var(--color-b-alt)
             // margin: auto
             max-width: max-content
+            box-shadow: #959da533 0px 8px 24px
 
             @include md
                 margin: unset

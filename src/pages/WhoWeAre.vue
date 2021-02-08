@@ -102,7 +102,7 @@ export default {
         align-items: flex-end
         border-radius: 0
         padding-bottom: var(--space-2xs)
-        border-bottom: 1px solid rgba(77, 97, 85, .15)
+        border-bottom: 2px solid rgba(77, 97, 85, .15)
 
     &--name
         min-width: 200px
@@ -126,7 +126,7 @@ export default {
     h3
         font-weight: 600
         font-size: var(--d-md)
-        // color: var(--color-p)
+        color: var(--color-p)
 
     ::v-deep
         //fix bullet points on mobile

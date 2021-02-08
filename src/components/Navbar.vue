@@ -32,7 +32,7 @@
 			<nav class="main-nav" v-show="displayNav">
 				<ul class="lg-nav">
 					<li><g-link to="/">Home</g-link></li>
-					<li><g-link to="/about">About</g-link></li>
+					<li><g-link to="/who-we-are">Who We Are</g-link></li>
 					<li><g-link to="/employer">Employers</g-link></li>
 					<li><g-link to="/employee">Employees</g-link></li>
 					<li><g-link to="/contact-us">Contact Us</g-link></li>
@@ -86,6 +86,7 @@ export default {
         padding-left: var(--space-md)
         padding-top: var(--space-2xs)
         padding-bottom: var(--space-2xs)
+        white-space: nowrap
 
         @include lg
             padding-right: var(--space-xs)

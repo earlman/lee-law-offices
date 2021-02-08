@@ -41,6 +41,8 @@ export default {
         padding: var(--space-lg) var(--space-sm) var(--space-2xl)
         margin: auto
 
+    @include xl
+        max-height: 66vh
     .hero
         // margin: auto
         width: 100%

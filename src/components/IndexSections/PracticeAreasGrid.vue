@@ -179,7 +179,7 @@
 
 .practice-areas
     max-width: var(--layout-max-width)
-    margin: 0 auto var(--space-lg)
+    margin: 0 auto
 
 .areas-grid
     display: grid

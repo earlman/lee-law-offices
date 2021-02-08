@@ -1,8 +1,6 @@
 ---
 
     id: "employer"
-    img: "employer-home"
-
 
 ---
 <!-- <div class="content-1">

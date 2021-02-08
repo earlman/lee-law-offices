@@ -35,7 +35,6 @@
 <page-query>
 query {
     pageContent(id: "employer"){
-        img
         content
     }
 }

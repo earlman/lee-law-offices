@@ -19,7 +19,7 @@
 			</hero>
 		</section>
 		<section>
-			<practice-areas-grid />
+			<p>employer content</p>
 		</section>
 		<section>
 			<free-consultation sectionTitle="Free Case Evaluation Form" />
@@ -36,7 +36,7 @@ import PracticeAreasGrid from '../components/IndexSections/PracticeAreasGrid.vue
 import FreeConsultation from '../components/IndexSections/FreeConsultation.vue';
 import ContactUs from '../components/IndexSections/ContactUs.vue';
 import Hero from '../components/IndexSections/Hero.vue';
-import img from '@/assets/images/hero.png';
+import img from '@/assets/images/termination.png';
 
 export default {
 	components: { PracticeAreasGrid, FreeConsultation, ContactUs, Hero },

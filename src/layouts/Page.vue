@@ -72,17 +72,16 @@ main
 
     @include lg
         background-size: cover
-        margin-bottom: var(--space-lg)
         padding: 0
 
     .pagetitle--container
         width: 100%
         position: relative
-        bottom: -8rem
+        bottom: -7.5rem
         height: min-content
 
         @include md
-            bottom: -10rem
+            bottom: -11rem
 
         @include lg
             bottom: -12rem
@@ -99,7 +98,7 @@ main
         grid-column: 2
         background-color: var(--color-b-alt)
         margin-bottom: var(--space-xs)
-        padding: var(--space-xs)
+        padding: var(--space-xs) var(--space-sm)
         z-index: 10
         position: absolute
         width: 100%

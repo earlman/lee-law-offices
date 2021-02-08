@@ -11,16 +11,16 @@
 					<h4>Our Services</h4>
 					<ul>
 						<li>
-							<g-link>Harrassment</g-link>
+							<g-link to="/practice-areas#harrassment">Harrassment</g-link>
 						</li>
 						<li>
-							<g-link>Discrimination</g-link>
+							<g-link to="/practice-areas#discrimination">Discrimination</g-link>
 						</li>
 						<li>
-							<g-link>Wage & Hour</g-link>
+							<g-link to="/practice-areas#wage">Wage & Hour</g-link>
 						</li>
 						<li>
-							<g-link>Termination</g-link>
+							<g-link to="/practice-areas#termination">Termination</g-link>
 						</li>
 					</ul>
 				</div>
@@ -28,10 +28,16 @@
 					<h4>Quick Links</h4>
 					<ul>
 						<li>
-							<g-link to="/about"> About </g-link>
+							<g-link to="/who-we-are"> Who We Are </g-link>
 						</li>
 						<li>
-							<g-link to="/practice-areas"> Practice Areas </g-link>
+							<g-link to="/business-litigation"> Business Litigation </g-link>
+						</li>
+						<li>
+							<g-link to="/employee"> Employees' Home </g-link>
+						</li>
+						<li>
+							<g-link to="/employer"> Employers' Home </g-link>
 						</li>
 						<li>
 							<g-link to="/contact-us"> Contact Us </g-link>

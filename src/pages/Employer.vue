@@ -3,10 +3,7 @@
 		<section class="h">
 			<hero :bgImage="bgImage">
 				<div class="content">
-					<h1 class="hero--title">
-						The law is on your side<br />
-						No legal fees until we win
-					</h1>
+					<h1 class="hero--title">We're here to protect you and your business</h1>
 					<div class="hero--text">
 						<p class="hero--text">Call us today for a free case evaluation</p>
 

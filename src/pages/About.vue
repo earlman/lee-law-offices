@@ -20,9 +20,10 @@
 				:id="edge.node.link"
 			>
 				<div class="person--head">
-					<h2 class="person--title">{{ edge.node.name }}</h2>
+					<h2 class="person--name">{{ edge.node.name }}</h2>
+					<h3 class="person--title">{{ edge.node.title }}</h3>
 				</div>
-				<div class="person--awards">
+				<div v-if="edge.node.awards[0]" class="person--awards">
 					<h3>Awards:</h3>
 					<ul>
 						<li v-for="award in edge.node.awards">{{ award }}</li>
@@ -74,7 +75,7 @@ export default {
 		};
 	},
 	metaInfo: {
-		title: 'Practice Areas',
+		title: 'Who We Are',
 	},
 	components: {
 		PageLayout,
@@ -86,11 +87,46 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .people
-    display: flex
-    flex-direction: column
+    & > *
+        margin-bottom: var(--space-md)
+
+.person
+    padding: var(--space-sm)
+    background-color: var(--color-b-alt)
+
+    &--head
+        margin-bottom: var(--space-xs)
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-end
+
+    &--name
+        min-width: 200px
+
+    ul
+        margin-bottom: var(--space-xs)
+
+    @include lg
+        padding: var(--space-md)
+
+.people
+    margin-bottom: var(--space-xl)
+
+    .person--name
+        font-size: var(--d-4xl)
+        // font-weight: 500
+
+    .person--title
+        font-size: var(--d-lg)
+
+    h3
+        font-weight: 600
+        font-size: var(--d-md)
+        // color: var(--color-p)
 
     ::v-deep
-        //fix bullet points in practice-area on mobile
+        //fix bullet points on mobile
         list-style-position: inside
 
         @include md
@@ -98,51 +134,5 @@ export default {
                 margin-left: var(--space-md)
                 list-style-position: outside
                 width: 80%
-
-        //colored background in some parts
-        aside
-            background-color: var(--color-p)
-            border-radius: 3px
-            padding-top: var(--space-sm)
-            padding-bottom: var(--space-sm)
-            padding-left: var(--space-xs)
-            padding-right: var(--space-xs)
-            margin-top: var(--space-md)
-            margin-left: calc(-1*var(--space-xs))
-            margin-right: calc(-1*var(--space-xs))
-            margin-bottom: calc(-1*var(--space-xs))
-
-            @include md
-                margin-left: calc(-1*var(--space-md))
-                margin-right: calc(-1*var(--space-md))
-                margin-bottom: calc(-1*var(--space-md))
-
-            ul
-                margin-bottom: 0
-
-                @include lg
-                    column-count: 2
-
-                li
-                    margin-bottom: var(--space-2xs)
-            *
-                color: white
-
-    .area
-        background-color: var(--color-b-alt)
-
-    .area
-        padding: var(--space-xs)
-
-        @include md
-            padding: var(--space-md)
-
-    .area--title
-        // margin-top: var(--space-xs)
-        margin-bottom: var(--space-xs)
-
-.people
-
-    & > *
-        margin-bottom: var(--space-md)
 </style>
+

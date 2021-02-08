@@ -56,7 +56,7 @@
 			<hr />
 
 			<aside class="aside">
-				<p>© foundations.dev. All Rights Reserved. 2019</p>
+				<p>© Foundations. All Rights Reserved. 2019</p>
 			</aside>
 		</footer>
 	</div>

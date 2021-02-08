@@ -9,7 +9,6 @@
 						every aspect of a case to satisfy our client’s unique needs and to maximize
 						our client’s results.
 					</h1>
-					<h1></h1>
 				</div>
 			</hero>
 		</section>

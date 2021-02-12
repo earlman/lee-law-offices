@@ -30,20 +30,15 @@
 				</div>
 			</div>
 			<nav class="main-nav" v-show="displayNav">
-				<ul class="lg-nav">
-					<li><g-link to="/">Home</g-link></li>
-					<li><g-link to="/who-we-are">Who We Are</g-link></li>
-					<li><g-link to="/employer">Practice Areas</g-link></li>
-					<!-- <li><g-link to="/employee">Employees</g-link></li> -->
-					<li><g-link to="/contact-us">Contact Us</g-link></li>
-					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
-				</ul>
+				<navbar-menu />
 			</nav>
 		</header>
 	</div>
 </template>
 <script>
+import NavbarMenu from './Navbar-Menu.vue';
 export default {
+	components: { NavbarMenu },
 	data() {
 		return {
 			displayNav: false,
@@ -78,20 +73,6 @@ export default {
     @include lg
         margin-top: var(--space-sm)
 
-    ul
-        @include lg
-            display: flex
-
-    li
-        padding-left: var(--space-md)
-        padding-top: var(--space-2xs)
-        padding-bottom: var(--space-2xs)
-        white-space: nowrap
-
-        @include lg
-            padding-right: var(--space-xs)
-            padding-left: var(--space-xs)
-
 .logo--container
     display: flex
     padding: var(--space-sm)
@@ -116,34 +97,6 @@ export default {
 // DISPLAY STYLES
 .header-container
     background-color: var(--color-b-alt)
-
-.main-nav
-    ul
-        list-style: none
-        border-bottom: 1px solid rgba(0, 0, 0, .1)
-
-        @include lg
-            border: none
-
-    li
-        border-top: 1px solid rgba(0, 0, 0, .1)
-
-        @include lg
-            border-top: 1px solid rgba(0, 0, 0, 0)
-            border-bottom: 1px solid rgba(0, 0, 0, 0)
-
-        &:hover
-            border-top: 1px solid rgba(0, 0, 0, .1)
-            border-bottom: 1px solid rgba(0, 0, 0, .1)
-
-    a
-        font-size: var(--d-lg)
-        font-weight: 400
-        color: var(--color-t-h)
-        font-family: var(--font-secondary)
-
-        &:hover
-            text-decoration: none
 
 .icon
     height: 30px

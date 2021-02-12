@@ -44,11 +44,9 @@ export default {
 						arrowColor: 'var(--color-p)',
 						subMenuOptions: [
 							{
-								isLinkAction: true,
 								type: 'link',
 								text: 'Employee Services',
-								// subText:
-								// 	'Stupid corporate wet blankets. Like booze ever killed anyone.',
+								// subText: 'Stupid corporate wet blankets. Like booze ever killed anyone.',
 								path: '/employee',
 								// iconLeft: '<i class="fa fa-star fa-fw"></i>',
 							},

@@ -10,6 +10,7 @@
     awards: 
         - Lawyers of Distinction in labor law (2020)
     order: 2
+    pic: "./profile_picture.png"
 
 ---
 

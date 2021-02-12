@@ -23,6 +23,7 @@
 					<h2 class="person--name">{{ edge.node.name }}</h2>
 					<h3 class="person--title">{{ edge.node.title }}</h3>
 				</div>
+				<g-image :src="edge.node.pic"> </g-image>
 				<div v-if="edge.node.awards[0]" class="person--awards">
 					<h3>Awards:</h3>
 					<ul>
@@ -58,6 +59,7 @@ query {
                 admitted
                 awards
                 content
+                pic (width: 720, height: 200, quality: 90)
             }
         }
     }

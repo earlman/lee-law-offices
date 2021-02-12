@@ -49,7 +49,7 @@ export default {
 								text: 'Employee Services',
 								// subText:
 								// 	'Stupid corporate wet blankets. Like booze ever killed anyone.',
-								path: { name: 'employee' },
+								path: '/employee',
 								// iconLeft: '<i class="fa fa-star fa-fw"></i>',
 							},
 							{
@@ -59,7 +59,7 @@ export default {
 								type: 'link',
 								text: 'Employer Services',
 								// subText: "You're a presentation tool!",
-								path: { name: 'employer' },
+								path: '/employer',
 								// arrowColor: '#659CC8',
 							},
 							{
@@ -70,7 +70,7 @@ export default {
 								text: 'Business Litigation',
 								// subText:
 								// 	'I enjoy having breakfast in bed. I like waking up to the smell of bacon. Sue me.',
-								path: { name: 'business-litigation' },
+								path: '/business-litigation',
 							},
 						],
 					},

@@ -23,9 +23,6 @@
 		<section>
 			<free-consultation sectionTitle="Free Case Evaluation Form" />
 		</section>
-		<section>
-			<contact-us />
-		</section>
 	</Layout>
 </template>
 

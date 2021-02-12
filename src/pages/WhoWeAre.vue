@@ -23,26 +23,32 @@
 					<h2 class="person--name">{{ edge.node.name }}</h2>
 					<h3 class="person--title">{{ edge.node.title }}</h3>
 				</div>
-				<g-image :src="edge.node.pic"> </g-image>
-				<div v-if="edge.node.awards[0]" class="person--awards">
-					<h3>Awards:</h3>
-					<ul>
-						<li v-for="award in edge.node.awards">{{ award }}</li>
-					</ul>
+				<div class="person--body">
+					<div class="person--pic">
+						<g-image :src="edge.node.pic"> </g-image>
+					</div>
+					<div class="person--arm">
+						<div v-if="edge.node.awards[0]" class="person--awards">
+							<h3>Awards:</h3>
+							<ul>
+								<li v-for="award in edge.node.awards">{{ award }}</li>
+							</ul>
+						</div>
+						<div class="person--education">
+							<h3>Education:</h3>
+							<ul>
+								<li v-for="e in edge.node.education">{{ e }}</li>
+							</ul>
+						</div>
+						<div class="person--admitted">
+							<h3>Admitted:</h3>
+							<ul>
+								<li v-for="a in edge.node.admitted">{{ a }}</li>
+							</ul>
+						</div>
+					</div>
+					<div class="person--content" v-html="edge.node.content" />
 				</div>
-				<div class="person--education">
-					<h3>Education:</h3>
-					<ul>
-						<li v-for="e in edge.node.education">{{ e }}</li>
-					</ul>
-				</div>
-				<div class="person--admitted">
-					<h3>Admitted:</h3>
-					<ul>
-						<li v-for="a in edge.node.admitted">{{ a }}</li>
-					</ul>
-				</div>
-				<div class="person--content" v-html="edge.node.content" />
 			</div>
 		</div>
 	</PageLayout>
@@ -109,6 +115,13 @@ export default {
     &--name
         min-width: 200px
 
+    &--body
+        @include md
+            margin-top: var(--space-sm)
+            display: grid
+            grid-template-columns: 1fr 2fr
+            grid-gap: var(--space-sm)
+
     ul
         margin-bottom: var(--space-xs)
 
@@ -117,6 +130,17 @@ export default {
 
 .people
     margin-bottom: var(--space-xl)
+
+    .person--pic
+        grid-column: 1
+        img
+            max-width: 100%
+
+    .person--arm
+        grid-column: 2
+
+    .person--content
+        grid-column: 1 / -1
 
     .person--name
         font-size: var(--d-3xl)
@@ -136,8 +160,8 @@ export default {
 
         @include md
             li
-                margin-left: var(--space-md)
+                margin-left: var(--space-sm)
                 list-style-position: outside
-                width: 80%
+                // width: 80%
 </style>
 

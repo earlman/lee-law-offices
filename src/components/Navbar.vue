@@ -33,8 +33,8 @@
 				<ul class="lg-nav">
 					<li><g-link to="/">Home</g-link></li>
 					<li><g-link to="/who-we-are">Who We Are</g-link></li>
-					<li><g-link to="/employer">Employers</g-link></li>
-					<li><g-link to="/employee">Employees</g-link></li>
+					<li><g-link to="/employer">Practice Areas</g-link></li>
+					<!-- <li><g-link to="/employee">Employees</g-link></li> -->
 					<li><g-link to="/contact-us">Contact Us</g-link></li>
 					<!-- <li><g-link  to="/">En Espanol</g-link></li> -->
 				</ul>

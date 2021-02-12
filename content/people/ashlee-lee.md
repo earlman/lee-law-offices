@@ -9,6 +9,7 @@
         - United States District Court for the Central District of California 
     awards: 
         - Lawyers of Distinction in labor law (2020)
+    order: 2
 
 ---
 

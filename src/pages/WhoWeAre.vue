@@ -49,7 +49,7 @@
 
 <page-query>
 query {  
-    people: allPeople(sortBy: "id", order: DESC) {
+    people: allPeople(sortBy: "order", order: ASC) {
       edges {
             node {
                 name

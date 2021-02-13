@@ -76,7 +76,7 @@ export default {
 					{
 						type: 'link',
 						text: 'Who We Are',
-						path: 'who-we-are',
+						path: '/who-we-are',
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{

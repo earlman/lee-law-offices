@@ -9,15 +9,16 @@
 
 						<p>(323) 289-2260<br /><em>Se habla Español</em></p>
 					</div>
-					<g-link to="/contact-us">
-						<button class="contact-us">Contact Us</button>
-					</g-link>
+					<g-link to="/contact-us"> </g-link>
 				</div>
 			</hero>
 		</section>
 		<section>
 			<div class="employer--content responsive-container">
-				<div v-html="$page.pageContent.content"></div>
+				<div class="inner">
+					<div v-html="$page.pageContent.content"></div>
+					<button class="contact-us">Contact Us</button>
+				</div>
 			</div>
 		</section>
 		<section>
@@ -64,13 +65,45 @@ section
 .employer--content
     background-color: var(--color-b-alt)
 
+    .inner
+        margin: auto
+        max-width: 75ch
+        display: grid
+        place-content: center
+
     ::v-deep
         //fix bullet points in practice-area on mobile
-        list-style-position: inside
+        // list-style-position: outside
 
-        @include md
+        h4
+            text-align: center
+
+        ul
+            margin: auto
+            width: max-content
+            display: grid
+            place-items: center
+            list-style: none
+            margin-top: var(--space-xs)
+
             li
-                margin-left: var(--space-md)
-                list-style-position: outside
-                width: 80%
+                line-height: 2
+
+            li::before
+                content: "\25A0"
+                color: var(--color-p)
+                display: inline-block
+                width: 1.5em
+                margin-left: -0.9em
+                height: 1.5rem
+
+        // @include md
+        //     li
+        //         margin-left: var(--space-md)
+        //         list-style-position: outside
+        //         width: 80%
+
+button.contact-us
+    max-width: 250px
+    margin: auto
 </style>

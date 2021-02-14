@@ -17,8 +17,15 @@
 			<div class="employer--content responsive-container">
 				<div class="inner">
 					<div v-html="$page.pageContent.content"></div>
-					<button class="contact-us">Contact Us</button>
+					<!-- <button class="contact-us">Contact Us</button> -->
 				</div>
+			</div>
+			<div class="cta responsive-container">
+				<h4>
+					You've come to the right place. We will help you build a strong defense and
+					offense against these claims.
+				</h4>
+				<h4>Contact us for a free consultation and speak to a member of our legal team.</h4>
 			</div>
 		</section>
 		<section>
@@ -76,32 +83,45 @@ section
         // list-style-position: outside
 
         h4
-            text-align: center
+            max-width: 600px
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: var(--space-2xs)
 
         ul
-            margin: auto
-            width: max-content
+            margin-left: auto
+            margin-right: auto
+            max-width: 400px
             display: grid
-            place-items: center
             list-style: none
+            list-style-position: outside
+            list-style-image: url(~@/assets/images/bullet.svg)
             margin-top: var(--space-xs)
 
+            &:last-child
+                margin-bottom: 0
+
             li
-                line-height: 2
-
-            li::before
-                content: "\25A0"
                 color: var(--color-p)
-                display: inline-block
-                width: 1.5em
-                margin-left: -0.9em
-                height: 1.5rem
+                line-height: 2
+                padding-left: var(--space-xs)
 
-        // @include md
-        //     li
-        //         margin-left: var(--space-md)
-        //         list-style-position: outside
-        //         width: 80%
+.cta
+    border-top: var(--color-p) solid 1px
+    border-bottom: var(--color-p) solid 1px
+    // background-color: rgba(247, 249, 247, .9)
+    border-radius: 0
+
+    h4
+        font-size: var(--d-xl)
+        color: var(--color-t-h)
+        margin-bottom: var(--space-2xs)
+        font-family: var(--font-secondary)
+        font-weight: 600
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: var(--space-2xs)
+        max-width: 600px
 
 button.contact-us
     max-width: 250px

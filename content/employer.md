@@ -37,6 +37,3 @@
 - Failure to reimburse for business expenses
 - Unfair business practice
 
-#### You've come to the right place. We will help you build a strong defense and offense against these claims. 
-
-Contact us for a free consultation and speak to a member of our legal team.

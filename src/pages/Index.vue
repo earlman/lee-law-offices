@@ -58,6 +58,7 @@ section
     max-width: 40ch
     line-height: 1.6
     margin-bottom: var(--space-sm)
+    color: var(--color-t-h-alt)
 
     &:last-child
         margin-bottom: 0

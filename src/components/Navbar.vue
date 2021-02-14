@@ -122,7 +122,7 @@ export default {
         .vnb__menu-options__option__link
             font-size: var(--d-lg)
             font-weight: 400
-            color: var(--color-t-h)
+            color: var(--color-t-h-alt)
             font-family: var(--font-secondary)
 
         .vnb__menu-options__option:not(:last-child)

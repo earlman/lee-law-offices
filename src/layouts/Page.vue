@@ -53,7 +53,10 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 main
-    background-color: var(--color-b)
+    // background-color: var(--color-b)
+
+    background-color: #edece9
+    background-image: url(~@/assets/images/background-tile.png)
     position: relative
 
 .hero

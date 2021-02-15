@@ -116,7 +116,6 @@ export default {
 
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
-.section-title
 
 .free-consultation
 

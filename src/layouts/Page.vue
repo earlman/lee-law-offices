@@ -53,7 +53,7 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .layout
-    background-color: #edece9
+    background-color: #faf6f5
     background-image: url(~@/assets/images/background-tile.png)
 
 main

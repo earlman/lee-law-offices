@@ -31,7 +31,7 @@ export default {
 
 <style lang="sass" scoped>
 .layout
-    background-color: #edece9
+    background-color: #faf6f5
     background-image: url(~@/assets/images/background-tile.png)
 
 main

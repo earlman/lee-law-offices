@@ -7,13 +7,7 @@
 
 
 <script>
-import VueNavigationBar from 'vue-navigation-bar';
-import 'vue-navigation-bar/dist/vue-navigation-bar.css';
-
 export default {
-	components: {
-		VueNavigationBar,
-	},
 	data() {
 		return {
 			navbarOptions: {

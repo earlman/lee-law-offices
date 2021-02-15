@@ -8,9 +8,18 @@ import * as GmapVue from 'gmap-vue';
 // Import Design System
 import '~/styles/index.sass'
 
+
+// Import Vue Navigation Bar
+import "vue-navigation-bar/dist/vue-navigation-bar.css";
+import VueNavigationBar from "vue-navigation-bar";
+
 export default function (Vue, { router, head, isClient }) {
     // Set default layout as a global component
     Vue.component('Layout', DefaultLayout);
+    if (process.isClient) {
+        const VueNavigationBar = require('vue-navigation-bar').default;
+        Vue.component("vue-navigation-bar", VueNavigationBar);
+    }
     Vue.use(Buefy);
 
     Vue.use(GmapVue, {

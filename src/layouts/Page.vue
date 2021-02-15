@@ -52,11 +52,11 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
-main
-    // background-color: var(--color-b)
-
+.layout
     background-color: #edece9
     background-image: url(~@/assets/images/background-tile.png)
+
+main
     position: relative
 
 .hero
@@ -151,13 +151,15 @@ main
     display: block !important
 
 .main
+    margin-bottom: var(--space-lg)
 
     @include lg
         grid-gap: var(--space-sm)
         display: grid
         grid-template-columns: 3fr 1fr
         max-width: var(--layout-max-width)
-        margin: var(--space-md)
+        margin-left: var(--space-md)
+        margin-right: var(--space-md)
 
         .sidebar
             grid-column: 2
@@ -169,5 +171,6 @@ main
             grid-row: 1
 
     @include xl
-        margin: auto
+        margin-right: auto
+        margin-left: auto
 </style>

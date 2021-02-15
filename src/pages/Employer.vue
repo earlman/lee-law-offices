@@ -109,7 +109,7 @@ section
 .cta
     border-top: var(--color-p) solid 1px
     border-bottom: var(--color-p) solid 1px
-    // background-color: rgba(247, 249, 247, .9)
+    background-color: rgba(247, 249, 247, .9)
     border-radius: 0
 
     h4

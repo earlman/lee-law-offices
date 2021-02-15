@@ -30,13 +30,13 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.layout
+    background-color: #edece9
+    background-image: url(~@/assets/images/background-tile.png)
+
 main
-    // background-color: var(--color-b)
     margin-bottom: var(--space-lg)
     display: grid
     justify-content: center
-
-    background-color: #edece9
-    background-image: url(~@/assets/images/background-tile.png)
 </style>
 

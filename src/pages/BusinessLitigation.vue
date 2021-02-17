@@ -50,11 +50,15 @@ export default {
 
 .page-buslit
 
-    ::v-deep h4
-        font-family: var(--font-secondary)
-        font-weight: 500
-        margin-top: 0
-        margin-bottom: var(--space-xs)
+    ::v-deep
+        h4
+            font-family: var(--font-secondary)
+            font-weight: 500
+            margin-top: 0
+            margin-bottom: var(--space-xs)
+
+        h1
+            font-size: var(--d-xl) !important
 
     .content
         margin-bottom: var(--space-lg)

@@ -31,13 +31,15 @@
 							<g-link to="/who-we-are"> Who We Are </g-link>
 						</li>
 						<li>
-							<g-link to="/business-litigation"> Business Litigation </g-link>
+							<g-link to="/business-litigation">
+								Business & Commercial Litigation
+							</g-link>
 						</li>
 						<li>
-							<g-link to="/employee"> Employees' Home </g-link>
+							<g-link to="/employee"> For Employees </g-link>
 						</li>
 						<li>
-							<g-link to="/employer"> Employers' Home </g-link>
+							<g-link to="/employer"> For Employers </g-link>
 						</li>
 						<li>
 							<g-link to="/contact-us"> Contact Us </g-link>

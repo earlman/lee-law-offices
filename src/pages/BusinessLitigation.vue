@@ -1,6 +1,6 @@
 <template>
 	<PageLayout
-		title="Business Litigation"
+		title="Business & Commercial Litigation"
 		class="page-buslit"
 		:bgImage="bgImage"
 		:noSidebar="true"

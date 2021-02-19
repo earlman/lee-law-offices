@@ -72,6 +72,12 @@ section
 .employer--content
     background-color: var(--color-b-alt)
 
+    @include xl
+        padding: var(--space-lg) var(--space-xl)
+        max-width: max-content
+        margin-left: auto
+        margin-right: auto
+
     .inner
         margin: auto
         max-width: 75ch
@@ -91,12 +97,13 @@ section
         ul
             margin-left: auto
             margin-right: auto
-            max-width: 400px
+            max-width: 600px
             display: grid
             list-style: none
-            list-style-position: outside
+            list-style-position: outisde
             list-style-image: url(~@/assets/images/bullet.svg)
             margin-top: var(--space-xs)
+            margin-left: var(--space-sm)
 
             &:last-child
                 margin-bottom: 0
@@ -111,6 +118,12 @@ section
     border-bottom: var(--color-p) solid 1px
     background-color: rgba(247, 249, 247, .9)
     border-radius: 0
+
+    @include xl
+        padding: var(--space-lg) var(--space-xl)
+        max-width: max-content
+        margin-left: auto
+        margin-right: auto
 
     h4
         font-size: var(--d-xl)

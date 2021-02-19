@@ -72,6 +72,9 @@ section
 .employer--content
     background-color: var(--color-b-alt)
 
+    @include md
+        padding: var(--space-lg) var(--space-lg)
+
     @include xl
         padding: var(--space-lg) var(--space-xl)
         max-width: max-content

@@ -43,7 +43,13 @@ div
     display: grid
     place-items: start
     max-width: var(--layout-max-width)
-    // margin: 0 var(--space-md) var(--space-xs)
+    margin: 0 var(--space-xs) var(--space-xs)
+
+    @include md
+        margin-left: var(--space-sm)
+
+    @include xl
+        margin-left: 0
 
 .button
     @include space-squish(27px)

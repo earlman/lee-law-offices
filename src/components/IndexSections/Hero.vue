@@ -26,6 +26,7 @@ export default {
     display: flex
     flex-direction: column
     min-height: 75vh
+    width: 100vw
 
     @include md
         background-image: url(~@/assets/images/landing-hero.png)
@@ -35,7 +36,6 @@ export default {
         // background-position: 100% 0%
         // background-size: 75% auto
         // overflow: hidden
-        width: 100vw
         min-height: revert
 
     @include lg
@@ -46,7 +46,7 @@ export default {
         max-height: 66vh
 
     .hero
-        margin: auto
+        margin: var(--space-sm) auto
         width: 100%
         max-width: var(--layout-max-width)
 

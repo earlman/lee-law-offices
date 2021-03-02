@@ -1,5 +1,6 @@
 <template>
-	<div class="hero-container" :style="{ 'background-image': 'url(' + bgImage + ')' }">
+	<!-- <div class="hero-container" :style="{ 'background-image': 'url(' + bgImage + ')' }"> -->
+	<div class="hero-container">
 		<div class="hero">
 			<slot></slot>
 		</div>
@@ -16,7 +17,7 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    // background-image: url(~@/assets/images/hero-mobile.png)
+    background-image: url(~@/assets/images/hero-mobile.png)
     background-position: center
     // min-height: 500px
     background-repeat: no-repeat
@@ -25,16 +26,10 @@ export default {
     display: flex
     flex-direction: column
     min-height: 75vh
+    width: 100vw
 
     @include md
-        // background-image: url(~@/assets/images/hero.png)
-        padding: var(--space-lg) var(--space-md)
-        margin: auto
-        max-width: var(--layout-max-width)
-        background-position: 100% 0%
-        background-size: 75% auto
-        overflow: hidden
-        width: 120vw //lol
+        background-image: url(~@/assets/images/employer-hero.png)
         min-height: revert
 
     @include lg
@@ -43,8 +38,9 @@ export default {
 
     @include xl
         max-height: 66vh
+
     .hero
-        // margin: auto
+        margin: var(--space-sm) auto
         width: 100%
         max-width: var(--layout-max-width)
 

@@ -12,7 +12,7 @@
         - District of Columbia (2011)
         - California (2013)
     order: 1
-    pic: "./profile_picture.png"
+    pic: ""
 
 ---
 

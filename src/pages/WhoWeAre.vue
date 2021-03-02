@@ -24,7 +24,7 @@
 					<h3 class="person--title">{{ edge.node.title }}</h3>
 				</div>
 				<div class="person--body">
-					<div class="person--pic">
+					<div v-if="edge.node.pic" class="person--pic">
 						<g-image :src="edge.node.pic"> </g-image>
 					</div>
 					<div class="person--arm">
@@ -132,12 +132,13 @@ export default {
     margin-bottom: var(--space-xl)
 
     .person--pic
-        grid-column: 1
+        grid-row: 1
         img
             max-width: 100%
 
     .person--arm
-        grid-column: 2
+        grid-row: 1
+        grid-column: span 2
 
     .person--content
         grid-column: 1 / -1

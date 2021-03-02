@@ -28,7 +28,7 @@ query {
 
 <script>
 import PageLayout from '@/layouts/Page';
-import img from '@/assets/images/contactus.png';
+import img from '@/assets/images/business-litigation.png';
 
 export default {
 	data() {
@@ -58,7 +58,11 @@ export default {
             margin-bottom: var(--space-xs)
 
         h1
-            font-size: var(--d-xl) !important
+            // font-size: var(--d-xl) !important
+
+        @include sm
+            .pagetitle
+                margin-top: -30px
 
     .content
         margin-bottom: var(--space-lg)

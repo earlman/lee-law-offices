@@ -106,6 +106,7 @@ main
         position: absolute
         width: 100%
         max-height: 100px // somehow fixes mobile title
+        // white-space: nowrap
 
         h1
             font-size: var(--d-2xl)

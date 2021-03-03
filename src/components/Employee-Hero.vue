@@ -25,11 +25,11 @@ export default {
     padding: var(--space-md) var(--space-sm)
     display: flex
     flex-direction: column
-    min-height: 80vh
+    min-height: 75vh
     width: 100vw
 
     @include md
-        background-image: url(~@/assets/images/employer-hero.png)
+        background-image: url(~@/assets/images/landing-hero.png)
         min-height: revert
 
     @include lg

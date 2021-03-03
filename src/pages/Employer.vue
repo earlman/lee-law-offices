@@ -9,7 +9,9 @@
 
 						<p>(323) 289-2260<br /><em>Se habla Español</em></p>
 					</div>
-					<g-link to="/contact-us"> </g-link>
+					<g-link to="/contact-us">
+						<button class="contact-us">Contact Us</button>
+					</g-link>
 				</div>
 			</hero>
 		</section>

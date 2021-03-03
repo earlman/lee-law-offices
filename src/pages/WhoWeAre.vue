@@ -65,7 +65,7 @@ query {
                 admitted
                 awards
                 content
-                pic (width: 720, height: 200, quality: 90)
+                # pic (width: 720, height: 200, quality: 90)
             }
         }
     }

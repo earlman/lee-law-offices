@@ -36,8 +36,8 @@ export default {
 
 main
     margin-bottom: var(--space-lg)
+
     display: grid
-    place-items: center
-    justify-content: center
+    justify-content: stretch
 </style>
 

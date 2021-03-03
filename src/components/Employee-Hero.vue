@@ -17,7 +17,7 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    background-image: url(~@/assets/images/hero-mobile.png)
+    background-image: url(~@/assets/images/employee-mobile.png)
     background-position: center
     // min-height: 500px
     background-repeat: no-repeat
@@ -25,20 +25,26 @@ export default {
     padding: var(--space-md) var(--space-sm)
     display: flex
     flex-direction: column
-    min-height: 75vh
-    width: 100vw
+    min-height: 600px
+    
 
     @include md
         background-image: url(~@/assets/images/employee-hero.png)
+        padding: var(--space-lg) var(--space-md)
+        margin: auto
+        max-width: var(--layout-max-width)
+        background-position: 100% 0%
+        background-size: 75% auto
+        overflow: hidden
+        width: 120vw //lol
         min-height: revert
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
 
     @include lg
-        padding: var(--space-lg) var(--space-sm) var(--space-2xl)
+        padding: var(--space-lg) var(--space-sm) var(--space-xl)
         margin: auto
 
     @include xl
-        max-height: 75vh
+        // max-height: 66vh
 
     .hero
         margin: 0 auto

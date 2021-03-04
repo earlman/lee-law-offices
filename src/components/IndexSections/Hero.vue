@@ -27,6 +27,7 @@ export default {
     flex-direction: column
     min-height: 75vh
     width: 100vw
+    box-shadow: inset 0px 0px 4px 4px rgba(80, 131, 119, 0.2)
 
     @include md
         background-image: url(~@/assets/images/landing-hero.png)

@@ -1,7 +1,7 @@
 <template>
 	<div class="responsive-container">
 		<div class="free-consultation">
-			<h2 v-if="sectionTitle" class="section-title">{{ sectionTitle }}</h2>
+			<h2 v-if="sectionTitle">{{ sectionTitle }}</h2>
 			<form
 				class="form"
 				name="contact"

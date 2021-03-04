@@ -29,8 +29,9 @@ export default {
     width: 100vw
 
     @include md
-        background-image: url(~@/assets/images/landing-hero.png)
+        background-image: url(~@/assets/images/employee-hero.png)
         min-height: revert
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
 
     @include lg
         padding: var(--space-lg) var(--space-sm) var(--space-2xl)

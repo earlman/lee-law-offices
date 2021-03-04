@@ -54,7 +54,7 @@ export default {
 
 .layout
     background-color: #faf6f5
-    background-image: url(~@/assets/images/background-tile.png)
+    background-image: url(~@/assets/images/background-tile-fabric.png)
 
 main
     position: relative

@@ -29,7 +29,7 @@ export default {
 					{
 						type: 'link',
 						text: 'Home',
-						path: { name: '/' },
+						path: '/',
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{

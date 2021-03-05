@@ -74,7 +74,7 @@ query {
 
 <script>
 import PageLayout from '@/layouts/Page';
-import img from '@/assets/images/practiceareas.png';
+import img from '@/assets/images/landing-hero.png';
 
 export default {
 	data() {

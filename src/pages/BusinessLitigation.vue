@@ -57,8 +57,10 @@ export default {
             margin-top: 0
             margin-bottom: var(--space-xs)
 
-        h1
-            // font-size: var(--d-xl) !important
+        @include lg
+            h1
+                white-space: nowrap
+                font-size: var(--d-xl) !important
 
         @include sm
             .pagetitle

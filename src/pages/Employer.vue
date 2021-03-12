@@ -22,13 +22,6 @@
 					<!-- <button class="contact-us">Contact Us</button> -->
 				</div>
 			</div>
-			<div class="cta responsive-container">
-				<h4>
-					You've come to the right place. We will help you build a strong defense and
-					offense against these claims.
-				</h4>
-				<h4>Contact us for a free consultation and speak to a member of our legal team.</h4>
-			</div>
 		</section>
 		<section>
 			<free-consultation sectionTitle="Free Case Evaluation Form" />

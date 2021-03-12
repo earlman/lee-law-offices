@@ -66,6 +66,8 @@ export default {
         .content
             padding: var(--space-sm)
             background-color: var(--color-b-alt)
+            // background-color: #faf6f5
+            // background-image: url(~@/assets/images/background-tile-fabric.png)
             // margin: auto
             max-width: max-content
             box-shadow: #959da533 0px 8px 24px

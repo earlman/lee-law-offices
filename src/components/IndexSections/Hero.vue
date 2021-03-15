@@ -17,34 +17,29 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    background-image: url(~@/assets/images/hero-mobile.png)
-    background-position: center
+    background-position: 0 20%
+    background-image: url(~@/assets/images/landing-mobile.png)
     // min-height: 500px
     background-repeat: no-repeat
     background-size: cover
-    padding: var(--space-md) var(--space-sm)
+    padding: 0 var(--space-sm)
     display: flex
     flex-direction: column
-    min-height: 75vh
+    min-height: 90vh
     width: 100vw
     box-shadow: inset 0px 0px 4px 4px rgba(80, 131, 119, 0.2)
 
     @include md
+        background-position: top left
         background-image: url(~@/assets/images/landing-hero.png)
-        // padding: var(--space-lg) var(--space-md)
-        // margin: auto
-        // max-width: var(--layout-max-width)
-        // background-position: 100% 0%
-        // background-size: 75% auto
-        // overflow: hidden
-        min-height: revert
+        min-height: 50vh
 
     @include lg
-        padding: var(--space-lg) var(--space-sm) var(--space-2xl)
+        padding: var(--space-md) var(--space-sm) calc(1.1 * var(--space-2xl))
         margin: auto
 
     @include xl
-        max-height: 66vh
+        // max-height: 66vh
 
     .hero
         margin: var(--space-sm) auto

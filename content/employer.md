@@ -18,7 +18,7 @@ We know how much money, time and energy it takes to run a business especially wh
 -   Failure to prevent harassment, discrimination and/or retaliation
 -   Wrongful termination
 
-## Employment Class Action Defense**
+## Employment Class Action Defense
 
 Have you been served with a class action complaint? We know, the words “class action” can cause panic and look intimidating. The current California litigation climate is booming with wage and hour class actions that are often propelled by aggressive plaintiff’s attorneys. To defend against a potential class action employers need someone with a deep and comprehensive knowledge of how to tackle class actions. Our team can provide you with an effective and cost-efficient strategic defense against seemingly intimidating class action complaints for the following matters: 
 

@@ -18,52 +18,61 @@
 		<section>
 			<div class="employer--content responsive-container">
 				<div class="inner">
-					<h2 id="employment-law-defense">Employment Law Defense</h2>
-					<p>
-						We know how much money, time and energy it takes to run a business
-						especially when California labor laws are so harsh on employers. If you have
-						a business in California and are having any issues with a former or current
-						employee then you have come to the right place. Our team will help you build
-						a strong and cost-effective defense to protect your business from employee
-						friendly California state laws, vindictive former employees and greedy
-						employee side attorneys looking only to exploit you for the following
-						matters:
-					</p>
-					<ul>
-						<li>Failure to pay overtime wages</li>
-						<li>Failure to provide meal and rest breaks</li>
-						<li>Failure to provide wage statements</li>
-						<li>Hostile work environment</li>
-						<li>Sexual harassment by a supervisor</li>
-						<li>Discrimination based on age, race, gender or sexual orientation</li>
-						<li>
-							Retaliation after they complained about harassment or discrimination
-						</li>
-						<li>Failure to prevent harassment, discrimination and/or retaliation</li>
-						<li>Wrongful termination</li>
-					</ul>
-					<g-image src="~/assets/images/person_1.jpg" width="500" />
-					<h2 id="employment-class-action-defense-">Employment Class Action Defense**</h2>
-					<p>
-						Have you been served with a class action complaint? We know, the words
-						“class action” can cause panic and look intimidating. The current California
-						litigation climate is booming with wage and hour class actions that are
-						often propelled by aggressive plaintiff’s attorneys. To defend against a
-						potential class action employers need someone with a deep and comprehensive
-						knowledge of how to tackle class actions. Our team can provide you with an
-						effective and cost-efficient strategic defense against seemingly
-						intimidating class action complaints for the following matters:
-					</p>
-					<ul>
-						<li>Failure to pay overtime wages</li>
-						<li>Failure to provide meal and rest breaks</li>
-						<li>Failure to provide wage statements</li>
-						<li>Failure to timely pay wages due at termination</li>
-						<li>Failure to pay minimum wages</li>
-						<li>Failure to reimburse for business expenses</li>
-						<li>Unfair business practice</li>
-					</ul>
-					<g-image src="~/assets/images/person_2.jpg" width="500" />
+					<div>
+						<h2 id="employment-law-defense">Employment Law Defense</h2>
+						<p>
+							We know how much money, time and energy it takes to run a business
+							especially when California labor laws are so harsh on employers. If you
+							have a business in California and are having any issues with a former or
+							current employee then you have come to the right place. Our team will
+							help you build a strong and cost-effective defense to protect your
+							business from employee friendly California state laws, vindictive former
+							employees and greedy employee side attorneys looking only to exploit you
+							for the following matters:
+						</p>
+						<ul>
+							<li>Failure to pay overtime wages</li>
+							<li>Failure to provide meal and rest breaks</li>
+							<li>Failure to provide wage statements</li>
+							<li>Hostile work environment</li>
+							<li>Sexual harassment by a supervisor</li>
+							<li>Discrimination based on age, race, gender or sexual orientation</li>
+							<li>
+								Retaliation after they complained about harassment or discrimination
+							</li>
+							<li>
+								Failure to prevent harassment, discrimination and/or retaliation
+							</li>
+							<li>Wrongful termination</li>
+						</ul>
+						<g-image src="~/assets/images/person_1.jpg" width="500" />
+					</div>
+					<div>
+						<h2 id="employment-class-action-defense-">
+							Employment Class Action Defense
+						</h2>
+						<p>
+							Have you been served with a class action complaint? We know, the words
+							“class action” can cause panic and look intimidating. The current
+							California litigation climate is booming with wage and hour class
+							actions that are often propelled by aggressive plaintiff’s attorneys. To
+							defend against a potential class action employers need someone with a
+							deep and comprehensive knowledge of how to tackle class actions. Our
+							team can provide you with an effective and cost-efficient strategic
+							defense against seemingly intimidating class action complaints for the
+							following matters:
+						</p>
+						<ul>
+							<li>Failure to pay overtime wages</li>
+							<li>Failure to provide meal and rest breaks</li>
+							<li>Failure to provide wage statements</li>
+							<li>Failure to timely pay wages due at termination</li>
+							<li>Failure to pay minimum wages</li>
+							<li>Failure to reimburse for business expenses</li>
+							<li>Unfair business practice</li>
+						</ul>
+						<g-image src="~/assets/images/person_2.jpg" width="500" />
+					</div>
 				</div>
 			</div>
 		</section>
@@ -107,6 +116,7 @@ export default {
 section
     overflow: hidden
     margin-bottom: var(--space-lg)
+    color: var(--color-p)
 
 .employer--content
     background-color: var(--color-b-alt)
@@ -125,6 +135,20 @@ section
         max-width: 75ch
         display: grid
         place-content: center
+
+        div
+            display: grid
+            place-content: center
+
+        h2
+            margin-bottom: var(--space-2xs)
+
+        img
+            max-width: 100%
+            margin-left: auto
+            margin-right: auto
+            margin-top: var(--space-sm)
+            margin-bottom: var(--space-md)
 
     ::v-deep
         //fix bullet points in practice-area on mobile
@@ -151,7 +175,6 @@ section
                 margin-bottom: 0
 
             li
-                color: var(--color-p)
                 line-height: 2
                 padding-left: var(--space-xs)
 

@@ -17,18 +17,19 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    background-image: url(~@/assets/images/hero-mobile.png)
+    background-image: url(~@/assets/images/employer-mobile.png)
     background-position: center
     // min-height: 500px
     background-repeat: no-repeat
     background-size: cover
-    padding: var(--space-md) var(--space-sm)
+    padding: var(--space-sm) var(--space-sm)
     display: flex
     flex-direction: column
     min-height: 80vh
     width: 100vw
 
     @include md
+        padding: var(--space-md) var(--space-sm)
         background-image: url(~@/assets/images/employer-hero.png)
         min-height: revert
 

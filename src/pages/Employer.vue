@@ -18,7 +18,7 @@
 		<section>
 			<div class="employer--content responsive-container">
 				<div class="inner">
-					<div>
+					<div class="contentgrid">
 						<h2 id="employment-law-defense">Employment Law Defense</h2>
 						<p>
 							We know how much money, time and energy it takes to run a business
@@ -45,9 +45,10 @@
 							</li>
 							<li>Wrongful termination</li>
 						</ul>
-						<g-image src="~/assets/images/person_1.jpg" width="500" />
+						<g-image src="~/assets/images/person_1.jpg" height="500" fit="outside"/>
 					</div>
-					<div>
+                    <hr>
+					<div class="contentgrid">
 						<h2 id="employment-class-action-defense-">
 							Employment Class Action Defense
 						</h2>
@@ -125,23 +126,46 @@ section
         padding: var(--space-lg) var(--space-lg)
 
     @include xl
-        padding: var(--space-lg) var(--space-xl)
-        max-width: max-content
+        width: 100%
+        // padding: var(--space-lg) var(--space-xl)
+        // max-width: max-content
         margin-left: auto
         margin-right: auto
 
+        .contentgrid
+            display: grid
+            grid-template-columns: 1fr 1fr
+            
+            h2
+                grid-column: 1/-1
+            
+            p
+                grid-column: 1/-1
+                font-size: var(--d-lg)
+
+            ul
+                font-size: var(--d-lg)
+                grid-column: 1
+    
     .inner
         margin: auto
         max-width: 75ch
         display: grid
         place-content: center
 
+        @include xl
+            max-width: 100%
+
+        p, ul
+            color: var(--color-h)
+
+
         div
             display: grid
             place-content: center
 
         h2
-            margin-bottom: var(--space-2xs)
+            margin-bottom: var(--space-xs)
 
         img
             max-width: 100%
@@ -177,29 +201,6 @@ section
             li
                 line-height: 2
                 padding-left: var(--space-xs)
-
-.cta
-    border-top: var(--color-p) solid 1px
-    border-bottom: var(--color-p) solid 1px
-    background-color: rgba(247, 249, 247, .9)
-    border-radius: 0
-
-    @include xl
-        padding: var(--space-lg) var(--space-xl)
-        max-width: max-content
-        margin-left: auto
-        margin-right: auto
-
-    h4
-        font-size: var(--d-xl)
-        color: var(--color-t-h)
-        margin-bottom: var(--space-2xs)
-        font-family: var(--font-secondary)
-        font-weight: 600
-        margin-left: auto
-        margin-right: auto
-        margin-bottom: var(--space-2xs)
-        max-width: 600px
 
 button.contact-us
     max-width: 250px

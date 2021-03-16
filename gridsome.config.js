@@ -17,6 +17,13 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
+                path: 'content/people/*.md',
+                typeName: 'People',
+            },
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
                 path: 'content/*.md',
                 typeName: 'PageContent',
             },

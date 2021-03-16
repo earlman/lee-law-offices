@@ -19,30 +19,55 @@ html
     // background-color: var(--color-N030) // Check colors file exist
     // background-color: red // Check styles are connected
 
-div
+div, img
     border-radius: 3px
+
+hr
+    margin: var(--space-sm) var(--space-lg) var(--space-md)
+    opacity: .5
+
+.responsive-container
+    max-width: var(--layout-max-width)
+    background-color: var(--color-b-alt)
+    padding: var(--space-sm)
+    margin: 0 var(--space-sm)
+    border-radius: 3px
+
+    @include md
+        padding: var(--space-sm)
+        margin: 0 var(--space-md)
+
+    @include lg
+        padding: var(--space-md)
+        margin: 0 auto
+    
+    @include xl
 
 .section-title
     display: grid
-    place-items: center
+    place-items: start
     max-width: var(--layout-max-width)
-    margin: 0 var(--space-md) var(--space-xs)
-    text-align: center
+    margin: 0 var(--space-xs) var(--space-xs)
 
     @include md
-        place-items: start
-
-    @include lg
-        text-align: left
+        margin-left: var(--space-sm)
 
     @include xl
         margin-left: 0
 
 .button
     @include space-squish(27px)
-    border: 3px solid var(--color-a)
+    background-color: var(--color-button)
+    text-transform: uppercase
     border-radius: 3px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 300px
 
+    *
+        color: var(--color-t-alt)
+    
 
 .accent-bar
     width: 100%

@@ -8,7 +8,7 @@
 				</div>
 			</div>
 		</div>
-		<main class="main">
+		<main class="main" :class="{ nogrid: noSidebar }">
 			<div class="sidebar" v-if="$slots.sidebar">
 				<slot name="sidebar"></slot>
 			</div>
@@ -40,6 +40,7 @@ export default {
 		pageSubtitle: '',
 		color: '',
 		bgImage: '',
+		noSidebar: false,
 	},
 	components: {
 		Navbar,
@@ -51,8 +52,11 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
+.layout
+    background-color: #faf6f5
+    background-image: url(~@/assets/images/background-tile-fabric.png)
+
 main
-    background-color: var(--color-b)
     position: relative
 
 .hero
@@ -71,17 +75,16 @@ main
 
     @include lg
         background-size: cover
-        margin-bottom: var(--space-lg)
         padding: 0
 
     .pagetitle--container
         width: 100%
         position: relative
-        bottom: -8rem
+        bottom: -7.5rem
         height: min-content
 
         @include md
-            bottom: -10rem
+            bottom: -11rem
 
         @include lg
             bottom: -12rem
@@ -98,14 +101,19 @@ main
         grid-column: 2
         background-color: var(--color-b-alt)
         margin-bottom: var(--space-xs)
-        padding: var(--space-xs)
+        padding: var(--space-xs) var(--space-sm)
         z-index: 10
         position: absolute
         width: 100%
+        max-height: 100px // somehow fixes mobile title
+        // white-space: nowrap
+
+        h1
+            font-size: var(--d-2xl)
 
         @include md
             // margin-right: var(--space-md)
-            padding: var(--space-sm) var(--space-md)
+            padding: 1.2rem var(--space-md)
 
         @include lg
             position: static
@@ -128,6 +136,9 @@ main
     ul
         margin: var(--space-sm) 0
 
+        @include md
+            margin: 0
+
     li
         padding: var(--space-2xs) var(--space-xs)
         list-style-type: none
@@ -137,24 +148,30 @@ main
             font-size: var(--d-md)
             color: var(--color-t-c)
 
+.nogrid // fill whole width with mainbar
+    display: block !important
+
 .main
+    margin-bottom: var(--space-lg)
 
     @include lg
         grid-gap: var(--space-sm)
         display: grid
         grid-template-columns: 3fr 1fr
         max-width: var(--layout-max-width)
-        margin: var(--space-md)
+        margin-left: var(--space-md)
+        margin-right: var(--space-md)
 
         .sidebar
             grid-column: 2
             margin: 0
-            min-height: 500px
+            min-height: min-content
 
         .mainbar
             grid-column: 1
             grid-row: 1
 
     @include xl
-        margin: auto
+        margin-right: auto
+        margin-left: auto
 </style>

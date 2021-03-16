@@ -28,7 +28,7 @@
 
 <page-query>
 query {  
-    areas: allPracticeAreas {
+    areas: allPracticeAreas(sortBy: "id", order: DESC) {
       edges {
             node {
               title
@@ -67,9 +67,8 @@ export default {
     display: flex
     flex-direction: column
 
-    nav li
-
-    ::v-deep //fix bullet points in practice-area on mobile
+    ::v-deep
+        //fix bullet points in practice-area on mobile
         list-style-position: inside
 
         @include md
@@ -77,6 +76,36 @@ export default {
                 margin-left: var(--space-md)
                 list-style-position: outside
                 width: 80%
+
+        //colored background in some parts
+        aside
+            background-color: var(--color-p)
+            border-radius: 3px
+            padding-top: var(--space-sm)
+            padding-bottom: var(--space-sm)
+            padding-left: var(--space-xs)
+            padding-right: var(--space-xs)
+            margin-top: var(--space-md)
+            margin-left: calc(-1*var(--space-xs))
+            margin-right: calc(-1*var(--space-xs))
+            margin-bottom: calc(-1*var(--space-xs))
+
+            @include md
+                margin-left: calc(-1*var(--space-md))
+                margin-right: calc(-1*var(--space-md))
+                margin-bottom: calc(-1*var(--space-md))
+
+            ul
+                margin-bottom: 0
+
+                @include xl
+                    column-count: 2
+                    column-gap: 0
+
+                li
+                    margin-bottom: var(--space-2xs)
+            *
+                color: white
 
     .area
         background-color: var(--color-b-alt)
@@ -88,10 +117,8 @@ export default {
             padding: var(--space-md)
 
     .area--title
-        margin-top: var(--space-xs)
-        margin-bottom: var(--space-sm)
-
-// Layout
+        // margin-top: var(--space-xs)
+        margin-bottom: var(--space-xs)
 
 .practiceareas
 

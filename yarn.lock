@@ -1021,6 +1021,21 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/open-sans@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.1.0.tgz#d44b4495bd23d78018675e4e79973894e393c0ed"
+  integrity sha512-sWDAAr6ESHJdBKXse6njvZem4sTZLILkugaEfAvpdFiaKBh2RnXTa4DJllDh5LzP0MLMUrfj/JAjMbKxWFo6pQ==
+
+"@fontsource/raleway@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.1.1.tgz#74682ff766ffa36c96f7f4ee200b993536ac357e"
+  integrity sha512-1MLn6ec7rFlkIZMOA/eYbSufp+YLmfIEsJcP0RsV1TdjFROQNMYQK4tAEbkS3iSU3Ou/BNB7NEoaNLT/BRUvLw==
+
+"@fontsource/roboto@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.1.0.tgz#28e0fb775013959df3a6b6d2c4ba0aad437f8d32"
+  integrity sha512-I4CIw73eJC/Oh83tPoRVKkySCLDwUQ2aK7O9wR5tRYc5APbsd3MrN6JhAvylIIwzn8eHQEMVoSjNGY9/sPLzyA==
+
 "@google/markerclustererplus@^5.1.0":
   version "5.1.3"
   resolved "https://registry.yarnpkg.com/@google/markerclustererplus/-/markerclustererplus-5.1.3.tgz#dd7ddbb2a17c977e0b0252c3d8e61fcf502b1bf2"
@@ -1176,6 +1191,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
+
+"@popperjs/core@^2.4.4":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.6.0.tgz#f022195afdfc942e088ee2101285a1d31c7d727f"
+  integrity sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -5105,21 +5125,6 @@ focus-group@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/focus-group/-/focus-group-0.3.1.tgz#e0f32ed86b0dabdd6ffcebdf898ecb32e47fedce"
   integrity sha1-4PMu2GsNq91v/OvfiY7LMuR/7c4=
-
-fontsource-open-sans@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-open-sans/-/fontsource-open-sans-3.1.5.tgz#93d0040633d37215658d72565bd2a12d9a8fa854"
-  integrity sha512-tculQB3D6GHLPcbY1+WduZJM3bitV7GptWuKBAU7emfagJ/D5jtMCMd4i4JOGEzk0n416fdo5vLC0zYHxBYxzg==
-
-fontsource-raleway@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/fontsource-raleway/-/fontsource-raleway-3.1.6.tgz#a8d313f386c16b5911c8ea5aa8c203e937c2432e"
-  integrity sha512-tuQRSvb/iTTEswaXXRctMru2mXn7SDOAP9SNEVlB3HgPKNsZH24eMrWbakYTX67KW8mI5CcEEH3dlGhbsvxD7g==
-
-fontsource-roboto@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/fontsource-roboto/-/fontsource-roboto-3.0.3.tgz#99c312babeabce22b3e933b3edf2951d4508f4f7"
-  integrity sha512-kfsC9qAP6XhwnSDAhg2lhWeaUJfLGXZh7GcLxFiz/4lXdkV2pVhWv2Xp9ES3b3BHdc9UuPrWXXLOphzHIStcOw==
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -11848,6 +11853,13 @@ tinycolor2@^1.4.1:
   resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
   integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
 
+tippy.js@^6.2.4:
+  version "6.2.7"
+  resolved "https://registry.yarnpkg.com/tippy.js/-/tippy.js-6.2.7.tgz#62fb34eda23f7d78151ddca922b62818c1ab9869"
+  integrity sha512-k+kWF9AJz5xLQHBi3K/XlmJiyu+p9gsCyc5qZhxxGaJWIW8SMjw1R+C7saUnP33IM8gUhDA2xX//ejRSwqR0tA==
+  dependencies:
+    "@popperjs/core" "^2.4.4"
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -12604,10 +12616,24 @@ vue-meta@^2.2.2:
   dependencies:
     deepmerge "^4.2.2"
 
+vue-navigation-bar@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/vue-navigation-bar/-/vue-navigation-bar-4.1.0.tgz#fc29fc6b27dc7b70b32cb79c6ec291ad262a5c08"
+  integrity sha512-iBkLLI954jlOatPy+ciGMDn/CnaZxPR2eZqEy4Pypz+SvU5BL9ByapO2r5tZUzANwzVJlzS7zEU0jSqAL2+nPQ==
+  dependencies:
+    tippy.js "^6.2.4"
+    vue-screen-size "^1.0.1"
+    vue2-transitions "^0.3.0"
+
 vue-router@^3.1.3:
   version "3.4.9"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.9.tgz#c016f42030ae2932f14e4748b39a1d9a0e250e66"
   integrity sha512-CGAKWN44RqXW06oC+u4mPgHLQQi2t6vLD/JbGRDAXm0YpMv0bgpKuU5bBd7AvMgfTz9kXVRIWKHqRwGEb8xFkA==
+
+vue-screen-size@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-screen-size/-/vue-screen-size-1.0.1.tgz#4c120ac09929b735eafe5898c6abf12ddb441895"
+  integrity sha512-FvPAQAZp235cWpceazYK3CyPXUmogJRbPwa2F34l4BiwNoCZxZIKcEgqrScpCm0pi8llPrGlHHiuM7uuQc3mHA==
 
 vue-server-renderer@^2.6.10:
   version "2.6.12"
@@ -12643,6 +12669,11 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+
+vue2-transitions@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vue2-transitions/-/vue2-transitions-0.3.0.tgz#765fc0d743103fcfe2d10f431697d8873a075c17"
+  integrity sha512-m1ad8K8kufqiEhj5gXHkkqOioI5sW0FaMbRiO0Tv2WFfGbO2eIKrfkFiO3HPQtMJboimaLCN4p/zL81clLbG4w==
 
 vue@^2.6.10:
   version "2.6.12"

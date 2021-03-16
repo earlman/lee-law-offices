@@ -86,18 +86,15 @@ export default {
 };
 </script>
 
+
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
-
 .navbar--container
     background-color: var(--color-b-alt)
-
     .navbar
         max-width: var(--layout-max-width)
         margin: auto
-
     ::v-deep
-
         .vnb__brand-image-wrapper__link
             display: flex
             padding-top: var(--space-xs)
@@ -105,29 +102,22 @@ export default {
             padding-left: var(--space-sm)
             align-items: center
             justify-content: space-between
-
             &__image
                 align-items: center
                 max-height: 40px
-
                 @include md
                     max-height: 50px
-
         .vnb__menu-options__option__link
             font-size: var(--d-lg)
             font-weight: 400
             color: var(--color-t-h-alt)
             font-family: var(--font-secondary)
-
         .vnb__menu-options__option:not(:last-child)
             margin-right: var(--space-sm)
-
         .vnb__sub-menu-options__option__link:hover
             border-left: solid 2px var(--color-p)
-
         .vnb__sub-menu-options__option__hr
             margin: 0
-
         .vnb__sub-menu-options
             padding: 0
 </style>

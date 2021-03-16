@@ -45,7 +45,7 @@
 							</li>
 							<li>Wrongful termination</li>
 						</ul>
-						<g-image src="~/assets/images/person_1.jpg" height="500" fit="outside"/>
+						<g-image src="~/assets/images/person_1.jpg" width="500"  height="300" position="top"/>
 					</div>
                     <hr>
 					<div class="contentgrid">
@@ -72,7 +72,7 @@
 							<li>Failure to reimburse for business expenses</li>
 							<li>Unfair business practice</li>
 						</ul>
-						<g-image src="~/assets/images/person_2.jpg" width="500" />
+						<g-image src="~/assets/images/person_2.jpg" width="500" height="300"/>
 					</div>
 				</div>
 			</div>
@@ -125,7 +125,7 @@ section
     @include md
         padding: var(--space-lg) var(--space-lg)
 
-    @include xl
+    @include lg
         width: 100%
         // padding: var(--space-lg) var(--space-xl)
         // max-width: max-content
@@ -153,7 +153,7 @@ section
         display: grid
         place-content: center
 
-        @include xl
+        @include lg
             max-width: 100%
 
         p, ul

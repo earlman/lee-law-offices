@@ -11,16 +11,15 @@
 					<h4>Our Services</h4>
 					<ul>
 						<li>
-							<g-link to="/practice-areas#harrassment">Harrassment</g-link>
+							<g-link to="/employee"> For Employees </g-link>
 						</li>
 						<li>
-							<g-link to="/practice-areas#discrimination">Discrimination</g-link>
+							<g-link to="/employer"> For Employers </g-link>
 						</li>
 						<li>
-							<g-link to="/practice-areas#wage">Wage & Hour</g-link>
-						</li>
-						<li>
-							<g-link to="/practice-areas#termination">Termination</g-link>
+							<g-link to="/business-litigation">
+								Business & Commercial Litigation
+							</g-link>
 						</li>
 					</ul>
 				</div>
@@ -28,24 +27,19 @@
 					<h4>Quick Links</h4>
 					<ul>
 						<li>
-							<g-link to="/who-we-are"> Who We Are </g-link>
+							<g-link to="/">Home</g-link>
 						</li>
 						<li>
-							<g-link to="/business-litigation">
-								Business & Commercial Litigation
-							</g-link>
+							<g-link to="/employee">Practice Areas</g-link>
 						</li>
 						<li>
-							<g-link to="/employee"> For Employees </g-link>
+							<g-link to="/who-we-are">Who We Are</g-link>
 						</li>
 						<li>
-							<g-link to="/employer"> For Employers </g-link>
+							<g-link to="/contact-us">Contact Us</g-link>
 						</li>
 						<li>
-							<g-link to="/contact-us"> Contact Us </g-link>
-						</li>
-						<li>
-							<g-link to="/disclaimer"> Disclaimer </g-link>
+							<g-link to="/disclaimer">Disclaimer</g-link>
 						</li>
 					</ul>
 				</div>

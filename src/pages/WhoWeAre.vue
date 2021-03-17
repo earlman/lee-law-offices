@@ -28,12 +28,6 @@
 						<g-image :src="edge.node.pic"> </g-image>
 					</div>
 					<div class="person--arm">
-						<div v-if="edge.node.awards[0]" class="person--awards">
-							<h3>Awards:</h3>
-							<ul>
-								<li v-for="award in edge.node.awards">{{ award }}</li>
-							</ul>
-						</div>
 						<div class="person--education">
 							<h3>Education:</h3>
 							<ul>
@@ -44,6 +38,12 @@
 							<h3>Admitted:</h3>
 							<ul>
 								<li v-for="a in edge.node.admitted">{{ a }}</li>
+							</ul>
+						</div>
+						<div v-if="edge.node.awards[0]" class="person--awards">
+							<h3>Awards:</h3>
+							<ul>
+								<li v-for="award in edge.node.awards">{{ award }}</li>
 							</ul>
 						</div>
 					</div>

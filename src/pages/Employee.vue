@@ -10,7 +10,7 @@
 					<div class="hero--text">
 						<p class="hero--text">Call us today for a free case evaluation</p>
 
-						<p>(323) 289-2260<br /><em>Se habla Español</em></p>
+						<p>(323) 289-2260, Ext. 1<br /><em>Se habla Español</em></p>
 					</div>
 					<g-link to="/contact-us">
 						<button class="contact-us">Contact Us</button>

@@ -9,7 +9,7 @@
 				<div class="info">
 					<div class="info-section">
 						<h4>Phone</h4>
-						<p>(323) 289-2260</p>
+						<p>(323) 289-2260, Ext. 1</p>
 					</div>
 					<div class="info-section">
 						<h4>Fax</h4>

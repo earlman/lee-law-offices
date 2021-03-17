@@ -7,7 +7,7 @@
 					<div class="hero--text">
 						<p class="hero--text">Call us today for a free case evaluation</p>
 
-						<p>(323) 289-2260<br /><em>Se habla Español</em></p>
+						<p>(323) 289-2260, Ext. 1<br /><em>Se habla Español</em></p>
 					</div>
 					<g-link to="/contact-us">
 						<button class="contact-us">Contact Us</button>
@@ -45,9 +45,14 @@
 							</li>
 							<li>Wrongful termination</li>
 						</ul>
-						<g-image src="~/assets/images/person_1.jpg" width="1000"  height="600" position="top"/>
+						<g-image
+							src="~/assets/images/person_1.jpg"
+							width="1000"
+							height="600"
+							position="top"
+						/>
 					</div>
-                    <hr>
+					<hr />
 					<div class="contentgrid">
 						<h2 id="employment-class-action-defense-">
 							Employment Class Action Defense
@@ -72,7 +77,7 @@
 							<li>Failure to reimburse for business expenses</li>
 							<li>Unfair business practice</li>
 						</ul>
-						<g-image src="~/assets/images/person_2.jpg" width="1000" height="600"/>
+						<g-image src="~/assets/images/person_2.jpg" width="1000" height="600" />
 					</div>
 				</div>
 			</div>
@@ -135,10 +140,10 @@ section
         .contentgrid
             display: grid
             grid-template-columns: 1fr 1fr
-            
+
             h2
                 grid-column: 1/-1
-            
+
             p
                 grid-column: 1/-1
                 font-size: var(--d-lg)
@@ -146,7 +151,7 @@ section
             ul
                 font-size: var(--d-lg)
                 grid-column: 1
-    
+
     .inner
         margin: auto
         max-width: 75ch
@@ -158,7 +163,6 @@ section
 
         p, ul
             color: var(--color-h)
-
 
         div
             display: grid

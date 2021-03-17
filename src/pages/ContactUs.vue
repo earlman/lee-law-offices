@@ -4,7 +4,7 @@
 			<div class="sidebar--inner">
 				<div class="sidebar--item">
 					<h4>Phone</h4>
-					<p>(323) 289-2260</p>
+					<p>(323) 289-2260, Ext. 1</p>
 					<h4>Fax</h4>
 					<p>(323) 642-5451</p>
 				</div>

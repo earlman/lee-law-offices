@@ -3,12 +3,13 @@
     name: "Ashley Lee"
     title: "Associate Attorney"
     education:
-        - Bachelor's Degree from University of Illinois Urbana-Champaign
+        - Bachelor's Degree in Social Work (2013), University of Illinois Urbana-Champaign
+        - Juris Doctor (2018), Depaul University College of Law (Chicago, IL)
     admitted:
-        - State of California
-        - United States District Court for the Central District of California 
+        - California (2019)
+        - United States District Court for the Central District of California
     awards: 
-        - Lawyers of Distinction in labor law (2020)
+        - Lawyers of Distinction in Labor Law (2020)
     order: 2
     pic: ""
 

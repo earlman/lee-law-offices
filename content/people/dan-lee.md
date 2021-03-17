@@ -3,14 +3,15 @@
     name: "Dan Lee"
     title: "Managing Partner"
     education:
-        - Bachelor of Art (1986) & Master of Art (1987) in Philosophy from Baylor University (Waco, TX)
-        - Master of Divinity (1990) from Southwest Baptist Theological Seminary (Fort Worth, TX)
-        - Doctor of Philosophy (1994) from Trinity Evangelical Divinity School (Deerfield, IL)
-        - Juris Doctor (2006) from Depaul University College of Law (Chicago, IL)
+        - Juris Doctor (2006), Depaul University College of Law (Chicago, IL)
+        - Doctor of Philosophy (1994), Trinity Evangelical Divinity School (Deerfield, IL)
+        - Master of Divinity (1990), Southwest Baptist Theological Seminary (Fort Worth, TX)
+        - Bachelor of Art (1986) & Master of Art (1987) in Philosophy, Baylor University (Waco, TX)
     admitted:
-        - Illinois (2006)
-        - District of Columbia (2011)
         - California (2013)
+        - United States District Court for the Central District of California
+        - District of Columbia (2011)
+        - Illinois (2006)
     order: 1
     pic: ""
 

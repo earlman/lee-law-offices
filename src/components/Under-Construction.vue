@@ -2,7 +2,7 @@
 	<div>
 		<div class="disclaimer--container">
 			<div class="disclaimer">
-				<h4>This page is under construction.</h4>
+				<h3>This page is under construction.</h3>
 			</div>
 		</div>
 	</div>
@@ -28,18 +28,14 @@ query {
     margin: auto
     @include xl
         width: 1200px
-.title
-    background-color: var(--color-b-alt)
-    padding: var(--space-xs)
-    margin: var(--space-xs) var(--space-xs)
-    max-width: min-content
-    @include md
-        margin: var(--space-sm)
-        padding: var(--space-sm)
+
 .disclaimer
+    min-height: 20vh
     background-color: var(--color-b-alt)
     padding: var(--space-xs)
     width: 100%
+    display: grid
+    place-items: center
     @include md
         padding: var(--space-sm)
 </style>

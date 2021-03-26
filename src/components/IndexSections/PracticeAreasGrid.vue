@@ -7,6 +7,7 @@
 					height="400"
 					class="areas--image"
 					src="@/assets/images/harassment.png"
+					alt="man touching woman's leg"
 				></g-image>
 				<div class="areas-content">
 					<a href="/practice-areas#harassment">
@@ -50,6 +51,7 @@
 					height="400"
 					class="areas--image"
 					src="@/assets/images/termination.png"
+					alt="box on a desk"
 				></g-image>
 				<div class="areas-content">
 					<a href="/practice-areas#termination">
@@ -94,6 +96,7 @@
 					height="400"
 					class="areas--image"
 					src="@/assets/images/discrimination.png"
+					alt="older woman getting lectured about computers"
 				></g-image>
 				<div class="areas-content">
 					<a href="/practice-areas#discrimination">
@@ -133,7 +136,8 @@
 					height="400"
 					class="areas--image"
 					src="@/assets/images/wage_hour.png"
-                    position="center"
+					position="center"
+					alt="person looking at clock"
 				></g-image>
 				<div class="areas-content">
 					<a href="/practice-areas#wage">

@@ -106,7 +106,9 @@ import img from '@/assets/images/discrimination.png';
 export default {
 	components: { PracticeAreasGrid, FreeConsultation, ContactUs, Hero },
 	metaInfo: {
-		title: 'Home',
+		title: 'Employer Law',
+		description:
+			"We're here to protect youand your business. Call us today for a free case evaluation.",
 	},
 	data() {
 		return {

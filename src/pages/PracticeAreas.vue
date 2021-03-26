@@ -53,8 +53,13 @@ export default {
 	},
 	metaInfo: {
 		title: 'Practice Areas',
-		description:
-			'The law protects you from being discriminated based on race, sex/gender, sexual orientation, age, religion, pregnancy, and disability. Call us for a free consultation.',
+		meta: [
+			{
+				name: 'description',
+				content:
+					'The law protects you from being discriminated based on race, sex/gender, sexual orientation, age, religion, pregnancy, and disability. Call us for a free consultation.',
+			},
+		],
 	},
 	components: {
 		PageLayout,

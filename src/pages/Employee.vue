@@ -39,8 +39,13 @@ export default {
 	components: { PracticeAreasGrid, FreeConsultation, ContactUs, Hero },
 	metaInfo: {
 		title: 'Employee Law',
-		description:
-			'The law is on your side. No legal fees until we win. Call us today for a free case evaluation.',
+		meta: [
+			{
+				name: 'description',
+				content:
+					'The law is on your side. No legal fees until we win. Call us today for a free case evaluation.',
+			},
+		],
 	},
 	data() {
 		return {

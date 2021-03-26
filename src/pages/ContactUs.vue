@@ -51,8 +51,13 @@ export default {
 	},
 	metaInfo: {
 		title: 'Contact Us',
-		description:
-			'Lee Law Offices is a boutique law firm in Los Angeles specializing in Labor and Employment Law, and Business and Commercial Litigation.',
+		meta: [
+			{
+				name: 'description',
+				content:
+					'Lee Law Offices is a boutique law firm in Los Angeles specializing in Labor and Employment Law, and Business and Commercial Litigation. Call us today for a free consultation.',
+			},
+		],
 	},
 	components: {
 		ContactUs,

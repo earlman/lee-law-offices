@@ -107,8 +107,13 @@ export default {
 	components: { PracticeAreasGrid, FreeConsultation, ContactUs, Hero },
 	metaInfo: {
 		title: 'Employer Law',
-		description:
-			"We're here to protect youand your business. Call us today for a free case evaluation.",
+		meta: [
+			{
+				name: 'description',
+				content:
+					'The law is on your side. No legal fees until we win. Call us today for a free case evaluation.',
+			},
+		],
 	},
 	data() {
 		return {

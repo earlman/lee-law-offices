@@ -46,7 +46,7 @@
 							<li>Wrongful termination</li>
 						</ul>
 						<g-image
-							src="~/assets/images/person_1.jpg"
+							src="~/assets/images/person_1.webp"
 							width="1000"
 							height="600"
 							position="top"
@@ -77,7 +77,7 @@
 							<li>Failure to reimburse for business expenses</li>
 							<li>Unfair business practice</li>
 						</ul>
-						<g-image src="~/assets/images/person_2.jpg" width="1000" height="600" />
+						<g-image src="~/assets/images/person_2.webp" width="1000" height="600" />
 					</div>
 				</div>
 			</div>

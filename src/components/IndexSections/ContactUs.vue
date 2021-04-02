@@ -40,11 +40,12 @@
 </template>
 
 <script>
-import Gmap from '@/components/Gmap';
+// import Gmap from '@/components/Gmap';
+const Gmap = () => import('@/components/Gmap');
 
 export default {
 	components: {
-		Gmap,
+		Gmap: () => import('@/components/Gmap'),
 	},
 };
 </script>

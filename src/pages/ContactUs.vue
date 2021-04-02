@@ -41,7 +41,7 @@
 import PageLayout from '@/layouts/Page';
 import ContactUs from '@/components/IndexSections/FreeConsultation';
 import Gmap from '@/components/Gmap';
-import img from '@/assets/images/contactus.png';
+import img from '@/assets/images/contact-us.webp';
 
 export default {
 	data() {

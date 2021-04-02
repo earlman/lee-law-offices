@@ -28,7 +28,7 @@ query {
 
 <script>
 import PageLayout from '@/layouts/Page';
-import img from '@/assets/images/business-litigation.png';
+import img from '@/assets/images/business-litigation.webp';
 
 export default {
 	data() {

@@ -7,7 +7,7 @@
 <script>
 import PageLayout from '@/layouts/Page.vue';
 import UnderConstruction from '@/components/Under-Construction.vue';
-import img from '@/assets/images/landing-hero.png';
+import img from '@/assets/images/landing-hero.webp';
 
 export default {
 	data() {

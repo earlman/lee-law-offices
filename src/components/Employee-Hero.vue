@@ -17,7 +17,7 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    background-image: url(~@/assets/images/employee-mobile.png)
+    background-image: url(~@/assets/images/employee-mobile.webp)
     background-position: center
     // min-height: 500px
     background-repeat: no-repeat
@@ -26,10 +26,9 @@ export default {
     display: flex
     flex-direction: column
     min-height: 600px
-    
 
     @include md
-        background-image: url(~@/assets/images/employee-hero.png)
+        background-image: url(~@/assets/images/employee-hero.webp)
         padding: var(--space-lg) var(--space-md)
         margin: auto
         max-width: var(--layout-max-width)

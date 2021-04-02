@@ -74,7 +74,7 @@ query {
 
 <script>
 import PageLayout from '@/layouts/Page';
-import img from '@/assets/images/landing-hero.png';
+import img from '@/assets/images/landing-hero.webp';
 
 export default {
 	data() {

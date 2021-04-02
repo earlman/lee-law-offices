@@ -17,7 +17,7 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .hero-container
-    background-image: url(~@/assets/images/employer-mobile.png)
+    background-image: url(~@/assets/images/employer-mobile.webp)
     background-position: center
     // min-height: 500px
     background-repeat: no-repeat
@@ -30,7 +30,7 @@ export default {
 
     @include md
         padding: var(--space-md) var(--space-sm)
-        background-image: url(~@/assets/images/employer-hero.png)
+        background-image: url(~@/assets/images/employer-hero.webp)
         min-height: revert
 
     @include lg

@@ -3,7 +3,7 @@
 		<footer class="footer">
 			<nav>
 				<div class="logo-container">
-					<img src="@/assets/images/logo-footer.png" alt="logo" class="logo" />
+					<img src="@/assets/images/logo-footer.webp" alt="logo" class="logo" />
 
 					<!-- <h1>Lee Law Offices</h1> -->
 				</div>

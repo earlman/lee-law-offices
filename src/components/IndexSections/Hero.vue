@@ -18,7 +18,7 @@ export default {
 
 .hero-container
     background-position: 0 20%
-    background-image: url(~@/assets/images/landing-mobile.png)
+    background-image: url(~@/assets/images/landing-mobile.webp)
     // min-height: 500px
     background-repeat: no-repeat
     background-size: cover
@@ -31,7 +31,7 @@ export default {
 
     @include md
         background-position: top left
-        background-image: url(~@/assets/images/landing-hero.png)
+        background-image: url(~@/assets/images/landing-hero.webp)
         min-height: 50vh
 
     @include lg

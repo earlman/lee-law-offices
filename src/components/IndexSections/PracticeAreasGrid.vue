@@ -6,7 +6,7 @@
 				<g-image
 					height="400"
 					class="areas--image"
-					src="@/assets/images/harassment.png"
+					src="@/assets/images/harassment.webp"
 					alt="man touching woman's leg"
 				></g-image>
 				<div class="areas-content">
@@ -50,7 +50,7 @@
 				<g-image
 					height="400"
 					class="areas--image"
-					src="@/assets/images/termination.png"
+					src="@/assets/images/termination.webp"
 					alt="box on a desk"
 				></g-image>
 				<div class="areas-content">
@@ -95,7 +95,7 @@
 				<g-image
 					height="400"
 					class="areas--image"
-					src="@/assets/images/discrimination.png"
+					src="@/assets/images/discrimination.webp"
 					alt="older woman getting lectured about computers"
 				></g-image>
 				<div class="areas-content">
@@ -135,7 +135,7 @@
 				<g-image
 					height="400"
 					class="areas--image"
-					src="@/assets/images/wage_hour.png"
+					src="@/assets/images/wage_hour.webp"
 					position="center"
 					alt="person looking at clock"
 				></g-image>

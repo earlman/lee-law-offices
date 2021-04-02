@@ -4,7 +4,7 @@
 			<div class="logo--container">
 				<div class="logo">
 					<g-link to="/">
-						<img src="@/assets/images/logo.png" alt="logo" class="logo" />
+						<img src="@/assets/images/logo.webp" alt="logo" class="logo" />
 					</g-link>
 				</div>
 				<!-- <img src="" alt="Lee Law Offices" /> -->

@@ -2,18 +2,35 @@
 	<PageLayout title="Who We Are" :bgImage="bgImage">
 		<template slot="sidebar">
 			<!-- SEARCH -->
+			<div class="input">
+				<input
+					id="search"
+					v-model="searchTerm"
+					class="input"
+					type="text"
+					placeholder="Search"
+					v-on:keyup.enter="getResults"
+				/>
+				<button @click="getResults">Search</button>
+			</div>
 		</template>
 		<div class="results">
-			<input
-				id="search"
-				v-model="searchTerm"
-				class="input"
-				type="text"
-				placeholder="Search"
-			/>
-			{{ searchResults }}
-			<!-- SEARCH RESULTS -->
-			<button @click="getResults">Search</button>
+			<h2>Results:</h2>
+			<div class="results--list" v-if="searchResults.people">
+				<div v-for="person in searchResults.people" :key="person.name">
+					{{ person }}
+					<h3>
+						{{ person.name }}
+					</h3>
+					<h4>
+						{{ person.title }}
+					</h4>
+					<a href=""></a>
+				</div>
+			</div>
+			<div v-if="searchResults.message">
+				{{ searchResults.message }}
+			</div>
 		</div>
 	</PageLayout>
 </template>
@@ -45,7 +62,10 @@ export default {
 		return {
 			bgImage: img,
 			searchTerm: '',
-			searchResults: '',
+			searchResults: {
+				message: '',
+				people: [],
+			},
 		};
 	},
 	// computed: {
@@ -53,10 +73,14 @@ export default {
 	// },
 	methods: {
 		getResults() {
+			this.searchResults.message = '';
 			const searchTerm = this.searchTerm;
 			if (searchTerm.length < 3) return [];
 			let results = this.$search.search({ query: searchTerm, limit: 5 });
-			this.searchResults = results;
+			if (results.length == 0) {
+				this.searchResults.message = 'No results found';
+			}
+			this.searchResults.people = results;
 			return;
 		},
 	},
@@ -72,75 +96,19 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
-.people
-    & > *
-        margin-bottom: var(--space-md)
-
-.person
+.results
+    background-color: var(--color-b)
+    height: 100%
     padding: var(--space-sm)
-    background-color: var(--color-b-alt)
 
-    &--head
-        margin-bottom: var(--space-xs)
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        align-items: flex-end
-        border-radius: 0
-        padding-bottom: var(--space-2xs)
-        border-bottom: 2px solid rgba(77, 97, 85, .15)
-
-    &--name
-        min-width: 200px
-
-    &--body
-        @include md
-            margin-top: var(--space-sm)
-            display: grid
-            grid-template-columns: 1fr 2fr
-            grid-gap: var(--space-sm)
-
-    ul
-        margin-bottom: var(--space-xs)
-
-    @include md
+    @include lg
         padding: var(--space-md)
 
-.people
-    margin-bottom: var(--space-xl)
+    h2
+        margin-bottom: var(--space-md)
 
-    .person--pic
-        grid-row: 1
-        img
-            max-width: 100%
-
-    .person--arm
-        grid-row: 1
-        grid-column: span 2
-
-    .person--content
-        grid-column: 1 / -1
-
-    .person--name
-        font-size: var(--d-3xl)
-        // font-weight: 500
-
-    .person--title
-        font-size: var(--d-lg)
-
-    h3
-        font-weight: 600
-        font-size: var(--d-md)
-        color: var(--color-p)
-
-    ::v-deep
-        //fix bullet points on mobile
-        list-style-position: inside
-
-        @include md
-            li
-                margin-left: var(--space-sm)
-                list-style-position: outside
-                // width: 80%
+.input
+    input
+        margin-bottom: var(--space-sm)
 </style>
 

@@ -2,7 +2,7 @@
 	<!-- <div class="hero-container" :style="{ 'background-image': 'url(' + bgImage + ')' }"> -->
 	<div class="hero-container">
 		<div class="hero">
-			<button @click="changeLocale">{{ $i18n.locale }}</button>
+			<!-- <button @click="changeLocale">{{ altLocale }}</button> -->
 			<slot></slot>
 		</div>
 	</div>
@@ -12,14 +12,19 @@ export default {
 	props: {
 		bgImage: '',
 	},
-	methods: {
-		changeLocale() {
-			this.$i18n.locale = 'es';
-			this.$router.push({
-				path: this.$tp(this.$route.path, this.currentLocale, true),
-			});
-		},
-	},
+	// computed: {
+	// 	altLocale() {
+	// 		return this.$i18n.locale == 'es' ? 'English' : 'Español';
+	// 	},
+	// },
+	// methods: {
+	// 	changeLocale() {
+	// 		this.$i18n.locale = this.$i18n.locale == 'es' ? 'en' : 'es';
+	// 		this.$router.push({
+	// 			path: this.$tp(this.$route.path, this.currentLocale, true),
+	// 		});
+	// 	},
+	// },
 };
 </script>
 <style lang="sass" scoped>

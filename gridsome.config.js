@@ -5,6 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 module.exports = {
     siteName: 'Lee Law Offices',
+    templates: {
+        People: '/employee/:name',
+    },
     plugins: [
         {
             use: 'gridsome-plugin-flexsearch',

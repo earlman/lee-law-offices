@@ -56,7 +56,7 @@
 						<label for="disclaimer">
 							<span class="label">
 								I have read the
-								<g-link class="link" to="/disclaimer" target="_blank"
+								<g-link class="link" :to="$tp('/disclaimer')" target="_blank"
 									>Disclaimer</g-link
 								>
 							</span>

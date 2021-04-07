@@ -8,9 +8,9 @@
 
 <script>
 export default {
-	data() {
-		return {
-			navbarOptions: {
+	computed: {
+		navbarOptions() {
+			return {
 				elementId: 'main-navbar',
 				isUsingVueRouter: true,
 				mobileBreakpoint: 992,
@@ -29,7 +29,7 @@ export default {
 					{
 						type: 'link',
 						text: 'Home',
-						path: '/',
+						path: this.$tp('/'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{
@@ -40,8 +40,7 @@ export default {
 							{
 								type: 'link',
 								text: 'For Employees',
-								// subText: 'Stupid corporate wet blankets. Like booze ever killed anyone.',
-								path: '/employee',
+								path: this.$tp('/employee'),
 								// iconLeft: '<i class="fa fa-star fa-fw"></i>',
 							},
 							{
@@ -50,8 +49,7 @@ export default {
 							{
 								type: 'link',
 								text: 'For Employers',
-								// subText: "You're a presentation tool!",
-								path: '/employer',
+								path: this.$tp('/employer'),
 								// arrowColor: '#659CC8',
 							},
 							{
@@ -60,9 +58,7 @@ export default {
 							{
 								type: 'link',
 								text: 'Business & Commercial Litigation',
-								// subText:
-								// 	'I enjoy having breakfast in bed. I like waking up to the smell of bacon. Sue me.',
-								path: '/business-litigation',
+								path: this.$tp('/business-litigation'),
 							},
 						],
 					},
@@ -70,19 +66,24 @@ export default {
 					{
 						type: 'link',
 						text: 'Who We Are',
-						path: '/who-we-are',
+						path: this.$tp('/who-we-are'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{
 						type: 'link',
 						text: 'Contact Us',
-						path: '/contact-us',
+						path: this.$tp('/contact-us'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 				],
-			},
-		};
+			};
+		},
 	},
+	// data() {
+	// 	return {
+	// 		navbarOptions:
+	// 	};
+	// },
 };
 </script>
 

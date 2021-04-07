@@ -13,7 +13,7 @@
 					in corporate law.
 				</p>
 			</div>
-			<g-link class="button" to="/business-litigation">
+			<g-link class="button" :to="$tp('/business-litigation')">
 				<span>Read More</span>
 				<svg
 					width="29"

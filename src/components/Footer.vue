@@ -4,20 +4,18 @@
 			<nav>
 				<div class="logo-container">
 					<img src="@/assets/images/logo-footer.webp" alt="logo" class="logo" />
-
-					<!-- <h1>Lee Law Offices</h1> -->
 				</div>
 				<div class="our-services">
 					<h4>Our Services</h4>
 					<ul>
 						<li>
-							<g-link to="/employee"> For Employees </g-link>
+							<g-link :to="$tp('/employee')"> For Employees </g-link>
 						</li>
 						<li>
-							<g-link to="/employer"> For Employers </g-link>
+							<g-link :to="$tp('/employer')"> For Employers </g-link>
 						</li>
 						<li>
-							<g-link to="/business-litigation">
+							<g-link :to="$tp('/business-litigation')">
 								Business & Commercial Litigation
 							</g-link>
 						</li>
@@ -27,19 +25,19 @@
 					<h4>Quick Links</h4>
 					<ul>
 						<li>
-							<g-link to="/">Home</g-link>
+							<g-link :to="$tp('/')">Home</g-link>
 						</li>
 						<li>
-							<g-link to="/employee">Practice Areas</g-link>
+							<g-link :to="$tp('/practice-areas')">Practice Areas</g-link>
 						</li>
 						<li>
-							<g-link to="/who-we-are">Who We Are</g-link>
+							<g-link :to="$tp('/who-we-are')">Who We Are</g-link>
 						</li>
 						<li>
-							<g-link to="/contact-us">Contact Us</g-link>
+							<g-link :to="$tp('/contact-us')">Contact Us</g-link>
 						</li>
 						<li>
-							<g-link to="/disclaimer">Disclaimer</g-link>
+							<g-link :to="$tp('/disclaimer')">Disclaimer</g-link>
 						</li>
 					</ul>
 				</div>

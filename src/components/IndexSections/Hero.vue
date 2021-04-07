@@ -2,6 +2,7 @@
 	<!-- <div class="hero-container" :style="{ 'background-image': 'url(' + bgImage + ')' }"> -->
 	<div class="hero-container">
 		<div class="hero">
+			<button @click="changeLocale">{{ $i18n.locale }}</button>
 			<slot></slot>
 		</div>
 	</div>
@@ -10,6 +11,14 @@
 export default {
 	props: {
 		bgImage: '',
+	},
+	methods: {
+		changeLocale() {
+			this.$i18n.locale = 'es';
+			this.$router.push({
+				path: this.$tp(this.$route.path, this.currentLocale, true),
+			});
+		},
 	},
 };
 </script>

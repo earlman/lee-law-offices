@@ -15,7 +15,7 @@
 				</p>
 			</div>
 			<div class="buttons">
-				<g-link class="button ba" to="/employee">
+				<g-link class="button ba" :to="$tp('/employee')">
 					<span>For Employees</span>
 					<svg
 						width="29"
@@ -30,7 +30,7 @@
 						/>
 					</svg>
 				</g-link>
-				<g-link class="button" to="/employer">
+				<g-link class="button" :to="$tp('/employer')">
 					<span>For Employers</span>
 					<svg
 						width="29"

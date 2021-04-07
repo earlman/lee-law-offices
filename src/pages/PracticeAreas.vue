@@ -25,10 +25,9 @@
 		</div>
 	</PageLayout>
 </template>
-
 <page-query>
-query {  
-    areas: allPracticeAreas(sortBy: "id", order: DESC) {
+query($locale: String) {  
+    areas: allTranslations(filter: { locale: { eq: $locale }, type: { eq: "practiceareas" } }) {
       edges {
             node {
               title
@@ -40,7 +39,6 @@ query {
     }
 }
 </page-query>
-
 <script>
 import PageLayout from '@/layouts/Page';
 import img from '@/assets/images/practice-areas.webp';

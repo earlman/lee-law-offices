@@ -9,6 +9,7 @@
 					class="input"
 					type="text"
 					placeholder="Search"
+					ref="search"
 					v-on:keyup.enter="getResults"
 				/>
 				<button @click="getResults">Search</button>
@@ -16,17 +17,16 @@
 		</template>
 		<div class="results">
 			<h2>Results:</h2>
+			<!-- <p>TODO: add list of employees</p> -->
 			<div class="results--list" v-if="searchResults.people">
-				<div v-for="person in searchResults.people" :key="person.name">
+				<div v-for="person in searchResults.people" :key="person.name" class="result">
 					<a :href="person.path">
-						<hr />
 						<h3>
 							{{ person.node.name }}
 						</h3>
 						<h4>
 							{{ person.node.title }}
 						</h4>
-						<hr />
 					</a>
 				</div>
 				<!-- {{ searchResults }} -->
@@ -78,7 +78,7 @@ export default {
 		getResults() {
 			this.searchResults.message = '';
 			const searchTerm = this.searchTerm;
-			if (searchTerm.length < 3) return [];
+			// if (searchTerm.length < 3) return [];
 			let results = this.$search.search({ query: searchTerm, limit: 5 });
 			if (results.length == 0) {
 				this.searchResults.message = 'No results found';
@@ -93,6 +93,9 @@ export default {
 	components: {
 		PageLayout,
 	},
+	mounted() {
+		this.$refs.search.focus();
+	},
 };
 </script>
 
@@ -100,7 +103,7 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .results
-    background-color: var(--color-b)
+    background-color: var(--color-b-alt)
     height: 100%
     padding: var(--space-sm)
 
@@ -113,5 +116,14 @@ export default {
 .input
     input
         margin-bottom: var(--space-sm)
+
+.result
+    padding-left: var(--space-md)
+    padding-top: var(--space-xs)
+    padding-bottom: var(--space-xs)
+    border-left: solid 5px var(--color-p)
+
+    &:hover
+        background-color: var(--color-b)
 </style>
 

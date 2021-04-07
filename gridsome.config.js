@@ -5,26 +5,53 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 module.exports = {
     siteName: 'Lee Law Offices',
+    templates: {
+        Translations: (node) => node.path
+    },
     plugins: [
-        // Load all Blog Posts from file system
+
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'content/practice-areas/*.md',
+                path: 'content/**/*.md',
+                typeName: 'Translations'
+            }
+        },
+        {
+            use: 'gridsome-plugin-i18n',
+            options: {
+                locales: [ // locales list
+                    "en-us",
+                    'es'
+                ],
+                pathAliases: { // path segment alias for each locales
+                    'en-us': 'en',
+                    'es': 'es'
+                },
+                fallbackLanguage: "en-us",
+                defaultLocale: "en-us",
+                messages: {} // Loading messages from main.ts
+            }
+        },
+        // TODO: delete these bc they're loaded in Translations
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: 'content/en-us/practice-areas/*.md',
                 typeName: 'PracticeAreas',
             },
         },
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'content/people/*.md',
+                path: 'content/en-us/people/*.md',
                 typeName: 'People',
             },
         },
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'content/*.md',
+                path: 'content/en-us/*.md',
                 typeName: 'PageContent',
             },
         },

@@ -4,10 +4,7 @@
 			<hero :bgImage="bgImage">
 				<div class="content hero-text">
 					<h1>
-						We are a boutique law firm in Los Angeles specializing in Labor and
-						Employment Law, and Business and Commercial Litigation. We carefully assess
-						every aspect of a case to satisfy our client’s unique needs and to maximize
-						our client’s results.
+						{{ $t('index.hero') }}
 					</h1>
 				</div>
 			</hero>

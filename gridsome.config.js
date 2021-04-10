@@ -14,7 +14,7 @@ module.exports = {
             use: '@gridsome/source-filesystem',
             options: {
                 path: 'content/**/*.md',
-                typeName: 'Translations'
+                typeName: 'Translations',
             }
         },
         {
@@ -30,7 +30,6 @@ module.exports = {
                 },
                 fallbackLanguage: "en-us",
                 defaultLocale: "en-us",
-                messages: {} // Loading messages from main.ts
             }
         },
         // TODO: delete these bc they're loaded in Translations

@@ -118,9 +118,17 @@ export default {
     place-items: center
     margin: var(--space-2xs) var(--space-xs)
 
+    @include lg
+        width: 300px
+        place-items: start
+        margin: 0
+
+    @include xl
+        width: 400px
+
     input
-        margin-bottom: var(--space-xs)
         width: 100%
+        margin-bottom: var(--space-xs)
 
 .result
     padding-left: var(--space-md)

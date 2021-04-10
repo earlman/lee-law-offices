@@ -114,8 +114,13 @@ export default {
         margin-bottom: var(--space-md)
 
 .input
+    display: grid
+    place-items: center
+    margin: var(--space-2xs) var(--space-xs)
+
     input
-        margin-bottom: var(--space-sm)
+        margin-bottom: var(--space-xs)
+        width: 100%
 
 .result
     padding-left: var(--space-md)

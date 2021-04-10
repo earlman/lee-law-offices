@@ -5,7 +5,23 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 module.exports = {
     siteName: 'Lee Law Offices',
+    templates: {
+        People: '/employee/:name',
+    },
     plugins: [
+        {
+            use: 'gridsome-plugin-flexsearch',
+            options: {
+                searchFields: ['name'],
+                collections: [
+                    {
+                        typeName: 'People',
+                        indexName: 'People',
+                        fields: ['name', 'title', 'pic'],
+                    },
+                ],
+            },
+        },
         // Load all Blog Posts from file system
         {
             use: '@gridsome/source-filesystem',

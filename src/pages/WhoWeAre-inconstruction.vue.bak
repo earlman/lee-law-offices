@@ -3,9 +3,9 @@
 		<template slot="sidebar">
 			<nav class="people--menu">
 				<ul>
-					<li v-for="edge in $page.people.edges" :key="edge.node.title">
-						<a :href="'#' + edge.node.link">
-							{{ edge.node.name }}
+					<li v-for="edge in $page.people.edges" :key="$page.people.title">
+						<a :href="'#' + $page.people.link">
+							{{ $page.people.name }}
 						</a>
 					</li>
 				</ul>
@@ -14,40 +14,40 @@
 		<div class="people">
 			<div
 				v-for="edge in $page.people.edges"
-				:key="edge.node.title"
-				:class="edge.node.title"
+				:key="$page.people.title"
+				:class="$page.people.title"
 				class="person"
-				:id="edge.node.link"
+				:id="$page.people.link"
 			>
 				<div class="person--head">
-					<h2 class="person--name">{{ edge.node.name }}</h2>
-					<h3 class="person--title">{{ edge.node.title }}</h3>
+					<h2 class="person--name">{{ $page.people.name }}</h2>
+					<h3 class="person--title">{{ $page.people.title }}</h3>
 				</div>
 				<div class="person--body">
-					<div v-if="edge.node.pic" class="person--pic">
-						<g-image :src="edge.node.pic"> </g-image>
+					<div v-if="$page.people.pic" class="person--pic">
+						<g-image :src="$page.people.pic"> </g-image>
 					</div>
 					<div class="person--arm">
 						<div class="person--education">
 							<h3>Education:</h3>
 							<ul>
-								<li v-for="e in edge.node.education">{{ e }}</li>
+								<li v-for="e in $page.people.education">{{ e }}</li>
 							</ul>
 						</div>
 						<div class="person--admitted">
 							<h3>Admitted:</h3>
 							<ul>
-								<li v-for="a in edge.node.admitted">{{ a }}</li>
+								<li v-for="a in $page.people.admitted">{{ a }}</li>
 							</ul>
 						</div>
-						<div v-if="edge.node.awards[0]" class="person--awards">
+						<div v-if="$page.people.awards[0]" class="person--awards">
 							<h3>Awards:</h3>
 							<ul>
-								<li v-for="award in edge.node.awards">{{ award }}</li>
+								<li v-for="award in $page.people.awards">{{ award }}</li>
 							</ul>
 						</div>
 					</div>
-					<div class="person--content" v-html="edge.node.content" />
+					<div class="person--content" v-html="$page.people.content" />
 				</div>
 			</div>
 		</div>

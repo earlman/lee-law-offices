@@ -45,18 +45,18 @@ export default {
 				menuOptionsRight: [
 					{
 						type: 'link',
-						text: 'Home',
+						text: this.$t('nav.home'),
 						path: this.$tp('/'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{
 						type: 'link',
-						text: 'Practice Areas',
+						text: this.$t('nav.pa'),
 						arrowColor: 'var(--color-p)',
 						subMenuOptions: [
 							{
 								type: 'link',
-								text: 'For Employees',
+								text: this.$t('nav.employees'),
 								path: this.$tp('/employee'),
 								// iconLeft: '<i class="fa fa-star fa-fw"></i>',
 							},
@@ -65,7 +65,7 @@ export default {
 							},
 							{
 								type: 'link',
-								text: 'For Employers',
+								text: this.$t('nav.employers'),
 								path: this.$tp('/employer'),
 								// arrowColor: '#659CC8',
 							},
@@ -74,7 +74,7 @@ export default {
 							},
 							{
 								type: 'link',
-								text: 'Business & Commercial Litigation',
+								text: this.$t('nav.ba'),
 								path: this.$tp('/business-litigation'),
 							},
 						],
@@ -82,13 +82,13 @@ export default {
 
 					{
 						type: 'link',
-						text: 'Who We Are',
+						text: this.$t('nav.wwa'),
 						path: this.$tp('/who-we-are'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{
 						type: 'link',
-						text: 'Contact Us',
+						text: this.$t('nav.ca'),
 						path: this.$tp('/contact-us'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},

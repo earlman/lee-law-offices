@@ -103,7 +103,7 @@ export default {
 						...this.formData,
 					}),
 				})
-					.then(() => this.$router.push('/success'))
+					.then(() => this.$router.push(this.$tp('/success')))
 					.catch((error) => alert(error));
 			} else {
 				alert('Please read the Disclaimer.');
@@ -158,4 +158,5 @@ export default {
 
         button
             max-width: 30ch
+            cursor: pointer
 </style>

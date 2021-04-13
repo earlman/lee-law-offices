@@ -2,7 +2,15 @@
     "nav": {
         "employers": "For Employers",
         "employees": "For Employees",
-        "read-more": "Read More"
+        "ba": "Business & Commercial Litigation",
+        "read-more": "Read More",
+        "home": "Home",
+        "pa": "Practice Areas",
+        "wwa": "Who We Are",
+        "ca": "Contact Us",
+        "our-services": "Our Services",
+        "ql": "Quick Links",
+        "disclaimer": "Disclaimer"
     },
     "index": {
         "hero": "We are a boutique law firm in Los Angeles specializing in Labor and Employment Law, and Business and Commercial Litigation. We carefully assess every aspect of a case to satisfy our client’s unique needs and to maximize our client’s results.",

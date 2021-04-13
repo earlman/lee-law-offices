@@ -1,5 +1,28 @@
 {
+    "nav": {
+        "employers": "For Employers",
+        "employees": "For Employees",
+        "read-more": "Read More"
+    },
     "index": {
-        "hero": "We are a boutique law firm in Los Angeles specializing in Labor and Employment Law, and Business and Commercial Litigation. We carefully assess every aspect of a case to satisfy our client’s unique needs and to maximize our client’s results."
+        "hero": "We are a boutique law firm in Los Angeles specializing in Labor and Employment Law, and Business and Commercial Litigation. We carefully assess every aspect of a case to satisfy our client’s unique needs and to maximize our client’s results.",
+        "labor-law": {
+            "header": "Labor & Employment Law",
+            "paragraph": "Our Labor & Employment Law Practice covers wage and hour claims, wrongful termination, discrimination, and harassment. We have represented a variety of clients in class actions as well as individual claims. Our practice is not limited to employees (usually as plaintiffs) or employers (usually as defendants). Having represented both sides of the case, we know how to best serve our clients to meet their unique needs."
+        },
+        "business-lit": {
+            "header": "Business & Commercial Litigation",
+            "paragraph": "Our Business & Commercial Litigation Practice includes breach of contract, breach of fiduciary duty and/or loyalty, partnership disputes, misappropriation of business secrets, misrepresentation, fraud, interference with contract, and interference with business operation. Our attorneys provide comprehensive advice in corporate law."
+        },
+        "case-eval": {
+            "header": "Free Case Evaluation Form",
+            "name": "Name",
+            "phone": "Phone",
+            "email": "Email",
+            "message": "Briefly explain your situation.",
+            "disclaimer": "I have read the disclaimer.",
+            "submit": "Submit"
+
+        }
     }
 }

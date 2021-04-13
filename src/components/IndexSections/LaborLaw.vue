@@ -1,17 +1,12 @@
 <template>
 	<div class="laborlaw responsive-container">
 		<div class="title">
-			<h2>Labor & Employment Law</h2>
+			<h2>{{ $t('index.labor-law.header') }}</h2>
 		</div>
 		<div class="content">
 			<div class="content--text">
 				<p>
-					Our Labor & Employment Law Practice covers wage and hour claims, wrongful
-					termination, discrimination, and harassment. We have represented a variety of
-					clients in class actions as well as individual claims. Our practice is not
-					limited to employees (usually as plaintiffs) or employers (usually as
-					defendants). Having represented both sides of the case, we know how to best
-					serve our clients to meet their unique needs.
+					{{ $t('index.labor-law.paragraph') }}
 				</p>
 			</div>
 			<div class="buttons">
@@ -31,7 +26,7 @@
 					</svg>
 				</g-link>
 				<g-link class="button" :to="$tp('/employer')">
-					<span>For Employers</span>
+					<span>{{ $t('nav.employers') }}</span>
 					<svg
 						width="29"
 						height="29"

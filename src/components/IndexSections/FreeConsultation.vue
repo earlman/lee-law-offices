@@ -19,21 +19,21 @@
 					<input
 						type="text"
 						name="name"
-						placeholder="Name"
+						:placeholder="$t('index.case-eval.name')"
 						class="name"
 						v-model="formData.name"
 					/>
 					<input
 						type="text"
 						name="phone"
-						placeholder="Phone"
+						:placeholder="$t('index.case-eval.phone')"
 						class="phone"
 						v-model="formData.phone"
 					/>
 					<input
 						type="text"
 						name="email"
-						placeholder="Email"
+						:placeholder="$t('index.case-eval.email')"
 						class="email"
 						v-model="formData.email"
 					/>
@@ -42,7 +42,7 @@
 						id=""
 						cols="30"
 						rows="10"
-						placeholder="Briefly explain your situation."
+						:placeholder="$t('index.case-eval.message')"
 						class="message"
 						v-model="formData.message"
 					></textarea>
@@ -55,14 +55,13 @@
 						/>
 						<label for="disclaimer">
 							<span class="label">
-								I have read the
-								<g-link class="link" :to="$tp('/disclaimer')" target="_blank"
-									>Disclaimer</g-link
-								>
+								<g-link class="link" :to="$tp('/disclaimer')" target="_blank">
+									{{ $t('index.case-eval.disclaimer') }}
+								</g-link>
 							</span>
 						</label>
 					</div>
-					<button type="submit" class="submit">Submit</button>
+					<button type="submit" class="submit">{{ $t('index.case-eval.submit') }}</button>
 				</div>
 			</form>
 		</div>

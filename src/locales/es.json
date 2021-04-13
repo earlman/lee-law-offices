@@ -1,5 +1,27 @@
 {
+    "nav": {
+        "employees": "Para Empleados",
+        "employers": "Para Empleadores(as)",
+        "read-more": "Lee Mas"
+    },
     "index": {
-        "hero": "(Spanish translation appears here)"
+        "hero": "(Spanish translation appears here)",
+        "labor-law": {
+            "header": "Ley de Trabajo y Empleo",
+            "paragraph": "Nuestra práctica de ley de trabajo y empleo cubre reclamos de salarios y horas, despido injustificado, descriminacion, y acoso. Hemos representado a una variedad de clientes en acciones colectivas al igual que reclamos individuales. Nuestra práctica no es limitada a empleados (usualmente el demandante) o empleadores(as) (usualmente el acusado(a)). El haber representado a ambos lados en un caso nos da la oportunidad de saber cómo servir a nuestros clientes para satisfacer sus necesidades únicas."
+        },
+        "business-lit": {
+            "header": "Litigio Comercial y Empresarial",
+            "paragraph": "Nuestra práctica de litigación comercial y empresarial incluye incumplimiento de contrato, incumplimiento del deber fiduciario y/o lealtad, disputas de asociación, apropiación indebida de secretos comerciales, tergiversación, fraude, interferencia con el contrato, e interferencia con operaciones de negocio. Nuestro abogados brindan un asesoramiento integral en derecho corporativo."
+        },
+        "case-eval": {
+            "header": "Formulario De Evaluación de Caso Gratuito",
+            "name": "Nombre",
+            "phone": "Telefono",
+            "email": "Correo Electronico",
+            "message": "Brevemente explique su situación.",
+            "disclaimer": "E leido los descargos de responsabilidad.",
+            "submit": "Someter"
+        }
     }
 }

@@ -12,7 +12,7 @@
 		<section><labor-law /></section>
 		<section><business-lit /></section>
 		<section>
-			<free-consultation sectionTitle="Free Case Evaluation Form" />
+			<free-consultation :sectionTitle="$t('index.case-eval.header')" />
 		</section>
 		<section>
 			<contact-us />

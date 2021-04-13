@@ -4,6 +4,7 @@
     link: "wage"
     subtitle: "Claim What You Have Earned"
     locale: en-us
+    type: "practiceareas"
 
 ---
 

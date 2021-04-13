@@ -1,36 +1,28 @@
 ---
 
-    title: "Discrimination"
+    title: "Discriminación"
     link: "discrimination"
-    subtitle: "Stop Getting Screwed Over"
+    subtitle: "Ponga en alto que se aprovechen de usted!"
     locale: "es"
+    type: "practiceareas"
 
 ---
 
-The law protects you from being discriminated based on race, sex/gender, sexual orientation, age, religion, pregnancy, and disability.  If you have ever experienced any of the following, you are being discriminated: 
+La ley lo/la protege de la discriminación basada en su raza, sexo/genero, orientación sexual, edad, religión, estado de embarazo, o discapacidad. Se alguna vez ha recibido los siguientes dichos o actos hacia usted, usted esta siendo discriminado:
 
 <aside>
 <ul>
     <li>
-        Your promotion was denied after you became pregnant and your supervisor says, “The company needs someone who will be more dedicated to the position.”
+        Su promoción laboral fue negado después de que haiga quedado embarazada y su supervisor dijo, “La compañía necesita a alguien que se dedicara a la posición de trabajo.”
     </li>
     <li>
-        Despite having more experience and qualifications than other applicants, you are passed over for a senior position because of your age, sex, or religious belief.
+        A pesar de tener mas experiencia y calificaciones en comparación a otros aplicantes, usted no ha sido considerado para una posición por su edad, sexo, o creencias religiosas.
     </li>
     <li>
-        Your hours were cut down after you asked for time-off for your medical treatment.
+        Sus horarios laborales han sido reducidas después de que usted pidió tiempo fuera de trabajo para recibir tratamiento médico.
     </li>
     <li>
-        You recently found out that your co-workers earn more than you despite having the same experience and qualifications.
-    </li>
-    <li>
-        You are being excluded or isolated by your co-workers. For instance, after your co-workers recently found out you are gay, they started calling you “princess.”
-    </li>
-    <li>
-        You are given impossible tasks no matter how hard you try.
-    </li>
-    <li>
-        Your supervisor deliberately withholds information that you need to do your job.  
+       Recientemente se enteró que su compañero de trabajo tiene un salario más alto a pesar de tener las misma experiencia y calificaciones.
     </li>
 </ul>
 </aside>

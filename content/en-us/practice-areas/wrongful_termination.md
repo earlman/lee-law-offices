@@ -4,6 +4,7 @@
     link: "termination"
     subtitle: "Stand Up to Protect Yourself"
     locale: en-us
+    type: "practiceareas"
 
 ---
 

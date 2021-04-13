@@ -1,46 +1,46 @@
 ---
 
-    title: "Harassment"
+    title: "Acoso"
     link: "harassment"
-    subtitle: "Enough is Enough!"
+    subtitle: "Y es suficiente!"
     locale: "es"
     type: "practiceareas"
 
 ---
 
-¿Esta siendo tratado de una forma ofensiva, humillante, intimidante, o amenazado(a) por su raza, color, origen de nacionalidad, genero, orientación sexual, por estar embarazada, edad, religión, o discapacidad?
-
-Ya es suficiente. Es ahora de que usted enfrente a su acosador.
+El acoso puede ser de forma verbal o física. Su acosador puede ser su compañero de trabajo y supervisor, o incluso alguien que no sea empleado somo un cliente o contratador. Si usted alguna vez ha recibido los siguientes dichos o actos hacia usted, usted está siendo acosado:
 
 <aside>
 <ul>
     <li>
-        “Mexicans are rapists.” 
+    “Los Mexicanos son violadores.”
     </li>
     <li>
-        “Black people are lazy.” 
+    “La gente negra son perezosos o huevones”
     </li>
     <li>
-        “Why do you keep getting pregnant? Control yourself.”
+    “Porque sigues saliendo embarazada? Contrólate.”
     </li>
     <li>
-        “Go back to your country.”
+“Regresa a tu pais.”
     </li>
     <li>
-        “Open your slanted eyes.”  
+“Abre tus ojos inclinados.”
     </li>
     <li>
-        “You’re too old to get this job done.”
-    </li>
-    <li>“I can’t understand your accent.”</li>
-    <li>
-        Your supervisor/co-worker touches your body parts behind you.
+“Eres muy viejo para obtener este trabajo.”
     </li>
     <li>
-        Your supervisor/co-worker constantly stares at your body parts. 
+“No puedo entender tu acento.”
     </li>
     <li>
-        Your supervisor/co-worker removes or tries to remove your hijab. 
+Su supervisor/compañero de trabajo le toca sus partes corporales por atrás.
+    </li>
+    <li>
+Su supervisor/compañero de trabajo constantemente mira sus partes corporales.
+    </li>
+    <li>
+Su supervisor/compañero de trabajo le remueve o intenta remover su hiyab. 
     </li>
 </ul>
 </aside>

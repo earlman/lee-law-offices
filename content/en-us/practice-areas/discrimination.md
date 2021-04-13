@@ -2,8 +2,9 @@
 
     title: "Discrimination"
     link: "discrimination"
-    subtitle: "Stop Getting Screwed Over"
+    subtitle: "Stop Getting Screwed Over!"
     locale: en-us
+    type: "practiceareas"
 
 ---
 

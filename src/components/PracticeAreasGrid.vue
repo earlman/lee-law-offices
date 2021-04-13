@@ -1,6 +1,6 @@
 <template>
 	<div class="practice-areas">
-		<h2 class="section-title">Practice Areas</h2>
+		<h2 class="section-title">{{ $t('nav.pa') }}</h2>
 		<div class="areas-grid">
 			<div class="harassment areas-item">
 				<g-image
@@ -12,8 +12,7 @@
 				<div class="areas-content">
 					<a href="/practice-areas#harassment">
 						<div class="areas-content-top">
-							<h3>Harassment</h3>
-							<p>
+							<h3>{{$t('employee.har.h')}}</h3>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="36"
@@ -30,18 +29,7 @@
 								</svg>
 							</p>
 						</div>
-						<p>
-							Are you
-							<em>
-								<b>
-									being treated in a way that is offensive, humiliating,
-									intimidating, or threatening at work</b
-								>
-							</em>
-							because of your race, color, national origin, gender, sexual
-							orientation, being pregnant, age, religion, or disability?
-						</p>
-						<p>Enough is enough. It's time to stand up against your harasser.</p>
+						<div v-html="$t('employee.har.p')"></div>
 					</a>
 				</div>
 			</div>
@@ -56,7 +44,7 @@
 				<div class="areas-content">
 					<a href="/practice-areas#termination">
 						<div class="areas-content-top">
-							<h3>Termination</h3>
+							<h3>{{$t('employee.ter.h')}}</h3>
 							<p>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -74,20 +62,9 @@
 								</svg>
 							</p>
 						</div>
-						<p>
-							Did you
-							<em>
-								<b> get fired </b>
-							</em>
-
-							after asking for your unpaid wages, filing your worker’s compensation
-							claim, or reporting harassment? Did you
-							<em>
-								<b> quit </b>
-							</em>
-							because you could no longer tolerate harassment or discrimination?
-						</p>
-						<p>You deserve better. It is time to claim your lost wages.</p>
+                        <div v-html="$t('employee.ter.p')"></div>
+					
+						
 					</a>
 				</div>
 			</div>
@@ -101,7 +78,7 @@
 				<div class="areas-content">
 					<a href="/practice-areas#discrimination">
 						<div class="areas-content-top">
-							<h3>Discrimination</h3>
+							<h3>{{$t('employee.dis.h')}}</h3>
 							<p>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -119,15 +96,7 @@
 								</svg>
 							</p>
 						</div>
-						<p>
-							Are you being
-							<em>
-								<b> treated less favorably </b>
-							</em>
-							at work because of your race, gender, age, religion, pregnant, or
-							disability?
-						</p>
-						<p>Stop getting screwed over. It's time to stand up for your rights.</p>
+						<div v-html="$t('employee.dis.p')"></div>
 					</a>
 				</div>
 			</div>
@@ -142,7 +111,7 @@
 				<div class="areas-content">
 					<a href="/practice-areas#wage">
 						<div class="areas-content-top">
-							<h3>Wage & Hour</h3>
+							<h3>{{$t('employee.wh.h')}}</h3>
 							<p>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -160,17 +129,8 @@
 								</svg>
 							</p>
 						</div>
-						<p>
-							Are you
-							<em>
-								<b> unsure if </b>
-							</em>
-
-							you are receiving all your wages? You are entitled to receiving the
-							minimum wage, overtime, meal and rest breaks, and back wages.
-						</p>
-
-						<p>It's time to claim what you earned.</p>
+						<div v-html="$t('employee.wh.p')"></div>
+						
 					</a>
 				</div>
 			</div>

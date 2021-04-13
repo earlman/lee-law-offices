@@ -82,5 +82,23 @@
                 "Unfair business practice"
             ]
         }
+    },
+    "employee": {
+        "har": {
+            "h": "Harassment",
+            "p": "<p>Are you <em><b>being treated in a way that is offensive, humiliating, intimidating, or threatening at work</b></em> because of your race, color, national origin, gender, sexual orientation, being pregnant, age, religion, or disability?</p><p>Enough is enough. It's time to stand up against your harasser.</p>"
+        },
+        "ter": {
+            "h": "Wrongful Termination",
+            "p": "<p>Did you <em><b>get fired</b></em>after asking for your unpaid wages, filing your worker’s compensation claim, or reporting harassment? Did you <em><b>quit</b></em> because you could no longer tolerate harassment or discrimination?</p><p>You deserve better. It is time to claim your lost wages.</p>"
+        },
+        "dis": {
+            "h": "Discrimination",
+            "p": "<p>Are you being<em><b> treated less favorably </b></em>at work because of your race, gender, age, religion, pregnant, or disability?</p><p>Stop getting screwed over. It's time to stand up for your rights.</p>"
+        },
+        "wh": {
+            "h": "Wage & Hour",
+            "p": "<p>Are you<em><b> unsure if </b></em>you are receiving all your wages? You are entitled to receiving the minimum wage, overtime, meal and rest breaks, and back wages.</p><p>It's time to claim what you earned.</p>"
+        }
     }
 }

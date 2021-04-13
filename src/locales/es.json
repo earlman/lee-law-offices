@@ -80,5 +80,23 @@
                 "Práctica desleal de negocios"
             ]
         }
+    },
+    "employee": {
+        "har": {
+            "h": "Acoso",
+            "p": "<p>¿Esta siendo tratado de una forma ofensiva, humillante, intimidante, o amenazado(a) por su raza, color, origen de nacionalidad, genero, orientación sexual, por estar embarazada, edad, religión, o discapacidad?</p><p>Ya es suficiente. Es ahora de que usted enfrente a su acosador.</p>"
+        },
+        "ter": {
+            "h": "Despido Injustificado",
+            "p": "<p>¿Fue despedido(a) después de haber pedido salario no pagado, sometido un reclamo de indemnización por accidente laboral, o por repórter un acoso? ¿Renuncio su trabajo debido a que ya no pudo tolerar el acoso o discriminación?</p><p>La ley está de su parte. No habrá costos legales hasta que ganemos.</p>"
+        },
+        "dis": {
+            "h": "Discriminación",
+            "p": "<p>¿Está siendo tratado(a) menos favorable en el trabajo por su raza, genero, edad, religión, por estar embarazada, o discapacidad? No deje que le jueguen mal. </p><p>Es hora de que defienda sus derechos.</p>"
+        },
+        "wh": {
+            "h": "Salario y Hora",
+            "p": "<p>¿No está seguro(a) si esta recibiendo el salario adecuado? Usted tiene derecho de recibir el salario mínimo, ser pagado por tiempo extraordinario, recibir horario de comida y un descanso, y salarios no pagados anteriormente.</p><p>Nunca es tarde para reclamar el salario que se ha ganado.</p>"
+        }
     }
 }

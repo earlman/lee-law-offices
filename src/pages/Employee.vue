@@ -3,13 +3,9 @@
 		<section class="h">
 			<hero :bgImage="bgImage">
 				<div class="content">
-					<h1 class="hero--title">
-						The law is on your side<br />
-						No legal fees until we win
-					</h1>
+					<h1 class="hero--title" v-html="$t('employee.hero.header')"></h1>
 					<div class="hero--text">
-						<p class="hero--text">Call us today for a free case evaluation</p>
-
+						<p class="hero--text">{{ $t('employee.hero.paragraph') }}</p>
 						<p>(323) 289-2260, Ext. 1<br /><em>Se habla Español</em></p>
 					</div>
 					<g-link :to="$tp('/contact-us')">
@@ -22,7 +18,7 @@
 			<practice-areas-grid />
 		</section>
 		<section>
-			<free-consultation sectionTitle="Free Case Evaluation Form" />
+			<free-consultation :sectionTitle="$t('index.case-eval.header')" />
 		</section>
 	</Layout>
 </template>

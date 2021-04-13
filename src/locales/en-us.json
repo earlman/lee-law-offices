@@ -84,6 +84,10 @@
         }
     },
     "employee": {
+        "hero": {
+            "header": "The law is on your side<br />No legal fees until we win",
+            "paragraph": "Call us today for a free case evaluation"
+        },
         "har": {
             "h": "Harassment",
             "p": "<p>Are you <em><b>being treated in a way that is offensive, humiliating, intimidating, or threatening at work</b></em> because of your race, color, national origin, gender, sexual orientation, being pregnant, age, religion, or disability?</p><p>Enough is enough. It's time to stand up against your harasser.</p>"

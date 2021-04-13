@@ -50,7 +50,7 @@
 			</div>
 		</section>
 		<section>
-			<free-consultation sectionTitle="Formulario De Evaluación de Caso Gratuito" />
+			<free-consultation :sectionTitle="$t('index.case-eval.header')" />
 		</section>
 	</Layout>
 </template>

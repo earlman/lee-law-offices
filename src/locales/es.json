@@ -82,6 +82,10 @@
         }
     },
     "employee": {
+        "hero": {
+            "header": "La ley está de su parte.<br />No habrá costos legales<br />hasta que ganemos. ",
+            "paragraph": "Llamanos hoy para una evaluación de tu caso gratuito"
+        },
         "har": {
             "h": "Acoso",
             "p": "<p>¿Esta siendo tratado de una forma ofensiva, humillante, intimidante, o amenazado(a) por su raza, color, origen de nacionalidad, genero, orientación sexual, por estar embarazada, edad, religión, o discapacidad?</p><p>Ya es suficiente. Es ahora de que usted enfrente a su acosador.</p>"

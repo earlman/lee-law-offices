@@ -1,5 +1,5 @@
 <template>
-	<PageLayout title="Who We Are" :bgImage="bgImage">
+	<PageLayout :title="$t('nav.wwa')" :bgImage="bgImage">
 		<template slot="sidebar">
 			<nav class="people--menu">
 				<ul>

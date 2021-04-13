@@ -22,6 +22,16 @@
             "message": "Brevemente explique su situación.",
             "disclaimer": "E leido los descargos de responsabilidad.",
             "submit": "Someter"
+        },
+        "contact-us": {
+            "header": "Contactanos",
+            "phone": "Numero",
+            "fax": "Fax",
+            "address": "Direccion",
+            "bh": "Horario de Negocio",
+            "wd": "Entresemana",
+            "we": "Fin de Semana",
+            "holidays": "Dias Feriados"
         }
     }
 }

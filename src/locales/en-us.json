@@ -22,7 +22,16 @@
             "message": "Briefly explain your situation.",
             "disclaimer": "I have read the disclaimer.",
             "submit": "Submit"
-
+        },
+        "contact-us": {
+            "header": "Contact Us",
+            "phone": "Phone",
+            "fax": "Fax",
+            "address": "Address",
+            "bh": "Business Hours",
+            "wd": "Weekdays",
+            "we": "Weekends",
+            "holidays": "Holidays"
         }
     }
 }

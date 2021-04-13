@@ -55,8 +55,8 @@
 						/>
 						<label for="disclaimer">
 							<span class="label">
-								<g-link class="link" :to="$tp('/disclaimer')" target="_blank">
-									{{ $t('index.case-eval.disclaimer') }}
+								<g-link class="link" :to="$tp('/disclaimer')" target="_blank"
+									>{{ $t('index.case-eval.disclaimer') }}
 								</g-link>
 							</span>
 						</label>

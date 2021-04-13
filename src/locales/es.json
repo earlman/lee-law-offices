@@ -6,10 +6,10 @@
         "read-more": "Lee Mas",
         "home": "Pagina De Inicio",
         "pa": "Area de Practica",
-        "wwa": "(Who We Are)",
+        "wwa": "Quienes Somos",
         "ca": "Contactanos",
-        "our-services": "(Our Services)",
-        "ql": "(Quick Links)",
+        "our-services": "Nuestros Servicios",
+        "ql": "Enlaces Rapidos",
         "disclaimer": "Descargos de Responsabilidad"
     },
     "index": {
@@ -40,6 +40,40 @@
             "wd": "Entresemana",
             "we": "Fin de Semana",
             "holidays": "Dias Feriados"
+        }
+    },
+    "employer": {
+        "hero": {
+            "header": "Estamos Aquí para<br/>proteger a usted y su negocio",
+            "paragraph": "Llamanos hoy para una evaluación de tu caso gratuito"
+        },
+        "eld": {
+            "header": "Defensa de la Ley Laboral",
+            "paragraph": "Sabemos cuánto dinero, tiempo, y energía se requiere para manejar un negocio, especialmente cuando las leyes laborales de California son muy exigentes con los empleadores(as). Si usted tiene un negocio en California y tiene algún problema con un empleado anterior o actual, entonces está en el lugar adecuado. Nuestro equipo le ayudará a construir una defensa fuerte y económica para proteger su negocio de las leyes de California que son más amables hacia empleados, ex empleados vengativos, y de abogados de empleados codiciosos que buscan explotar por lo siguiente:",
+            "list": [
+                "No pagar los salarios de las horas extraordinarias",
+                "No proporcionar pausas para comer y descansar ",
+                "No proporcionar declaraciones de salario",
+                "Ambiente de trabajo hostil",
+                "Acoso sexual de un supervisor",
+                "Discriminacion basado en la edad, raza, género, u orientación sexual",
+                "Represalias después de haberse quejado de acoso o discriminacion",
+                "No haber prevenido acoso, descriminacion y/o represalias",
+                "Despido injustificado"
+            ]
+        },
+        "ecad": {
+            "header": "Defensa de Demanda Colectiva Laboral",
+            "paragraph": "Le han notificado con una demanda colectiva? Sabemos que las palabras “demanda colectiva” pueden causar pánico y es intimidante. El clima de litigación en California está en auge con demandas colectivas sobre salarios y horas de empleo que muy seguido son promovidos por abogados agresivos. Para defender contra una demanda colectiva, los empleadores necesitan a alguien con un conocimiento profundo y completo de cómo atacar una demanda colectiva. Nuestro equipo puede proporcionarle a usted con una estrategia de defensa efectiva y económica contra una demanda colectiva intimidante que reclamo lo siguiente:",
+            "list": [
+                "No pagar los salarios de las horas extraordinarias ",
+                "No proporcionar pausas para comer y descansar ",
+                "No proporcionar declaraciones de salario",
+                "No proporcionar pago de salario a tiempo despues de terminación de empleo",
+                "No pagar el salario mínimo",
+                "No reembolsar por gastos de negocio",
+                "Práctica desleal de negocios"
+            ]
         }
     }
 }

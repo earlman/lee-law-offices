@@ -40,13 +40,13 @@ module.exports = {
                 typeName: 'PracticeAreas',
             },
         },
-        {
-            use: '@gridsome/source-filesystem',
-            options: {
-                path: 'content/en-us/people/*.md',
-                typeName: 'People',
-            },
-        },
+        // {
+        //     use: '@gridsome/source-filesystem',
+        //     options: {
+        //         path: 'content/en-us/people/*.md',
+        //         typeName: 'People',
+        //     },
+        // },
         {
             use: '@gridsome/source-filesystem',
             options: {

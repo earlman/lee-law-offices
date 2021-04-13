@@ -29,19 +29,19 @@
 					</div>
 					<div class="person--arm">
 						<div class="person--education">
-							<h3>Education:</h3>
+							<h3>{{ $t('wwa.education') }}:</h3>
 							<ul>
 								<li v-for="e in edge.node.education">{{ e }}</li>
 							</ul>
 						</div>
 						<div class="person--admitted">
-							<h3>Admitted:</h3>
+							<h3>{{ $t('wwa.admitted') }}:</h3>
 							<ul>
 								<li v-for="a in edge.node.admitted">{{ a }}</li>
 							</ul>
 						</div>
 						<div v-if="edge.node.awards[0]" class="person--awards">
-							<h3>Awards:</h3>
+							<h3>{{ $t('wwa.awards') }}:</h3>
 							<ul>
 								<li v-for="award in edge.node.awards">{{ award }}</li>
 							</ul>
@@ -55,9 +55,9 @@
 </template>
 
 <page-query>
-query {  
-    people: allPeople(sortBy: "order", order: ASC) {
-      edges {
+query($locale: String) {  
+    people: allTranslations(filter: { locale: { eq: $locale }, type: { eq: "person" } }, sortBy: "order", order: ASC) {
+      	edges {
             node {
                 name
                 title
@@ -65,6 +65,7 @@ query {
                 admitted
                 awards
                 content
+                # link
                 # pic (width: 720, height: 200, quality: 90)
             }
         }

@@ -1,8 +1,9 @@
 ---
 
-title: "Wage & Hour"
-link: "wage"
-subtitle: "Claim What You Have Earned"
+    title: "Wage & Hour"
+    link: "wage"
+    subtitle: "Claim What You Have Earned"
+    locale: en-us
 
 ---
 

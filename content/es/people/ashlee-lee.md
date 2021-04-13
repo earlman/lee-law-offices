@@ -1,25 +1,27 @@
 ---
 
     name: "Ashley Lee"
-    title: "Associate Attorney"
+    title: "Abogada Asociada"
     education:
-        - Bachelor's Degree in Social Work (2013), University of Illinois Urbana-Champaign
+        - Licenciatura en Trabajo Social (2013), University of Illinois Urbana-Champaign 
         - Juris Doctor (2018), Depaul University College of Law (Chicago, IL)
     admitted:
         - California (2019)
-        - United States District Court for the Central District of California
+        - Tribunal de Distrito de los Estados Unidos Para el Distrito Central de California
     awards: 
-        - Lawyers of Distinction in Labor Law (2020)
+        - Abogadas en Distinción en Derecho Laboral (2020)
     order: 2
     pic: ""
+    type: "person"
+    locale: "es"
+
 
 ---
 
-Ms. Lee is an associate attorney at Lee Law Offices. She graduated with a bachelor's degree in social work from the University of Illinois Urbana-Champaign, and a juris doctorate from DePaul University in Chicago, Illinois. 
+La señorita Lee es abogada asociada en las oficinas Lee Law Offices. Se graduó con una licenciatura en trabajo social en la universidad de Illinois Urbana-Champaign y obtiene una juris doctorado de la Universidad de DePaul en Chicago, Illinois. 
 
-She has a long history working in social work, non-profit organizations, domestic violence and family law clinics in the Chicagoland area and was the CALI Award Recipient in 2018 for her work at the DePaul University Family Law Clinic. Her background in social work has allowed her to bring a unique skill of making clients feel heard and zealously defending and advocating for their livelihood. 
+Tiene una largo historial en trabajo social, organizaciones sin fines de lucro, violencia doméstica y clínicas de ley de familia en la área de Chicagoland y también fue la recipiente del premio CALI Award en el 2018 por su trabajo en la clínica de ley familiar de la Universidad de DePaul. Su experiencia en trabajo social le ha permitido aportar una habilidad única en hacer que los clientes se sientan escuchados y el defender y advocar por su sustento celosamente.
 
-Ms. Lee’s practice is dedicated to representing both plaintiffs and defendants in harassment, retaliation and wrongful termination actions, wage-and-hour class actions, commercial & business litigation cases. Her experience in representing both plaintiffs and defendants, particularly employers and employees, brings a unique advantage that allows her to evaluate a case from all angles. 
+La señorita Lee se dedica a defender a ambos el/la demandante o el/la acusado(a) en casos de acoso, represalias y despido injustificado, demandas colectivas sobre salarios y horas de empleo, y casos comerciales y empresariales. Su experiencia en representar a ambos partidos, particularmente a empleados y empleadores le trae una ventaja única que le permite evaluar su caso de todos angulo. 
 
-Ms. Lee is admitted to the State of California and the United States District Court for the Central District of California.  She is a recipient of the Lawyers of Distinction (2020) in labor law.
-
+La señora Lee está licenciada en el estado de California y el Tribunal de Distrito de los Estados Unidos para el Distrito Central de California. Es recipiente del premio de Abogadas en Distinción en Derecho Laboral (2020) en ley de labor.

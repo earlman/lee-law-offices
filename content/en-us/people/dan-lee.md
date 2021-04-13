@@ -14,6 +14,9 @@
         - Illinois (2006)
     order: 1
     pic: ""
+    type: "person"
+    locale: en-us
+
 
 ---
 

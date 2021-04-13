@@ -1,8 +1,9 @@
 ---
 
-title: "Wrongful Termination"
-link: "termination"
-subtitle: "Stand Up to Protect Yourself"
+    title: "Wrongful Termination"
+    link: "termination"
+    subtitle: "Stand Up to Protect Yourself"
+    locale: "es"
 
 ---
 

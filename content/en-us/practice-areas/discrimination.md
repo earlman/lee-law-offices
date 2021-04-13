@@ -1,8 +1,9 @@
 ---
 
-title: "Discrimination"
-link: "discrimination"
-subtitle: "Stop Getting Screwed Over"
+    title: "Discrimination"
+    link: "discrimination"
+    subtitle: "Stop Getting Screwed Over"
+    locale: en-us
 
 ---
 

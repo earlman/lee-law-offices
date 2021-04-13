@@ -12,6 +12,9 @@
         - Lawyers of Distinction in Labor Law (2020)
     order: 2
     pic: ""
+    type: "person"
+    locale: en-us
+
 
 ---
 

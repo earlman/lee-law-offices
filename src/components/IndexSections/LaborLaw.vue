@@ -11,7 +11,7 @@
 			</div>
 			<div class="buttons">
 				<g-link class="button ba" :to="$tp('/employee')">
-					<span>For Employees</span>
+					<span>{{ $t('nav.employees') }}</span>
 					<svg
 						width="29"
 						height="29"

@@ -47,6 +47,9 @@
             "holidays": "Holidays"
         }
     },
+    "buslit": {
+        "exal": "Example Allegations"
+    },
     "employer": {
         "hero": {
             "header": "We're here to protect you<br />and your business",

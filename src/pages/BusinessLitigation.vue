@@ -3,7 +3,7 @@
 		<div class="content">
 			<div v-html="$page.c.edges[0].node.content" class="content--text"></div>
 			<div class="content--allegations">
-				<h4>Example Allegations:</h4>
+				<h4>{{ $t('buslit.exal') }}</h4>
 				<ul>
 					<li v-for="(item, i) in $page.c.edges[0].node.allegations" :key="i">
 						{{ item }}

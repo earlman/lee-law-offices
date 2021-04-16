@@ -47,6 +47,9 @@
             "holidays": "Dias Feriados"
         }
     },
+    "buslit": {
+        "exal": "Ejemplo de Alegaciones"
+    },
     "employer": {
         "hero": {
             "header": "Estamos Aquí para<br/>proteger a usted y su negocio",

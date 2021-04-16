@@ -30,7 +30,7 @@ export default {
     box-shadow: inset 0px 0px 4px 4px rgba(80, 131, 119, 0.2)
 
     @include md
-        background-position: top left
+        background-position: top center
         background-image: url(~@/assets/images/landing-hero.webp)
         min-height: 50vh
 
@@ -39,7 +39,7 @@ export default {
         margin: auto
 
     @include xl
-        // max-height: 66vh
+        background-position: center center
 
     .hero
         margin: var(--space-sm) auto

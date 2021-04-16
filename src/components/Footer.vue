@@ -58,7 +58,10 @@
 			<hr />
 
 			<aside class="aside">
-				<p>© Foundations. All Rights Reserved. 2019</p>
+				<p>
+					© Lee Law Offices. All Rights Reserved. Built with
+					<a href="http://foundations.design" target="_blank">Foundations.</a>
+				</p>
 			</aside>
 		</footer>
 	</div>
@@ -131,11 +134,15 @@ footer
         *
             all: initial
 
-        p
+        p, a
             color: white
             text-transform: uppercase
             font-variant: small-caps
             letter-spacing: 0.06em
             font-size: 12px
             margin-bottom: var(--space-md)
+
+        a
+            text-decoration: underline
+            cursor: pointer
 </style>

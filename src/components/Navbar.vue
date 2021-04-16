@@ -99,12 +99,6 @@ export default {
 						isLinkAction: true,
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
-					{
-						type: 'link',
-						text: 'Español',
-						path: '/contact-us',
-						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
-					},
 				],
 			};
 		},

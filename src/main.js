@@ -13,7 +13,13 @@ import '~/styles/index.sass'
 import "vue-navigation-bar/dist/vue-navigation-bar.css";
 import VueNavigationBar from "vue-navigation-bar";
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient, appOptions }) {
+
+    // hot reload i18n messages
+    appOptions.i18n.setLocaleMessage('es', require('./locales/es.json'))
+    appOptions.i18n.setLocaleMessage('en-us', require('./locales/en-us.json'))
+
+
     // Set default layout as a global component
     Vue.component('Layout', DefaultLayout);
     if (process.isClient) {

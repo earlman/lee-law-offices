@@ -6,18 +6,22 @@
 module.exports = {
     siteName: 'Lee Law Offices',
     templates: {
-        People: '/employee/:name',
+        People: (node) => {
+            return node.path
+            // return `/product/${node.slug}/reviews`
+        },
+        Translations: (node) => node.path,
     },
     plugins: [
         {
             use: 'gridsome-plugin-flexsearch',
             options: {
-                searchFields: ['name'],
+                searchFields: ['name', 'locale', 'type'],
                 collections: [
                     {
-                        typeName: 'People',
+                        typeName: 'Translations',
                         indexName: 'People',
-                        fields: ['name', 'title', 'pic'],
+                        fields: ['name', 'title', 'pic', 'path', 'filename'],
                     },
                 ],
             },
@@ -26,21 +30,47 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'content/practice-areas/*.md',
-                typeName: 'PracticeAreas',
-            },
+                path: '**/*.md',
+                baseDir: './content',
+                typeName: 'Translations',
+            }
         },
+        // Load all Blog Posts from file system
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'content/people/*.md',
+                path: '**/people/*.md',
+                baseDir: './content',
                 typeName: 'People',
-            },
+            }
         },
+        {
+            use: 'gridsome-plugin-i18n',
+            options: {
+                locales: [ // locales list
+                    "en-us",
+                    'es'
+                ],
+                pathAliases: { // path segment alias for each locales
+                    'en-us': 'en-us',
+                    'es': 'es'
+                },
+                fallbackLanguage: "en-us",
+                defaultLocale: "en-us",
+            }
+        },
+        // TODO: delete these bc they're loaded in Translations
+        // {
+        //     use: '@gridsome/source-filesystem',
+        //     options: {
+        //         path: 'content/en-us/practice-areas/*.md',
+        //         typeName: 'PracticeAreas',
+        //     },
+        // },
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'content/*.md',
+                path: 'content/en-us/*.md',
                 typeName: 'PageContent',
             },
         },

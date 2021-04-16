@@ -3,14 +3,14 @@
 		<section class="h">
 			<hero :bgImage="bgImage">
 				<div class="content">
-					<h1 class="hero--title">We're here to protect you<br />and your business</h1>
+					<h1 class="hero--title" v-html="$t('employer.hero.header')"></h1>
 					<div class="hero--text">
-						<p class="hero--text">Call us today for a free case evaluation</p>
+						<p class="hero--text">{{ $t('employer.hero.paragraph') }}</p>
 
 						<p>(323) 289-2260, Ext. 1<br /><em>Se habla Español</em></p>
 					</div>
-					<g-link to="/contact-us">
-						<button class="contact-us">Contact Us</button>
+					<g-link :to="$tp('/contact-us')">
+						<button class="contact-us">{{ $t('nav.ca') }}</button>
 					</g-link>
 				</div>
 			</hero>
@@ -19,31 +19,12 @@
 			<div class="employer--content responsive-container">
 				<div class="inner">
 					<div class="contentgrid">
-						<h2 id="employment-law-defense">Employment Law Defense</h2>
-						<p>
-							We know how much money, time and energy it takes to run a business
-							especially when California labor laws are so harsh on employers. If you
-							have a business in California and are having any issues with a former or
-							current employee then you have come to the right place. Our team will
-							help you build a strong and cost-effective defense to protect your
-							business from employee friendly California state laws, vindictive former
-							employees and greedy employee side attorneys looking only to exploit you
-							for the following matters:
-						</p>
+						<h2 id="employment-law-defense">{{ $t('employer.eld.header') }}</h2>
+						<p>{{ $t('employer.eld.paragraph') }}</p>
 						<ul>
-							<li>Failure to pay overtime wages</li>
-							<li>Failure to provide meal and rest breaks</li>
-							<li>Failure to provide wage statements</li>
-							<li>Hostile work environment</li>
-							<li>Sexual harassment by a supervisor</li>
-							<li>Discrimination based on age, race, gender or sexual orientation</li>
-							<li>
-								Retaliation after they complained about harassment or discrimination
+							<li v-for="(item, i) in $t('employer.eld.list')" :key="i">
+								{{ item }}
 							</li>
-							<li>
-								Failure to prevent harassment, discrimination and/or retaliation
-							</li>
-							<li>Wrongful termination</li>
 						</ul>
 						<g-image
 							src="~/assets/images/person_1.webp"
@@ -55,27 +36,13 @@
 					<hr />
 					<div class="contentgrid">
 						<h2 id="employment-class-action-defense-">
-							Employment Class Action Defense
+							{{ $t('employer.ecad.header') }}
 						</h2>
-						<p>
-							Have you been served with a class action complaint? We know, the words
-							“class action” can cause panic and look intimidating. The current
-							California litigation climate is booming with wage and hour class
-							actions that are often propelled by aggressive plaintiff’s attorneys. To
-							defend against a potential class action employers need someone with a
-							deep and comprehensive knowledge of how to tackle class actions. Our
-							team can provide you with an effective and cost-efficient strategic
-							defense against seemingly intimidating class action complaints for the
-							following matters:
-						</p>
+						<p>{{ $t('employer.ecad.paragraph') }}</p>
 						<ul>
-							<li>Failure to pay overtime wages</li>
-							<li>Failure to provide meal and rest breaks</li>
-							<li>Failure to provide wage statements</li>
-							<li>Failure to timely pay wages due at termination</li>
-							<li>Failure to pay minimum wages</li>
-							<li>Failure to reimburse for business expenses</li>
-							<li>Unfair business practice</li>
+							<li v-for="(item, i) in $t('employer.ecad.list')" :key="i">
+								{{ item }}
+							</li>
 						</ul>
 						<g-image src="~/assets/images/person_2.webp" width="1000" height="600" />
 					</div>
@@ -83,7 +50,7 @@
 			</div>
 		</section>
 		<section>
-			<free-consultation sectionTitle="Free Case Evaluation Form" />
+			<free-consultation :sectionTitle="$t('index.case-eval.header')" />
 		</section>
 	</Layout>
 </template>
@@ -97,7 +64,7 @@ query {
 </page-query>
 
 <script>
-import PracticeAreasGrid from '../components/IndexSections/PracticeAreasGrid.vue';
+import PracticeAreasGrid from '../components/PracticeAreasGrid.vue';
 import FreeConsultation from '../components/IndexSections/FreeConsultation.vue';
 import ContactUs from '../components/IndexSections/ContactUs.vue';
 import Hero from '../components/Employer-Hero.vue';
@@ -146,6 +113,7 @@ section
 
         .contentgrid
             display: grid
+            grid-gap: 0 var(--space-xs)
             grid-template-columns: 1fr 1fr
 
             h2

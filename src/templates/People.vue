@@ -39,7 +39,6 @@
 		</div>
 	</PageLayout>
 </template>
-
 <page-query>
 query ($id: ID!) {
     people(id: $id) {

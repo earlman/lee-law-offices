@@ -1,15 +1,15 @@
 <template>
-	<PageLayout title="Contact Us" :bgImage="bgImage">
+	<PageLayout :title="$t('nav.ca')" :bgImage="bgImage">
 		<template slot="sidebar">
 			<div class="sidebar--inner">
 				<div class="sidebar--item">
-					<h4>Phone</h4>
+					<h4>{{ $t('index.contact-us.phone') }}</h4>
 					<p>(323) 289-2260, Ext. 1</p>
-					<h4>Fax</h4>
+					<h4>{{ $t('index.contact-us.fax') }}</h4>
 					<p>(323) 642-5451</p>
 				</div>
 				<div class="sidebar--item">
-					<h4>Address</h4>
+					<h4>{{ $t('index.contact-us.address') }}</h4>
 					<p>
 						725 S. Figueroa Street <br />
 						Suite 3065<br />
@@ -17,13 +17,13 @@
 					</p>
 				</div>
 				<div class="sidebar--item">
-					<h4>Business Hours</h4>
+					<h4>{{ $t('nav.ba') }}</h4>
 					<div class="hours-table">
-						<p>Weekdays</p>
+						<p>{{ $t('index.contact-us.wd') }}</p>
 						<p>9 am - 5pm</p>
-						<p>Weekends</p>
+						<p>{{ $t('index.contact-us.we') }}</p>
 						<p>Closed</p>
-						<p>Holidays</p>
+						<p>{{ $t('index.contact-us.holidays') }}</p>
 						<p>Closed</p>
 					</div>
 				</div>

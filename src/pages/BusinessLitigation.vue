@@ -1,16 +1,13 @@
 <template>
-	<PageLayout
-		title="Business & Commercial Litigation"
-		class="page-buslit"
-		:bgImage="bgImage"
-		:noSidebar="true"
-	>
+	<PageLayout :title="$t('nav.ba')" class="page-buslit" :bgImage="bgImage" :noSidebar="true">
 		<div class="content">
-			<div v-html="$page.pageContent.content" class="content--text"></div>
+			<div v-html="$page.c.edges[0].node.content" class="content--text"></div>
 			<div class="content--allegations">
-				<h4>Example Allegations:</h4>
+				<h4>{{ $t('buslit.exal') }}</h4>
 				<ul>
-					<li v-for="(item, i) in $page.pageContent.allegations" :key="i">{{ item }}</li>
+					<li v-for="(item, i) in $page.c.edges[0].node.allegations" :key="i">
+						{{ item }}
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -18,10 +15,14 @@
 </template>
 
 <page-query>
-query {
-    pageContent(id: "business-litigation"){
-        content
-        allegations
+query($locale: String) {
+    c: allTranslations(filter: { locale: { eq: $locale }, type: { eq: "bl" } }) {
+      edges {
+            node {
+                content
+                allegations
+            }
+        }
     }
 }
 </page-query>

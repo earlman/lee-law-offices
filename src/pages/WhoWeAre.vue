@@ -59,15 +59,15 @@
 					v-model="searchTerm"
 					class="input"
 					type="text"
-					placeholder="Search"
+					:placeholder="$t('wwa.search')"
 					ref="search"
 					v-on:keyup.enter="getResults"
 				/>
-				<button @click="getResults">Search</button>
+				<button @click="getResults">{{ $t('wwa.search') }}</button>
 			</div>
 		</template>
 		<div class="results">
-			<h2>Results:</h2>
+			<h2>{{ $t('wwa.results') }}</h2>
 			<!-- <p>TODO: add list of employees</p> -->
 			<div class="results--list" v-if="searchResults.people">
 				<div v-for="person in searchResults.people" :key="person.name" class="result">

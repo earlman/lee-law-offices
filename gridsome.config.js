@@ -6,17 +6,20 @@
 module.exports = {
     siteName: 'Lee Law Offices',
     templates: {
-        People: '/employee/:name',
+        // People: (node) => {
+        //     return `/employee/${node.path}`
+        //     // return `/product/${node.slug}/reviews`
+        // },
         Translations: (node) => node.path,
     },
     plugins: [
         {
             use: 'gridsome-plugin-flexsearch',
             options: {
-                searchFields: ['name'],
+                searchFields: ['name', 'locale', 'type'],
                 collections: [
                     {
-                        typeName: 'People',
+                        typeName: 'Translations',
                         indexName: 'People',
                         fields: ['name', 'title', 'pic'],
                     },
@@ -54,13 +57,6 @@ module.exports = {
         //         typeName: 'PracticeAreas',
         //     },
         // },
-        {
-            use: '@gridsome/source-filesystem',
-            options: {
-                path: 'content/en-us/people/*.md',
-                typeName: 'People',
-            },
-        },
         {
             use: '@gridsome/source-filesystem',
             options: {

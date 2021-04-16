@@ -1,6 +1,6 @@
 <template>
 	<PageLayout :title="$t('nav.wwa')" :bgImage="bgImage">
-		<template slot="sidebar">
+		<!-- <template slot="sidebar">
 			<nav class="people--menu">
 				<ul>
 					<li v-for="edge in $page.people.edges" :key="edge.node.title">
@@ -10,8 +10,8 @@
 					</li>
 				</ul>
 			</nav>
-		</template>
-		<div class="people">
+		</template> -->
+		<!-- <div class="people">
 			<div
 				v-for="edge in $page.people.edges"
 				:key="edge.node.title"
@@ -49,6 +49,41 @@
 					</div>
 					<div class="person--content" v-html="edge.node.content" />
 				</div>
+            </div>
+        </div> -->
+		<template slot="sidebar">
+			<!-- SEARCH -->
+			<div class="input">
+				<input
+					id="search"
+					v-model="searchTerm"
+					class="input"
+					type="text"
+					placeholder="Search"
+					ref="search"
+					v-on:keyup.enter="getResults"
+				/>
+				<button @click="getResults">Search</button>
+			</div>
+		</template>
+		<div class="results">
+			<h2>Results:</h2>
+			<!-- <p>TODO: add list of employees</p> -->
+			<div class="results--list" v-if="searchResults.people">
+				<div v-for="person in searchResults.people" :key="person.name" class="result">
+					<a :href="person.path">
+						<h3>
+							{{ person.node.name }}
+						</h3>
+						<h4>
+							{{ person.node.title }}
+						</h4>
+					</a>
+				</div>
+				<!-- {{ searchResults }} -->
+			</div>
+			<div v-if="searchResults.message">
+				{{ searchResults.message }}
 			</div>
 		</div>
 	</PageLayout>
@@ -81,7 +116,26 @@ export default {
 	data() {
 		return {
 			bgImage: img,
+			searchTerm: '',
+			searchResults: {
+				message: '',
+				people: [],
+			},
 		};
+	},
+
+	methods: {
+		getResults() {
+			this.searchResults.message = '';
+			const searchTerm = this.searchTerm;
+			// if (searchTerm.length < 3) return [];
+			let results = this.$search.search({ query: searchTerm, limit: 5 });
+			if (results.length == 0) {
+				this.searchResults.message = 'No results found';
+			}
+			this.searchResults.people = results;
+			return;
+		},
 	},
 	metaInfo: {
 		title: 'Who We Are',
@@ -89,81 +143,50 @@ export default {
 	components: {
 		PageLayout,
 	},
+	mounted() {
+		this.$refs.search.focus();
+	},
 };
 </script>
 
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
-.people
-    & > *
-        margin-bottom: var(--space-md)
-
-.person
-    padding: var(--space-sm)
+.results
     background-color: var(--color-b-alt)
+    height: 100%
+    padding: var(--space-sm)
 
-    &--head
-        margin-bottom: var(--space-xs)
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        align-items: flex-end
-        border-radius: 0
-        padding-bottom: var(--space-2xs)
-        border-bottom: 2px solid rgba(77, 97, 85, .15)
-
-    &--name
-        min-width: 200px
-
-    &--body
-        @include md
-            margin-top: var(--space-sm)
-            display: grid
-            grid-template-columns: 1fr 2fr
-            grid-gap: var(--space-sm)
-
-    ul
-        margin-bottom: var(--space-xs)
-
-    @include md
+    @include lg
         padding: var(--space-md)
 
-.people
-    margin-bottom: var(--space-xl)
+    h2
+        margin-bottom: var(--space-md)
 
-    .person--pic
-        grid-row: 1
-        img
-            max-width: 100%
+.input
+    display: grid
+    place-items: center
+    margin: var(--space-2xs) var(--space-xs)
 
-    .person--arm
-        grid-row: 1
-        grid-column: span 2
+    @include lg
+        width: 300px
+        place-items: start
+        margin: 0
 
-    .person--content
-        grid-column: 1 / -1
+    @include xl
+        width: 400px
 
-    .person--name
-        font-size: var(--d-3xl)
-        // font-weight: 500
+    input
+        width: 100%
+        margin-bottom: var(--space-xs)
 
-    .person--title
-        font-size: var(--d-lg)
+.result
+    padding-left: var(--space-md)
+    padding-top: var(--space-xs)
+    padding-bottom: var(--space-xs)
+    border-left: solid 5px var(--color-p)
 
-    h3
-        font-weight: 600
-        font-size: var(--d-md)
-        color: var(--color-p)
-
-    ::v-deep
-        //fix bullet points on mobile
-        list-style-position: inside
-
-        @include md
-            li
-                margin-left: var(--space-sm)
-                list-style-position: outside
-                // width: 80%
+    &:hover
+        background-color: var(--color-b)
 </style>
 

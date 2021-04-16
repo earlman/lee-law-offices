@@ -15,7 +15,7 @@ export default {
 	methods: {
 		changeLocale(text) {
 			if (text == 'English' || text == 'Español') {
-				this.$i18n.locale = this.$i18n.locale == 'es' ? 'en' : 'es';
+				this.$i18n.locale = this.$i18n.locale == 'es' ? 'en-us' : 'es';
 				this.$router.push({
 					path: this.$tp(this.$route.path, this.currentLocale, true),
 				});

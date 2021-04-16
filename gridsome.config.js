@@ -6,10 +6,10 @@
 module.exports = {
     siteName: 'Lee Law Offices',
     templates: {
-        // People: (node) => {
-        //     return `/employee/${node.path}`
-        //     // return `/product/${node.slug}/reviews`
-        // },
+        People: (node) => {
+            return node.path
+            // return `/product/${node.slug}/reviews`
+        },
         Translations: (node) => node.path,
     },
     plugins: [
@@ -21,7 +21,7 @@ module.exports = {
                     {
                         typeName: 'Translations',
                         indexName: 'People',
-                        fields: ['name', 'title', 'pic'],
+                        fields: ['name', 'title', 'pic', 'path', 'filename'],
                     },
                 ],
             },
@@ -30,8 +30,18 @@ module.exports = {
         {
             use: '@gridsome/source-filesystem',
             options: {
-                path: 'content/**/*.md',
+                path: '**/*.md',
+                baseDir: './content',
                 typeName: 'Translations',
+            }
+        },
+        // Load all Blog Posts from file system
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: '**/people/*.md',
+                baseDir: './content',
+                typeName: 'People',
             }
         },
         {
@@ -42,7 +52,7 @@ module.exports = {
                     'es'
                 ],
                 pathAliases: { // path segment alias for each locales
-                    'en-us': 'en',
+                    'en-us': 'en-us',
                     'es': 'es'
                 },
                 fallbackLanguage: "en-us",

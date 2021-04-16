@@ -14,6 +14,7 @@
     type: "person"
     locale: en-us
     pic: "./profile_picture.png"
+    filename: "ashlee-lee"
 
 ---
 

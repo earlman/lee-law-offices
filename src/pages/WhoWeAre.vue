@@ -71,7 +71,7 @@
 			<!-- <p>TODO: add list of employees</p> -->
 			<div class="results--list" v-if="searchResults.people">
 				<div v-for="person in searchResults.people" :key="person.name" class="result">
-					<a :href="person.path">
+					<a :href="$tp('/people/' + person.node.filename)">
 						<h3>
 							{{ person.node.name }}
 						</h3>
@@ -99,7 +99,11 @@ query($locale: String) {
                 education
                 admitted
                 awards
+                path
                 content
+                fileInfo {
+                    name
+                }
                 # link
                 # pic (width: 720, height: 200, quality: 90)
             }

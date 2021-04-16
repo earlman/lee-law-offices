@@ -33,13 +33,13 @@ module.exports = {
             }
         },
         // TODO: delete these bc they're loaded in Translations
-        {
-            use: '@gridsome/source-filesystem',
-            options: {
-                path: 'content/en-us/practice-areas/*.md',
-                typeName: 'PracticeAreas',
-            },
-        },
+        // {
+        //     use: '@gridsome/source-filesystem',
+        //     options: {
+        //         path: 'content/en-us/practice-areas/*.md',
+        //         typeName: 'PracticeAreas',
+        //     },
+        // },
         // {
         //     use: '@gridsome/source-filesystem',
         //     options: {

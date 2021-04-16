@@ -113,6 +113,7 @@ section
 
         .contentgrid
             display: grid
+            grid-gap: 0 var(--space-xs)
             grid-template-columns: 1fr 1fr
 
             h2

@@ -1,6 +1,5 @@
 ---
 
-    id: "business-litigation"
     allegations: 
         - Breach of Fiduciary Duty
         - Breach of Contract
@@ -9,6 +8,8 @@
         - Consumer Fraud
         - Misappropriation of Business Secrets
         - Tortious Interference with Contract
+    type: "bl"
+    locale: "en-us"
 
 ---
 <h4>

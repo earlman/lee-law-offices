@@ -1,56 +1,5 @@
 <template>
 	<PageLayout :title="$t('nav.wwa')" :bgImage="bgImage">
-		<!-- <template slot="sidebar">
-			<nav class="people--menu">
-				<ul>
-					<li v-for="edge in $page.people.edges" :key="edge.node.title">
-						<a :href="'#' + edge.node.link">
-							{{ edge.node.name }}
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</template> -->
-		<!-- <div class="people">
-			<div
-				v-for="edge in $page.people.edges"
-				:key="edge.node.title"
-				:class="edge.node.title"
-				class="person"
-				:id="edge.node.link"
-			>
-				<div class="person--head">
-					<h2 class="person--name">{{ edge.node.name }}</h2>
-					<h3 class="person--title">{{ edge.node.title }}</h3>
-				</div>
-				<div class="person--body">
-					<div v-if="edge.node.pic" class="person--pic">
-						<g-image :src="edge.node.pic"> </g-image>
-					</div>
-					<div class="person--arm">
-						<div class="person--education">
-							<h3>{{ $t('wwa.education') }}:</h3>
-							<ul>
-								<li v-for="e in edge.node.education">{{ e }}</li>
-							</ul>
-						</div>
-						<div class="person--admitted">
-							<h3>{{ $t('wwa.admitted') }}:</h3>
-							<ul>
-								<li v-for="a in edge.node.admitted">{{ a }}</li>
-							</ul>
-						</div>
-						<div v-if="edge.node.awards[0]" class="person--awards">
-							<h3>{{ $t('wwa.awards') }}:</h3>
-							<ul>
-								<li v-for="award in edge.node.awards">{{ award }}</li>
-							</ul>
-						</div>
-					</div>
-					<div class="person--content" v-html="edge.node.content" />
-				</div>
-            </div>
-        </div> -->
 		<template slot="sidebar">
 			<!-- SEARCH -->
 			<div class="input">
@@ -137,8 +86,15 @@ export default {
 			if (results.length == 0) {
 				this.searchResults.message = 'No results found';
 			}
-			this.searchResults.people = results;
+			this.searchResults.people = this.filterLocale(results);
 			return;
+		},
+		filterLocale(people) {
+			const results = people.filter((person) => {
+				return person.locale == this.$i18n.locale;
+			});
+			console.log(results);
+			return results;
 		},
 	},
 	metaInfo: {

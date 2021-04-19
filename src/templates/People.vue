@@ -15,19 +15,21 @@
 					</div>
 					<div class="person--arm">
 						<div class="person--education">
-							<h3>Education:</h3>
+							<h3>
+								{{ $t('wwa.education') }}
+							</h3>
 							<ul>
 								<li v-for="e in $page.people.education">{{ e }}</li>
 							</ul>
 						</div>
 						<div class="person--admitted">
-							<h3>Admitted:</h3>
+							<h3>{{ $t('wwa.admitted') }}</h3>
 							<ul>
 								<li v-for="a in $page.people.admitted">{{ a }}</li>
 							</ul>
 						</div>
 						<div v-if="$page.people.awards[0]" class="person--awards">
-							<h3>Awards:</h3>
+							<h3>{{ $t('wwa.awards') }}</h3>
 							<ul>
 								<li v-for="award in $page.people.awards">{{ award }}</li>
 							</ul>
@@ -48,6 +50,7 @@ query ($id: ID!) {
         admitted
         awards
         content
+        locale
         # pic (width: 720, height: 200, quality: 90)
     }
 }
@@ -66,6 +69,9 @@ export default {
 
 	components: {
 		PageLayout,
+	},
+	mounted() {
+		this.$i18n.locale = this.$page.people.locale;
 	},
 };
 </script>

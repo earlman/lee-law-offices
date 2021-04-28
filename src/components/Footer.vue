@@ -4,53 +4,56 @@
 			<nav>
 				<div class="logo-container">
 					<img src="@/assets/images/logo-footer.webp" alt="logo" class="logo" />
-
-					<!-- <h1>Lee Law Offices</h1> -->
 				</div>
 				<div class="our-services">
-					<h4>Our Services</h4>
+					<h4>{{ $t('nav.our-services') }}</h4>
 					<ul>
 						<li>
-							<g-link to="/employee"> For Employees </g-link>
+							<g-link :to="$tp('/employee')"> {{ $t('nav.employees') }} </g-link>
 						</li>
 						<li>
-							<g-link to="/employer"> For Employers </g-link>
+							<g-link :to="$tp('/employer')"> {{ $t('nav.employers') }} </g-link>
 						</li>
 						<li>
-							<g-link to="/business-litigation">
-								Business & Commercial Litigation
+							<g-link :to="$tp('/business-litigation')">
+								{{ $t('nav.ba') }}
 							</g-link>
 						</li>
 					</ul>
 				</div>
 				<div class="quick-links">
-					<h4>Quick Links</h4>
+					<h4>{{ $t('nav.ql') }}</h4>
 					<ul>
 						<li>
-							<g-link to="/">Home</g-link>
+							<g-link :to="$tp('/')">{{ $t('nav.home') }}</g-link>
 						</li>
 						<li>
-							<g-link to="/employee">Practice Areas</g-link>
+							<g-link :to="$tp('/practice-areas')">{{ $t('nav.pa') }}</g-link>
 						</li>
 						<li>
-							<g-link to="/who-we-are">Who We Are</g-link>
+							<g-link :to="$tp('/who-we-are')">{{ $t('nav.wwa') }}</g-link>
 						</li>
 						<li>
-							<g-link to="/contact-us">Contact Us</g-link>
+							<g-link :to="$tp('/contact-us')">{{ $t('nav.ca') }}</g-link>
 						</li>
 						<li>
-							<g-link to="/disclaimer">Disclaimer</g-link>
+							<g-link :to="$tp('/disclaimer')">{{ $t('nav.disclaimer') }}</g-link>
 						</li>
 					</ul>
 				</div>
 				<div class="contact">
-					<h4>Contact</h4>
+					<h4>{{ $t('nav.ca') }}</h4>
 					<ul>
-						<li><strong>Phone: </strong>&nbsp;(323) 289-2260, Ext. 1</li>
-						<li><strong>Fax: </strong>&nbsp;(323) 642-5451</li>
 						<li>
-							<strong>Address: </strong>&nbsp;725 S. Figueroa Street, Suite 3065, Los
-							Angeles, CA 90017
+							<strong>{{ $t('index.contact-us.phone') }}: </strong>&nbsp;(323)
+							289-2260, Ext. 1
+						</li>
+						<li>
+							<strong>{{ $t('index.contact-us.fax') }}: </strong>&nbsp;(323) 642-5451
+						</li>
+						<li>
+							<strong>{{ $t('index.contact-us.address') }}: </strong>&nbsp;725 S.
+							Figueroa Street, Suite 3065, Los Angeles, CA 90017
 						</li>
 					</ul>
 				</div>

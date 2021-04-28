@@ -1,35 +1,35 @@
 <template>
 	<div class="responsive-container">
 		<div class="contact-us">
-			<h2 class="section-title">Contact Us</h2>
+			<h2 class="">{{ $t('index.contact-us.header') }}</h2>
 			<div class="contact-us--inner">
 				<div class="gmap">
 					<Gmap />
 				</div>
 				<div class="info">
 					<div class="info-section">
-						<h4>Phone</h4>
+						<h4>{{ $t('index.contact-us.phone') }}</h4>
 						<p>(323) 289-2260, Ext. 1</p>
 					</div>
 					<div class="info-section">
-						<h4>Fax</h4>
+						<h4>{{ $t('index.contact-us.fax') }}</h4>
 						<p>(323) 642-5451</p>
 					</div>
 					<div class="info-section">
-						<h4>Address</h4>
+						<h4>{{ $t('index.contact-us.address') }}</h4>
 						<p>
-							Address: 725 S. Figueroa Street, Suite 3065 <br />
+							725 S. Figueroa Street, Suite 3065 <br />
 							Los Angeles, CA 90017
 						</p>
 					</div>
 					<div class="info-section">
-						<h4>Business Hours</h4>
+						<h4>{{ $t('index.contact-us.bh') }}</h4>
 						<div class="hours-table">
-							<p>Weekdays</p>
-							<p>9 am - 5pm</p>
-							<p>Weekends</p>
+							<p>{{ $t('index.contact-us.wd') }}</p>
+							<p>9am - 5pm (PT)</p>
+							<p>{{ $t('index.contact-us.we') }}</p>
 							<p>Closed</p>
-							<p>Holidays</p>
+							<p>{{ $t('index.contact-us.holidays') }}</p>
 							<p>Closed</p>
 						</div>
 					</div>

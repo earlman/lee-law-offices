@@ -17,6 +17,8 @@
         "buefy": "^0.9.4",
         "gmap-vue": "^1.5.0",
         "gridsome": "^0.7.0",
+        "gridsome-plugin-i18n": "^1.6.0",
+        "gridsome-plugin-flexsearch": "^1.1.0",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "netlify-cms": "^2.10.74",
         "node-sass": "^4.0.0",

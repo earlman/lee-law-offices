@@ -1,6 +1,10 @@
 <template>
 	<div class="navbar--container">
-		<vue-navigation-bar :options="navbarOptions" class="navbar" />
+		<vue-navigation-bar
+			:options="navbarOptions"
+			class="navbar"
+			@vnb-item-clicked="changeLocale"
+		/>
 	</div>
 </template>
 
@@ -8,9 +12,22 @@
 
 <script>
 export default {
-	data() {
-		return {
-			navbarOptions: {
+	methods: {
+		changeLocale(text) {
+			if (text == 'English' || text == 'Español') {
+				this.$i18n.locale = this.$i18n.locale == 'es' ? 'en-us' : 'es';
+				this.$router.push({
+					path: this.$tp(this.$route.path, this.currentLocale, true),
+				});
+			}
+		},
+	},
+	computed: {
+		altLocale() {
+			return this.$i18n.locale == 'es' ? 'English' : 'Español';
+		},
+		navbarOptions() {
+			return {
 				elementId: 'main-navbar',
 				isUsingVueRouter: true,
 				mobileBreakpoint: 992,
@@ -28,20 +45,19 @@ export default {
 				menuOptionsRight: [
 					{
 						type: 'link',
-						text: 'Home',
-						path: '/',
+						text: this.$t('nav.home'),
+						path: this.$tp('/'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{
 						type: 'link',
-						text: 'Practice Areas',
+						text: this.$t('nav.pa'),
 						arrowColor: 'var(--color-p)',
 						subMenuOptions: [
 							{
 								type: 'link',
-								text: 'For Employees',
-								// subText: 'Stupid corporate wet blankets. Like booze ever killed anyone.',
-								path: '/employee',
+								text: this.$t('nav.employees'),
+								path: this.$tp('/employee'),
 								// iconLeft: '<i class="fa fa-star fa-fw"></i>',
 							},
 							{
@@ -49,9 +65,8 @@ export default {
 							},
 							{
 								type: 'link',
-								text: 'For Employers',
-								// subText: "You're a presentation tool!",
-								path: '/employer',
+								text: this.$t('nav.employers'),
+								path: this.$tp('/employer'),
 								// arrowColor: '#659CC8',
 							},
 							{
@@ -59,36 +74,40 @@ export default {
 							},
 							{
 								type: 'link',
-								text: 'Business & Commercial Litigation',
-								// subText:
-								// 	'I enjoy having breakfast in bed. I like waking up to the smell of bacon. Sue me.',
-								path: '/business-litigation',
+								text: this.$t('nav.ba'),
+								path: this.$tp('/business-litigation'),
 							},
 						],
 					},
 
 					{
 						type: 'link',
-						text: 'Who We Are',
-						path: '/who-we-are',
+						text: this.$t('nav.wwa'),
+						path: this.$tp('/who-we-are'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{
 						type: 'link',
-						text: 'Contact Us',
-						path: '/contact-us',
+						text: this.$t('nav.ca'),
+						path: this.$tp('/contact-us'),
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 					{
 						type: 'link',
-						text: 'Español',
-						path: '/contact-us',
+						text: this.altLocale,
+						path: '',
+						isLinkAction: true,
 						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
 					},
 				],
-			},
-		};
+			};
+		},
 	},
+	// data() {
+	// 	return {
+	// 		navbarOptions:
+	// 	};
+	// },
 };
 </script>
 

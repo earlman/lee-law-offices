@@ -1,0 +1,111 @@
+{
+    "nav": {
+        "employees": "Para Empleados",
+        "employers": "Para Empleadores(as)",
+        "ba": " Litigio Comercial y Empresarial",
+        "read-more": "Lee Mas",
+        "home": "Pagina De Inicio",
+        "pa": "Area de Practica",
+        "wwa": "Quienes Somos",
+        "ca": "Contactanos",
+        "our-services": "Nuestros Servicios",
+        "ql": "Enlaces Rapidos",
+        "disclaimer": "Descargos de Responsabilidad"
+    },
+    "wwa": {
+        "education": "Educaccion",
+        "admitted": "Licenciado en Derecho en",
+        "awards": "Premios",
+        "results": "Resultados",
+        "search": "Búsqueda"
+    },
+    "index": {
+        "hero": "Somos una oficina de abogados boutique en Los Ángeles especializada en ley de Trabajo y Empleo, y Litigio Comercial y Empresarial. Evaluamos cada aspecto de un case para poder satisfacer las necesidades únicas de nuestros clientes y para maximizar el resultado para nuestros clientes.",
+        "labor-law": {
+            "header": "Ley de Trabajo y Empleo",
+            "paragraph": "Nuestra práctica de ley de trabajo y empleo cubre reclamos de salarios y horas, despido injustificado, descriminacion, y acoso. Hemos representado a una variedad de clientes en acciones colectivas al igual que reclamos individuales. Nuestra práctica no es limitada a empleados (usualmente el demandante) o empleadores(as) (usualmente el acusado(a)). El haber representado a ambos lados en un caso nos da la oportunidad de saber cómo servir a nuestros clientes para satisfacer sus necesidades únicas."
+        },
+        "business-lit": {
+            "header": "Litigio Comercial y Empresarial",
+            "paragraph": "Nuestra práctica de litigación comercial y empresarial incluye incumplimiento de contrato, incumplimiento del deber fiduciario y/o lealtad, disputas de asociación, apropiación indebida de secretos comerciales, tergiversación, fraude, interferencia con el contrato, e interferencia con operaciones de negocio. Nuestro abogados brindan un asesoramiento integral en derecho corporativo."
+        },
+        "case-eval": {
+            "header": "Formulario De Evaluación de Caso Gratuito",
+            "name": "Nombre",
+            "phone": "Telefono",
+            "email": "Correo Electronico",
+            "message": "Brevemente explique su situación.",
+            "disclaimer": "E leido los descargos de responsabilidad.",
+            "submit": "Someter"
+        },
+        "contact-us": {
+            "header": "Contactanos",
+            "phone": "Numero",
+            "fax": "Fax",
+            "address": "Direccion",
+            "bh": "Horario de Negocio",
+            "wd": "Entresemana",
+            "we": "Fin de Semana",
+            "holidays": "Dias Feriados"
+        }
+    },
+    "buslit": {
+        "exal": "Ejemplo de Alegaciones"
+    },
+    "employer": {
+        "hero": {
+            "header": "Estamos Aquí para<br/>proteger a usted y su negocio",
+            "paragraph": "Llamanos hoy para una evaluación de tu caso gratuito"
+        },
+        "eld": {
+            "header": "Defensa de la Ley Laboral",
+            "paragraph": "Sabemos cuánto dinero, tiempo, y energía se requiere para manejar un negocio, especialmente cuando las leyes laborales de California son muy exigentes con los empleadores(as). Si usted tiene un negocio en California y tiene algún problema con un empleado anterior o actual, entonces está en el lugar adecuado. Nuestro equipo le ayudará a construir una defensa fuerte y económica para proteger su negocio de las leyes de California que son más amables hacia empleados, ex empleados vengativos, y de abogados de empleados codiciosos que buscan explotar por lo siguiente:",
+            "list": [
+                "No pagar los salarios de las horas extraordinarias",
+                "No proporcionar pausas para comer y descansar ",
+                "No proporcionar declaraciones de salario",
+                "Ambiente de trabajo hostil",
+                "Acoso sexual de un supervisor",
+                "Discriminacion basado en la edad, raza, género, u orientación sexual",
+                "Represalias después de haberse quejado de acoso o discriminacion",
+                "No haber prevenido acoso, descriminacion y/o represalias",
+                "Despido injustificado"
+            ]
+        },
+        "ecad": {
+            "header": "Defensa de Demanda Colectiva Laboral",
+            "paragraph": "Le han notificado con una demanda colectiva? Sabemos que las palabras “demanda colectiva” pueden causar pánico y es intimidante. El clima de litigación en California está en auge con demandas colectivas sobre salarios y horas de empleo que muy seguido son promovidos por abogados agresivos. Para defender contra una demanda colectiva, los empleadores necesitan a alguien con un conocimiento profundo y completo de cómo atacar una demanda colectiva. Nuestro equipo puede proporcionarle a usted con una estrategia de defensa efectiva y económica contra una demanda colectiva intimidante que reclamo lo siguiente:",
+            "list": [
+                "No pagar los salarios de las horas extraordinarias ",
+                "No proporcionar pausas para comer y descansar ",
+                "No proporcionar declaraciones de salario",
+                "No proporcionar pago de salario a tiempo despues de terminación de empleo",
+                "No pagar el salario mínimo",
+                "No reembolsar por gastos de negocio",
+                "Práctica desleal de negocios"
+            ]
+        }
+    },
+    "employee": {
+        "hero": {
+            "header": "La ley está de su parte.<br />No habrá costos legales<br />hasta que ganemos. ",
+            "paragraph": "Llamanos hoy para una evaluación de tu caso gratuito"
+        },
+        "har": {
+            "h": "Acoso",
+            "p": "<p>¿Esta siendo tratado de una forma ofensiva, humillante, intimidante, o amenazado(a) por su raza, color, origen de nacionalidad, genero, orientación sexual, por estar embarazada, edad, religión, o discapacidad?</p><p>Ya es suficiente. Es ahora de que usted enfrente a su acosador.</p>"
+        },
+        "ter": {
+            "h": "Despido Injustificado",
+            "p": "<p>¿Fue despedido(a) después de haber pedido salario no pagado, sometido un reclamo de indemnización por accidente laboral, o por repórter un acoso? ¿Renuncio su trabajo debido a que ya no pudo tolerar el acoso o discriminación?</p><p>La ley está de su parte. No habrá costos legales hasta que ganemos.</p>"
+        },
+        "dis": {
+            "h": "Discriminación",
+            "p": "<p>¿Está siendo tratado(a) menos favorable en el trabajo por su raza, genero, edad, religión, por estar embarazada, o discapacidad? No deje que le jueguen mal. </p><p>Es hora de que defienda sus derechos.</p>"
+        },
+        "wh": {
+            "h": "Salario y Hora",
+            "p": "<p>¿No está seguro(a) si esta recibiendo el salario adecuado? Usted tiene derecho de recibir el salario mínimo, ser pagado por tiempo extraordinario, recibir horario de comida y un descanso, y salarios no pagados anteriormente.</p><p>Nunca es tarde para reclamar el salario que se ha ganado.</p>"
+        }
+    }
+}

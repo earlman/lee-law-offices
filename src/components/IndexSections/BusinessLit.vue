@@ -1,20 +1,16 @@
 <template>
 	<div class="businesslit responsive-container">
 		<div class="title">
-			<h2>Business & Commercial Litigation</h2>
+			<h2>{{ $t('index.business-lit.header') }}</h2>
 		</div>
 		<div class="content">
 			<div class="content--text">
 				<p>
-					Our Business & Commercial Litigation Practice includes breach of contract,
-					breach of fiduciary duty and/or loyalty, partnership disputes, misappropriation
-					of business secrets, misrepresentation, fraud, interference with contract, and
-					interference with business operation. Our attorneys provide comprehensive advice
-					in corporate law.
+					{{ $t('index.business-lit.paragraph') }}
 				</p>
 			</div>
-			<g-link class="button" to="/business-litigation">
-				<span>Read More</span>
+			<g-link class="button" :to="$tp('/business-litigation')">
+				<span>{{ $t('nav.read-more') }}</span>
 				<svg
 					width="29"
 					height="29"

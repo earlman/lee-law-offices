@@ -1,0 +1,113 @@
+{
+    "nav": {
+        "employers": "For Employers",
+        "employees": "For Employees",
+        "ba": "Business & Commercial Litigation",
+        "read-more": "Read More",
+        "home": "Home",
+        "pa": "Practice Areas",
+        "wwa": "Who We Are",
+        "ca": "Contact Us",
+        "our-services": "Our Services",
+        "ql": "Quick Links",
+        "disclaimer": "Disclaimer"
+    },
+    "wwa": {
+        "education": "Education",
+        "admitted": "Admitted",
+        "awards": "Awards",
+        "results": "Results",
+        "search": "Search"
+    },
+    "index": {
+        "hero": "We are a boutique law firm in Los Angeles specializing in Labor and Employment Law, and Business and Commercial Litigation. We carefully assess every aspect of a case to satisfy our client’s unique needs and to maximize our client’s results.",
+        "labor-law": {
+            "header": "Labor & Employment Law",
+            "paragraph": "Our Labor & Employment Law Practice covers wage and hour claims, wrongful termination, discrimination, and harassment. We have represented a variety of clients in class actions as well as individual claims. Our practice is not limited to employees (usually as plaintiffs) or employers (usually as defendants). Having represented both sides of the case, we know how to best serve our clients to meet their unique needs."
+        },
+        "business-lit": {
+            "header": "Business & Commercial Litigation",
+            "paragraph": "Our Business & Commercial Litigation Practice includes breach of contract, breach of fiduciary duty and/or loyalty, partnership disputes, misappropriation of business secrets, misrepresentation, fraud, interference with contract, and interference with business operation. Our attorneys provide comprehensive advice in corporate law."
+        },
+        "case-eval": {
+            "header": "Free Case Evaluation Form",
+            "name": "Name",
+            "phone": "Phone",
+            "email": "Email",
+            "message": "Briefly explain your situation.",
+            "disclaimer": "I have read the disclaimer.",
+            "submit": "Submit"
+        },
+        "contact-us": {
+            "header": "Contact Us",
+            "phone": "Phone",
+            "fax": "Fax",
+            "address": "Address",
+            "bh": "Business Hours",
+            "wd": "Weekdays",
+            "we": "Weekends",
+            "holidays": "Holidays"
+        }
+    },
+    "buslit": {
+        "exal": "Example Allegations"
+    },
+    "employer": {
+        "hero": {
+            "header": "We're here to protect you<br />and your business",
+            "paragraph": "Call us today for a free case evaluation"
+        },
+        "eld": {
+            "header": "Employment Law Defense",
+            "paragraph": "We know how much money, time and energy it takes to run a business especially when California labor laws are so harsh on employers. If you have a business in California and are having any issues with a former or current employee then you have come to the right place. Our team will help you build a strong and cost-effective defense to protect your business from employee friendly California state laws, vindictive former employees and greedy employee side attorneys looking only to exploit you for the following matters:",
+            "list": [
+                "Failure to pay overtime wages",
+                "Failure to provide meal and rest breaks",
+                "Failure to provide wage statements",
+                "Hostile work environment",
+                "Sexual harassment by a supervisor",
+                "Discrimination based on age, race, gender or sexual orientation",
+                "Retaliation after they complained about harassment or discrimination",
+                "Failure to prevent harassment, discrimination and/or retaliation",
+                "Wrongful termination"
+            ]
+        },
+        "ecad": {
+            "header": "Employment Class Action Defense",
+            "paragraph": "Have you been served with a class action complaint? We know, the words “class action” can cause panic and look intimidating. The current California litigation climate is booming with wage and hour class actions that are often propelled by aggressive plaintiff’s attorneys. To defend against a potential class action employers need someone with a deep and comprehensive knowledge of how to tackle class actions. Our team can provide you with an effective and cost-efficient strategic defense against seemingly intimidating class action complaints for the following matters:",
+            "list": [
+                "Failure to pay overtime wages",
+                "Failure to provide meal and rest breaks",
+                "Failure to pay overtime wages",
+                "Failure to provide meal and rest breaks",
+                "Failure to provide wage statements",
+                "Failure to timely pay wages due at termination",
+                "Failure to pay minimum wages",
+                "Failure to reimburse for business expenses",
+                "Unfair business practice"
+            ]
+        }
+    },
+    "employee": {
+        "hero": {
+            "header": "The law is on your side<br />No legal fees until we win",
+            "paragraph": "Call us today for a free case evaluation"
+        },
+        "har": {
+            "h": "Harassment",
+            "p": "<p>Are you <em><b>being treated in a way that is offensive, humiliating, intimidating, or threatening at work</b></em> because of your race, color, national origin, gender, sexual orientation, being pregnant, age, religion, or disability?</p><p>Enough is enough. It's time to stand up against your harasser.</p>"
+        },
+        "ter": {
+            "h": "Wrongful Termination",
+            "p": "<p>Did you <em><b>get fired</b></em>after asking for your unpaid wages, filing your worker’s compensation claim, or reporting harassment? Did you <em><b>quit</b></em> because you could no longer tolerate harassment or discrimination?</p><p>You deserve better. It is time to claim your lost wages.</p>"
+        },
+        "dis": {
+            "h": "Discrimination",
+            "p": "<p>Are you being<em><b> treated less favorably </b></em>at work because of your race, gender, age, religion, pregnant, or disability?</p><p>Stop getting screwed over. It's time to stand up for your rights.</p>"
+        },
+        "wh": {
+            "h": "Wage & Hour",
+            "p": "<p>Are you<em><b> unsure if </b></em>you are receiving all your wages? You are entitled to receiving the minimum wage, overtime, meal and rest breaks, and back wages.</p><p>It's time to claim what you earned.</p>"
+        }
+    }
+}

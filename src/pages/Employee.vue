@@ -9,7 +9,7 @@
 						<p>(323) 289-2260, Ext. 1<br /><em>Se habla Español</em></p>
 					</div>
 					<g-link :to="$tp('/contact-us')">
-						<button class="contact-us">Contact Us</button>
+						<button class="contact-us">{{ $t('nav.ca') }}</button>
 					</g-link>
 				</div>
 			</hero>

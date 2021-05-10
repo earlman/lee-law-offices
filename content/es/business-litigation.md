@@ -13,5 +13,5 @@
 
 ---
 <h4>
-Nuestra práctica de litigación empresarial y comercial proporciona una completa selección de servicios para nuestros clientes corporativos. También proporcionamos un servicio de litigación especializada para propiedades de iglesias y disputas de gobernanza. 
+Nuestra práctica de litigación empresarial y comercial proporciona una selección completa de servicios para nuestros clientes corporativos. También proporcionamos un servicio de litigación especializada para propiedades de iglesias y disputas de gobernanza. 
 </h4>

@@ -20,14 +20,14 @@
         "search": "Búsqueda"
     },
     "index": {
-        "hero": "Somos una oficina de abogados boutique en Los Ángeles especializada en ley de Trabajo y Empleo, y Litigio Comercial y Empresarial. Evaluamos cada aspecto de un case para poder satisfacer las necesidades únicas de nuestros clientes y para maximizar el resultado para nuestros clientes.",
+        "hero": "Somos una oficina de abogados boutique en Los Ángeles especializada en ley de Trabajo y Empleo, y Litigio Comercial y Empresarial. Evaluamos cada aspecto de un caso para poder satisfacer las necesidades únicas de nuestros clientes y para maximizar el resultado para nuestros clientes.",
         "labor-law": {
             "header": "Ley de Trabajo y Empleo",
-            "paragraph": "Nuestra práctica de ley de trabajo y empleo cubre reclamos de salarios y horas, despido injustificado, descriminacion, y acoso. Hemos representado a una variedad de clientes en acciones colectivas al igual que reclamos individuales. Nuestra práctica no es limitada a empleados (usualmente el demandante) o empleadores(as) (usualmente el acusado(a)). El haber representado a ambos lados en un caso nos da la oportunidad de saber cómo servir a nuestros clientes para satisfacer sus necesidades únicas."
+            "paragraph": "Nuestra práctica de ley de trabajo y empleo cubre reclamos de salarios y horas, despido injustificado, discriminación, y acoso. Hemos representado a una variedad de clientes en acciones colectivas al igual que reclamos individuales. Nuestra práctica no es limitada a empleados (usualmente el demandante) o empleadores(as) (usualmente el acusado(a)). El haber representado a ambos lados en un caso nos da la oportunidad de saber cómo servir a nuestros clientes para satisfacer sus necesidades únicas."
         },
         "business-lit": {
             "header": "Litigio Comercial y Empresarial",
-            "paragraph": "Nuestra práctica de litigación comercial y empresarial incluye incumplimiento de contrato, incumplimiento del deber fiduciario y/o lealtad, disputas de asociación, apropiación indebida de secretos comerciales, tergiversación, fraude, interferencia con el contrato, e interferencia con operaciones de negocio. Nuestro abogados brindan un asesoramiento integral en derecho corporativo."
+            "paragraph": "Nuestra práctica de litigación comercial y empresarial incluye incumplimiento de contrato, incumplimiento del deber fiduciario y/o lealtad, disputas de asociación, apropiación indebida de secretos comerciales, tergiversación, fraude, interferencia con el contrato, e interferencia con operaciones de negocio. Nuestros abogados brindan un asesoramiento integral en derecho corporativo."
         },
         "case-eval": {
             "header": "Formulario De Evaluación de Caso Gratuito",
@@ -46,7 +46,8 @@
             "bh": "Horario de Negocio",
             "wd": "Entresemana",
             "we": "Fin de Semana",
-            "holidays": "Dias Feriados"
+            "holidays": "Dias Feriados",
+            "closed": "Cerrado"
         }
     },
     "buslit": {
@@ -105,7 +106,7 @@
         },
         "wh": {
             "h": "Salario y Hora",
-            "p": "<p>¿No está seguro(a) si esta recibiendo el salario adecuado? Usted tiene derecho de recibir el salario mínimo, ser pagado por tiempo extraordinario, recibir horario de comida y un descanso, y salarios no pagados anteriormente.</p><p>Nunca es tarde para reclamar el salario que se ha ganado.</p>"
+            "p": "<p>¿No está seguro(a) si esta recibiendo el salario adecuado? Usted tiene derecho de recibir el salario mínimo, ser pagado por tiempo extraordinario, recibir horario de comida y un descanso, y salarios no pagados anteriormente.</p><p>Nunca es tarde para reclamar el salario que le pertenece.</p>"
         }
     }
 }

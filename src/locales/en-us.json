@@ -46,7 +46,8 @@
             "bh": "Business Hours",
             "wd": "Weekdays",
             "we": "Weekends",
-            "holidays": "Holidays"
+            "holidays": "Holidays",
+            "closed": "Closed"
         }
     },
     "buslit": {

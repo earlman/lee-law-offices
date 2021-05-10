@@ -22,9 +22,9 @@
 						<p>{{ $t('index.contact-us.wd') }}</p>
 						<p>9 am - 5pm</p>
 						<p>{{ $t('index.contact-us.we') }}</p>
-						<p>Closed</p>
+						<p>{{ $t('index.contact-us.closed') }}</p>
 						<p>{{ $t('index.contact-us.holidays') }}</p>
-						<p>Closed</p>
+						<p>{{ $t('index.contact-us.closed') }}</p>
 					</div>
 				</div>
 			</div>

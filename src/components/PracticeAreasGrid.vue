@@ -10,7 +10,7 @@
 					alt="man touching woman's leg"
 				></g-image>
 				<div class="areas-content">
-					<a href="/practice-areas#harassment">
+					<a :href="$tp('/practice-areas#harassment')">
 						<div class="areas-content-top">
 							<h3>{{$t('employee.har.h')}}</h3>
 								<svg
@@ -42,7 +42,7 @@
 					alt="box on a desk"
 				></g-image>
 				<div class="areas-content">
-					<a href="/practice-areas#termination">
+					<a :href="$tp('/practice-areas#termination')">
 						<div class="areas-content-top">
 							<h3>{{$t('employee.ter.h')}}</h3>
 							<p>
@@ -76,7 +76,7 @@
 					alt="older woman getting lectured about computers"
 				></g-image>
 				<div class="areas-content">
-					<a href="/practice-areas#discrimination">
+					<a :href="$tp('/practice-areas#discrimination')">
 						<div class="areas-content-top">
 							<h3>{{$t('employee.dis.h')}}</h3>
 							<p>
@@ -109,7 +109,7 @@
 					alt="person looking at clock"
 				></g-image>
 				<div class="areas-content">
-					<a href="/practice-areas#wage">
+					<a :href="$tp('/practice-areas#wage')">
 						<div class="areas-content-top">
 							<h3>{{$t('employee.wh.h')}}</h3>
 							<p>

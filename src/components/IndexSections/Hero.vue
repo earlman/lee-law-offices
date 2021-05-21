@@ -30,10 +30,17 @@ export default {
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 
+.webp .hero-container
+   background-image: url("~@/assets/images/landing-mobile.webp")
+   @include md
+      background-image: url("~@/assets/images/landing-hero.webp")
+.no-webp .hero-container
+   background-image: url("~@/assets/images/landing-mobile.jpg")
+   @include md
+      background-image: url("~@/assets/images/landing-hero.jpg")
+
 .hero-container
    background-position: 0 20%
-   background-image: url(~@/assets/images/landing-mobile.webp)
-    // min-height: 500px
    background-repeat: no-repeat
    background-size: cover
    padding: 0 var(--space-sm)
@@ -45,7 +52,6 @@ export default {
 
    @include md
       background-position: top center
-      background-image: url(~@/assets/images/landing-hero.webp)
       min-height: 50vh
 
    @include lg

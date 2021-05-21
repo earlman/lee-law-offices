@@ -73,7 +73,7 @@ export default {
    flex-direction: column
 
    ::v-deep
-        //fix bullet points in practice-area on mobile
+      //fix bullet points in practice-area on mobile
       list-style-position: inside
 
       @include md
@@ -82,7 +82,7 @@ export default {
             list-style-position: outside
             width: 80%
 
-        //colored background in some parts
+         //colored background in some parts
          aside
             background-color: var(--color-p)
             border-radius: 3px
@@ -122,7 +122,7 @@ export default {
          padding: var(--space-md)
 
    .area--title
-        // margin-top: var(--space-xs)
+      // margin-top: var(--space-xs)
       margin-bottom: var(--space-xs)
 
 .practiceareas

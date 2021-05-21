@@ -41,7 +41,7 @@
 import PageLayout from '@/layouts/Page';
 import ContactUs from '@/components/IndexSections/FreeConsultation';
 import Gmap from '@/components/Gmap';
-import img from '@/assets/images/contact-us.webp';
+import img from '@/assets/images/contact-us.jpg';
 
 export default {
 	data() {
@@ -72,33 +72,33 @@ export default {
 
 .sidebar--inner
 
-    h4
-        text-transform: uppercase
-        margin-bottom: var(--space-2xs)
+   h4
+      text-transform: uppercase
+      margin-bottom: var(--space-2xs)
 
-    @include lg
-        .sidebar--item
-            margin-bottom: var(--space-sm)
+   @include lg
+      .sidebar--item
+         margin-bottom: var(--space-sm)
 
 .contact-us ::v-deep
-    margin-left: 0
-    margin-right: 0
+   margin-left: 0
+   margin-right: 0
 
 .gmap
-    margin-bottom: var(--space-sm)
-    background-color: var(--color-b-alt)
-    padding: var(--space-xs)
+   margin-bottom: var(--space-sm)
+   background-color: var(--color-b-alt)
+   padding: var(--space-xs)
     // margin: var(--space-xs)
 
-    @include md
-        margin-left: 0
-        margin-right: 0
+   @include md
+      margin-left: 0
+      margin-right: 0
 
-    @include lg
-        margin-top: 0
+   @include lg
+      margin-top: 0
 
 .hours-table
-    display: grid
-    grid-template-rows: 1fr 1fr 1fr
-    grid-template-columns: 1fr 1fr
+   display: grid
+   grid-template-rows: 1fr 1fr 1fr
+   grid-template-columns: 1fr 1fr
 </style>

@@ -6,7 +6,7 @@
 				<g-image
 					height="400"
 					class="areas--image"
-					src="@/assets/images/harassment.webp"
+					src="@/assets/images/harassment.jpg"
 					alt="man touching woman's leg"
 				></g-image>
 				<div class="areas-content">
@@ -38,7 +38,7 @@
 				<g-image
 					height="400"
 					class="areas--image"
-					src="@/assets/images/termination.webp"
+					src="@/assets/images/termination.jpg"
 					alt="box on a desk"
 				></g-image>
 				<div class="areas-content">
@@ -72,7 +72,7 @@
 				<g-image
 					height="400"
 					class="areas--image"
-					src="@/assets/images/discrimination.webp"
+					src="@/assets/images/discrimination.jpg"
 					alt="older woman getting lectured about computers"
 				></g-image>
 				<div class="areas-content">
@@ -104,7 +104,7 @@
 				<g-image
 					height="400"
 					class="areas--image"
-					src="@/assets/images/wage_hour.webp"
+					src="@/assets/images/wage_hour.jpg"
 					position="center"
 					alt="person looking at clock"
 				></g-image>
@@ -143,62 +143,62 @@
 @import '@/styles/04 - Layout/_media.sass'
 
 .practice-areas
-    max-width: var(--layout-max-width)
-    margin: 0 auto
+   max-width: var(--layout-max-width)
+   margin: 0 auto
 
 .areas-grid
-    display: grid
-    margin: var(--space-xs)
-    grid-gap: var(--space-xs)
+   display: grid
+   margin: var(--space-xs)
+   grid-gap: var(--space-xs)
 
-    @include md
-        margin: var(--space-sm)
-        grid-template-columns: 1fr 1fr
-        grid-gap: var(--space-sm)
+   @include md
+      margin: var(--space-sm)
+      grid-template-columns: 1fr 1fr
+      grid-gap: var(--space-sm)
 
-    @include xl
-        margin: 0
+   @include xl
+      margin: 0
 
-    h3
-        font-family: var(--font-secondary)
-        margin-bottom: var(--space-xs)
-        font-weight: 500
-        color: var(--color-t)
+   h3
+      font-family: var(--font-secondary)
+      margin-bottom: var(--space-xs)
+      font-weight: 500
+      color: var(--color-t)
 
-    .areas-content
-        background-color: var(--color-b-alt)
-        padding: var(--space-sm)
-        height: 100%
+   .areas-content
+      background-color: var(--color-b-alt)
+      padding: var(--space-sm)
+      height: 100%
 
-        @include md
-            padding: var(--space-sm) var(--space-md)
+      @include md
+         padding: var(--space-sm) var(--space-md)
 
-        p
+         p
             margin-bottom: var(--space-xs)
 
-        .areas-content-top
+         .areas-content-top
             justify-content: space-between
             display: flex
 
-        a:hover
+         a:hover
             text-decoration: none
 
-    .areas-item
-        display: flex
-        flex-direction: column
-        min-width: 300px
-        height: 100%
-        overflow: hidden
+   .areas-item
+      display: flex
+      flex-direction: column
+      min-width: 300px
+      height: 100%
+      overflow: hidden
 
-        img
-            max-width: 100%
+      img
+         max-width: 100%
 
-        &:hover
+         &:hover
             .areas--image
-                filter: grayscale(0)
+               filter: grayscale(0)
 
-        @include xl
+         @include xl
             .areas--image
-                transition: filter .4s,.4s ease
-                filter: grayscale(100%)
+               transition: filter .4s,.4s ease
+               filter: grayscale(100%)
 </style>

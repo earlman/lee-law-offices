@@ -41,7 +41,7 @@ query($locale: String) {
 </page-query>
 <script>
 import PageLayout from '@/layouts/Page';
-import img from '@/assets/images/practice-areas.webp';
+import img from '@/assets/images/practice-areas.jpg';
 
 export default {
 	data() {
@@ -69,21 +69,21 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .practiceareas
-    display: flex
-    flex-direction: column
+   display: flex
+   flex-direction: column
 
-    ::v-deep
+   ::v-deep
         //fix bullet points in practice-area on mobile
-        list-style-position: inside
+      list-style-position: inside
 
-        @include md
-            li
-                margin-left: var(--space-md)
-                list-style-position: outside
-                width: 80%
+      @include md
+         li
+            margin-left: var(--space-md)
+            list-style-position: outside
+            width: 80%
 
         //colored background in some parts
-        aside
+         aside
             background-color: var(--color-p)
             border-radius: 3px
             padding-top: var(--space-sm)
@@ -96,37 +96,37 @@ export default {
             margin-bottom: calc(-1*var(--space-xs))
 
             @include md
-                margin-left: calc(-1*var(--space-md))
-                margin-right: calc(-1*var(--space-md))
-                margin-bottom: calc(-1*var(--space-md))
+               margin-left: calc(-1*var(--space-md))
+               margin-right: calc(-1*var(--space-md))
+               margin-bottom: calc(-1*var(--space-md))
 
             ul
-                margin-bottom: 0
+               margin-bottom: 0
 
-                @include xl
-                    column-count: 2
-                    column-gap: 0
+               @include xl
+                  column-count: 2
+                  column-gap: 0
 
-                li
-                    margin-bottom: var(--space-2xs)
+               li
+                  margin-bottom: var(--space-2xs)
             *
-                color: white
+               color: white
 
-    .area
-        background-color: var(--color-b-alt)
+   .area
+      background-color: var(--color-b-alt)
 
-    .area
-        padding: var(--space-xs)
+   .area
+      padding: var(--space-xs)
 
-        @include md
-            padding: var(--space-md)
+      @include md
+         padding: var(--space-md)
 
-    .area--title
+   .area--title
         // margin-top: var(--space-xs)
-        margin-bottom: var(--space-xs)
+      margin-bottom: var(--space-xs)
 
 .practiceareas
 
-    & > *
-        margin-bottom: var(--space-md)
+   & > *
+      margin-bottom: var(--space-md)
 </style>

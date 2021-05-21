@@ -29,7 +29,7 @@ query($locale: String) {
 
 <script>
 import PageLayout from '@/layouts/Page';
-import img from '@/assets/images/business-litigation.webp';
+import img from '@/assets/images/business-litigation.jpg';
 
 export default {
 	data() {
@@ -58,41 +58,41 @@ export default {
 
 .page-buslit
 
-    ::v-deep
-        h4
-            font-family: var(--font-secondary)
-            font-weight: 500
-            margin-top: 0
-            margin-bottom: var(--space-xs)
+   ::v-deep
+      h4
+         font-family: var(--font-secondary)
+         font-weight: 500
+         margin-top: 0
+         margin-bottom: var(--space-xs)
 
-        @include lg
+         @include lg
             h1
-                white-space: nowrap
-                font-size: var(--d-xl) !important
+               white-space: nowrap
+               font-size: var(--d-xl) !important
 
-        @include sm
+         @include sm
             .pagetitle
-                margin-top: -30px
+               margin-top: -30px
 
-    .content
-        margin-bottom: var(--space-lg)
-        display: grid
-        grid-gap: var(--space-sm)
+   .content
+      margin-bottom: var(--space-lg)
+      display: grid
+      grid-gap: var(--space-sm)
 
-        @include xl
-            grid-template-columns: 2fr 1fr
-            margin-bottom: var(--space-xl)
+      @include xl
+         grid-template-columns: 2fr 1fr
+         margin-bottom: var(--space-xl)
 
-        &--text
+         &--text
             padding: var(--space-sm)
             background-color: white
 
             @include md
-                padding: var(--space-md)
+               padding: var(--space-md)
             @include lg
-                padding: var(--space-lg)
+               padding: var(--space-lg)
 
-        &--allegations
+         &--allegations
             background-color: var(--color-p)
             padding-left: var(--space-md)
             padding-right: var(--space-md)
@@ -100,12 +100,12 @@ export default {
             padding-bottom: var(--space-md)
 
             h4
-                margin-top: 0
-                margin-bottom: var(--space-2xs)
+               margin-top: 0
+               margin-bottom: var(--space-2xs)
 
             li
-                margin-left: var(--space-sm)
+               margin-left: var(--space-sm)
 
             *
-                color: white
+               color: white
 </style>

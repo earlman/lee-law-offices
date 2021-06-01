@@ -39,7 +39,6 @@ export default {
 
    @include md
       padding: var(--space-md) var(--space-sm)
-      background-image: url()
       min-height: revert
 
    @include lg

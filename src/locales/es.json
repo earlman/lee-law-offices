@@ -17,7 +17,8 @@
         "admitted": "Licenciado en Derecho en",
         "awards": "Premios",
         "results": "Resultados",
-        "search": "Búsqueda"
+        "search": "Búsqueda",
+        "instructions": "Realice una búsqueda para mostrar el perfil del abogado."
     },
     "index": {
         "hero": "Somos una oficina de abogados boutique en Los Ángeles especializada en ley de Trabajo y Empleo, y Litigio Comercial y Empresarial. Evaluamos cada aspecto de un caso para poder satisfacer las necesidades únicas de nuestros clientes y para maximizar el resultado para nuestros clientes.",

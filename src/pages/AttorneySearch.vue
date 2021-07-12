@@ -34,6 +34,9 @@
 			<div v-if="searchResults.message">
 				{{ searchResults.message }}
 			</div>
+			<p v-if="!searchResults.people[0]">
+				{{ $t('wwa.instructions') }}
+			</p>
 		</div>
 	</PageLayout>
 </template>

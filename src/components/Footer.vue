@@ -92,10 +92,10 @@ footer
 
    .logo
       margin: 0
-        // margin: var(--space-sm) 0 0
+      // margin: var(--space-sm) 0 0
       width: 200px
       @include lg
-            // margin-top: var(--space-md)
+         // margin-top: var(--space-md)
 
    nav
       margin: 0 auto var(--space-md)
@@ -104,25 +104,25 @@ footer
       .our-services, .quick-links, .contact
          margin-top: var(--space-sm)
 
-         @include lg
-            display: grid
-            grid-template-rows: 1fr
-            grid-template-columns: 3fr 2fr 2fr 3fr
-
-            ul
-               margin-right: var(--space-lg)
-         h4
-            margin-bottom: var(--space-2xs)
+      @include lg
+         display: grid
+         grid-template-rows: 1fr
+         grid-template-columns: 3fr 2fr 2fr 3fr
 
          ul
-            margin-bottom: var(--space-sm)
-            list-style-type: none
+            margin-right: var(--space-lg)
+      h4
+         margin-bottom: var(--space-2xs)
 
-            *
-               font-size: var(--d-sm)
+      ul
+         margin-bottom: var(--space-sm)
+         list-style-type: none
 
-            a
-               font-weight: 400
+         *
+            font-size: var(--d-sm)
+
+         a
+            font-weight: 400
 
    hr
       margin: auto
@@ -137,15 +137,15 @@ footer
       *
          all: initial
 
-         p, a
-            color: white
-            text-transform: uppercase
-            font-variant: small-caps
-            letter-spacing: 0.06em
-            font-size: 12px
-            margin-bottom: var(--space-md)
+      p, a
+         color: white
+         text-transform: uppercase
+         font-variant: small-caps
+         letter-spacing: 0.06em
+         font-size: 12px
+         margin-bottom: var(--space-md)
 
-         a
-            text-decoration: underline
-            cursor: pointer
+      a
+         text-decoration: underline
+         cursor: pointer
 </style>

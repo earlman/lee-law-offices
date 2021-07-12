@@ -1,5 +1,5 @@
 <template>
-	<PageLayout title="Who We Are" :bgImage="bgImage">
+	<PageLayout title="Attorney" :bgImage="bgImage">
 		<template slot="sidebar">
 			<a href="/who-we-are">⬅&nbsp;&nbsp;&nbsp;Back to search</a>
 		</template>
@@ -81,80 +81,80 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .people
-    & > *
-        margin-bottom: var(--space-md)
+   & > *
+      margin-bottom: var(--space-md)
 
 .person
-    padding: var(--space-sm)
-    background-color: var(--color-b-alt)
+   padding: var(--space-sm)
+   background-color: var(--color-b-alt)
 
-    &--head
-        margin-bottom: var(--space-xs)
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        align-items: flex-end
-        border-radius: 0
-        padding-bottom: var(--space-2xs)
-        border-bottom: 2px solid rgba(77, 97, 85, .15)
+   &--head
+      margin-bottom: var(--space-xs)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: flex-end
+      border-radius: 0
+      padding-bottom: var(--space-2xs)
+      border-bottom: 2px solid rgba(77, 97, 85, .15)
 
-    &--name
-        min-width: 200px
+   &--name
+      min-width: 200px
 
-    &--body
-        @include md
-            margin-top: var(--space-sm)
-            display: grid
-            grid-template-columns: 1fr 2fr
-            grid-gap: var(--space-sm)
+   &--body
+      @include md
+         margin-top: var(--space-sm)
+         display: grid
+         grid-template-columns: 1fr 2fr
+         grid-gap: var(--space-sm)
 
-    ul
-        margin-bottom: var(--space-xs)
+   ul
+      margin-bottom: var(--space-xs)
 
-    @include md
-        padding: var(--space-md)
+   @include md
+      padding: var(--space-md)
 
 .people
-    margin-bottom: var(--space-xl)
+   margin-bottom: var(--space-xl)
 
-    .person--pic
-        grid-row: 1
-        img
-            max-width: 100%
+   .person--pic
+      grid-row: 1
+      img
+         max-width: 100%
 
-    .person--arm
-        grid-row: 1
-        grid-column: span 2
+   .person--arm
+      grid-row: 1
+      grid-column: span 2
 
-    .person--content
-        grid-column: 1 / -1
+   .person--content
+      grid-column: 1 / -1
 
-    .person--name
-        font-size: var(--d-3xl)
-        // font-weight: 500
+   .person--name
+      font-size: var(--d-3xl)
+      // font-weight: 500
 
-    .person--title
-        font-size: var(--d-lg)
+   .person--title
+      font-size: var(--d-lg)
 
-    h3
-        font-weight: 600
-        font-size: var(--d-md)
-        color: var(--color-p)
+   h3
+      font-weight: 600
+      font-size: var(--d-md)
+      color: var(--color-p)
 
-    ::v-deep
-        //fix bullet points on mobile
-        list-style-position: inside
+   ::v-deep
+      //fix bullet points on mobile
+      list-style-position: inside
 
-        @include md
-            li
-                margin-left: var(--space-sm)
-                list-style-position: outside
-                // width: 80%
+      @include md
+         li
+            margin-left: var(--space-sm)
+            list-style-position: outside
+            // width: 80%
 
 .sidebar
-    a
-        color: var(--color-p)
-        &:hover
-            text-decoration: underline
+   a
+      color: var(--color-p)
+      &:hover
+         text-decoration: underline
 </style>
 

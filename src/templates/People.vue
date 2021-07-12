@@ -1,7 +1,7 @@
 <template>
 	<PageLayout title="Attorney" :bgImage="bgImage">
 		<template slot="sidebar">
-			<a href="/who-we-are">⬅&nbsp;&nbsp;&nbsp;Back to search</a>
+			<a href="/attorney-search">⬅&nbsp;&nbsp;&nbsp;Back to search</a>
 		</template>
 		<div class="people">
 			<div class="person">

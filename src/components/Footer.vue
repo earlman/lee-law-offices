@@ -31,7 +31,7 @@
 							<g-link :to="$tp('/practice-areas')">{{ $t('nav.pa') }}</g-link>
 						</li>
 						<li>
-							<g-link :to="$tp('/who-we-are')">{{ $t('nav.wwa') }}</g-link>
+							<g-link :to="$tp('/attorney-search')">{{ $t('nav.wwa') }}</g-link>
 						</li>
 						<li>
 							<g-link :to="$tp('/contact-us')">{{ $t('nav.ca') }}</g-link>
@@ -73,71 +73,71 @@
 @import '@/styles/04 - Layout/_media.sass'
 
 .logo-container
-    margin-top: var(--space-sm)
-    margin-left: -.5rem
-    opacity: .8
+   margin-top: var(--space-sm)
+   margin-left: -.5rem
+   opacity: .8
 
-    h1
-        font-variant: small-caps
+   h1
+      font-variant: small-caps
 
 .footer-container
-    background-color: var(--color-b-f)
-    border-top: 18px solid var(--color-p)
+   background-color: var(--color-b-f)
+   border-top: 18px solid var(--color-p)
 
 footer
-    margin: var(--space-sm) var(--layout-margin) 0 var(--space-md)
+   margin: var(--space-sm) var(--layout-margin) 0 var(--space-md)
 
-    *
-        color: white
+   *
+      color: white
 
-    .logo
-        margin: 0
+   .logo
+      margin: 0
         // margin: var(--space-sm) 0 0
-        width: 200px
-        @include lg
+      width: 200px
+      @include lg
             // margin-top: var(--space-md)
 
-    nav
-        margin: 0 auto var(--space-md)
-        max-width: var(--layout-max-width)
+   nav
+      margin: 0 auto var(--space-md)
+      max-width: var(--layout-max-width)
 
-        .our-services, .quick-links, .contact
-            margin-top: var(--space-sm)
+      .our-services, .quick-links, .contact
+         margin-top: var(--space-sm)
 
-        @include lg
+         @include lg
             display: grid
             grid-template-rows: 1fr
             grid-template-columns: 3fr 2fr 2fr 3fr
 
             ul
-                margin-right: var(--space-lg)
-        h4
+               margin-right: var(--space-lg)
+         h4
             margin-bottom: var(--space-2xs)
 
-        ul
+         ul
             margin-bottom: var(--space-sm)
             list-style-type: none
 
             *
-                font-size: var(--d-sm)
+               font-size: var(--d-sm)
 
             a
-                font-weight: 400
+               font-weight: 400
 
-    hr
-        margin: auto
-        max-width: var(--layout-max-width)
-        margin-bottom: var(--space-sm)
-        opacity: .1
+   hr
+      margin: auto
+      max-width: var(--layout-max-width)
+      margin-bottom: var(--space-sm)
+      opacity: .1
 
-    .aside
-        display: grid
-        place-items: center
+   .aside
+      display: grid
+      place-items: center
 
-        *
-            all: initial
+      *
+         all: initial
 
-        p, a
+         p, a
             color: white
             text-transform: uppercase
             font-variant: small-caps
@@ -145,7 +145,7 @@ footer
             font-size: 12px
             margin-bottom: var(--space-md)
 
-        a
+         a
             text-decoration: underline
             cursor: pointer
 </style>

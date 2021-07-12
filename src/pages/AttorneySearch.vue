@@ -97,9 +97,6 @@ export default {
 			return results;
 		},
 	},
-	metaInfo: {
-		title: 'Who We Are',
-	},
 	components: {
 		PageLayout,
 	},
@@ -113,40 +110,40 @@ export default {
 @import '@/styles/04 - Layout/_media.sass'
 
 .results
-    background-color: var(--color-b-alt)
-    height: 100%
-    padding: var(--space-sm)
+   background-color: var(--color-b-alt)
+   height: 100%
+   padding: var(--space-sm)
 
-    @include lg
-        padding: var(--space-md)
+   @include lg
+      padding: var(--space-md)
 
-    h2
-        margin-bottom: var(--space-md)
+   h2
+      margin-bottom: var(--space-md)
 
 .input
-    display: grid
-    place-items: center
-    margin: var(--space-2xs) var(--space-xs)
+   display: grid
+   place-items: center
+   margin: var(--space-2xs) var(--space-xs)
 
-    @include lg
-        width: 300px
-        place-items: start
-        margin: 0
+   @include lg
+      width: 300px
+      place-items: start
+      margin: 0
 
-    @include xl
-        width: 400px
+   @include xl
+      width: 400px
 
-    input
-        width: 100%
-        margin-bottom: var(--space-xs)
+   input
+      width: 100%
+      margin-bottom: var(--space-xs)
 
 .result
-    padding-left: var(--space-md)
-    padding-top: var(--space-xs)
-    padding-bottom: var(--space-xs)
-    border-left: solid 5px var(--color-p)
+   padding-left: var(--space-md)
+   padding-top: var(--space-xs)
+   padding-bottom: var(--space-xs)
+   border-left: solid 5px var(--color-p)
 
-    &:hover
-        background-color: var(--color-b)
+   &:hover
+      background-color: var(--color-b)
 </style>
 

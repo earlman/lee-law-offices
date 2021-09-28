@@ -56,18 +56,18 @@ export default {
 						subMenuOptions: [
 							{
 								type: 'link',
-								text: this.$t('nav.employees'),
-								path: this.$tp('/employee'),
-								// iconLeft: '<i class="fa fa-star fa-fw"></i>',
+								text: this.$t('nav.employers'),
+								path: this.$tp('/employer'),
+								// arrowColor: '#659CC8',
 							},
 							{
 								type: 'hr',
 							},
 							{
 								type: 'link',
-								text: this.$t('nav.employers'),
-								path: this.$tp('/employer'),
-								// arrowColor: '#659CC8',
+								text: this.$t('nav.employees'),
+								path: this.$tp('/employee'),
+								// iconLeft: '<i class="fa fa-star fa-fw"></i>',
 							},
 							{
 								type: 'hr',

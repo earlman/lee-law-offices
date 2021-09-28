@@ -31,7 +31,7 @@ export default {
 				elementId: 'main-navbar',
 				isUsingVueRouter: true,
 				mobileBreakpoint: 992,
-				brandImagePath: './',
+				brandImagePath: this.$tp('/'),
 				brandImage: require('@/assets/images/logo.webp'),
 				brandImageAltText: 'logo',
 				// collapseButtonImageOpen: require('@/assets/images/menu.svg'),
@@ -79,13 +79,35 @@ export default {
 							},
 						],
 					},
-
 					{
 						type: 'link',
 						text: this.$t('nav.wwa'),
-						path: this.$tp('/attorney-search'),
-						// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
+						arrowColor: 'var(--color-p)',
+						subMenuOptions: [
+							{
+								type: 'link',
+								text: 'Dan Lee, Managing Partner',
+								path: this.$tp('/people/dan-lee'),
+								// arrowColor: '#659CC8',
+							},
+							{
+								type: 'hr',
+							},
+							{
+								type: 'link',
+								text: 'Ashley Lee, Associate',
+								path: this.$tp('/people/ashley-lee'),
+								// iconLeft: '<i class="fa fa-star fa-fw"></i>',
+							},
+						],
 					},
+
+					// {
+					// 	type: 'link',
+					// 	text: this.$t('nav.wwa'),
+					// 	path: this.$tp('/attorney-search'),
+					// 	// iconRight: '<i class="fa fa-long-arrow-right fa-fw"></i>',
+					// },
 					{
 						type: 'link',
 						text: this.$t('nav.ca'),

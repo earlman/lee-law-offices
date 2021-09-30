@@ -7,10 +7,14 @@ module.exports = {
     siteName: 'Lee Law Offices',
     templates: {
         People: (node) => {
-            return node.path
-            // return `/product/${node.slug}/reviews`
+            return node.path;
         },
         Translations: (node) => node.path,
+    },
+    chainWebpack: (config) => {
+        const svgRule = config.module.rule('svg');
+        svgRule.uses.clear();
+        svgRule.use('vue-svg-loader').loader('vue-svg-loader');
     },
     plugins: [
         {
@@ -33,7 +37,7 @@ module.exports = {
                 path: '**/*.md',
                 baseDir: './content',
                 typeName: 'Translations',
-            }
+            },
         },
         // Load all Blog Posts from file system
         {
@@ -42,22 +46,24 @@ module.exports = {
                 path: '**/people/*.md',
                 baseDir: './content',
                 typeName: 'People',
-            }
+            },
         },
         {
             use: 'gridsome-plugin-i18n',
             options: {
-                locales: [ // locales list
-                    "en-us",
-                    'es'
+                locales: [
+                    // locales list
+                    'en-us',
+                    'es',
                 ],
-                pathAliases: { // path segment alias for each locales
+                pathAliases: {
+                    // path segment alias for each locales
                     'en-us': 'en-us',
-                    'es': 'es'
+                    es: 'es',
                 },
-                fallbackLanguage: "en-us",
-                defaultLocale: "en-us",
-            }
+                fallbackLanguage: 'en-us',
+                defaultLocale: 'en-us',
+            },
         },
         // TODO: delete these bc they're loaded in Translations
         // {

@@ -19,7 +19,7 @@ admitted:
     - Member of the Federal Trial Bar
 
 order: 1
-pic: ''
+pic: './dlee.jpg'
 type: 'person'
 locale: en-us
 filename: 'dan-lee'

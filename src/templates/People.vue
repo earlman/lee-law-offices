@@ -50,16 +50,17 @@
 </template>
 <page-query>
 query ($id: ID!) {
-    people(id: $id) {
-        name
-        title
-        education
-        admitted
-        awards
-        content
-        locale
-        # pic (width: 720, height: 200, quality: 90)
-    }
+   people(id: $id) {
+      name
+      title
+      education
+      admitted
+      awards
+      content
+      locale
+      pic (width: 300, height: 400, quality: 90)
+      
+   }
 }
 </page-query>
 
@@ -107,6 +108,9 @@ export default {
 
    &--name
       min-width: 200px
+
+   &--arm
+      font-size: var(--d-sm)
 
    &--body
       @include md

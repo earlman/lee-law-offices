@@ -13,8 +13,8 @@ awards:
 order: 2
 type: 'person'
 locale: en-us
-pic: './profile_picture.png'
-filename: 'ashlee-lee'
+pic: './alee.jpeg'
+filename: 'ashley-lee'
 ---
 
 Ashley Lee concentrates her practice in matters involving harassment, retaliation, wrongful termination, wage-and-hour class actions, and business litigation. She is experienced in representing both plaintiffs and defendants in employment-related matters, giving her a balanced perspective when evaluating a case for trial or settlement.

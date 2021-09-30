@@ -1,28 +1,24 @@
 ---
-
-    name: "Ashley Lee"
-    title: "Associate Attorney"
-    education:
-        - Bachelor's Degree in Social Work (2013), University of Illinois Urbana-Champaign
-        - Juris Doctor (2018), Depaul University College of Law (Chicago, IL)
-    admitted:
-        - California (2019)
-        - United States District Court for the Central District of California
-    awards: 
-        - Lawyers of Distinction in Labor Law (2020)
-    order: 2
-    type: "person"
-    locale: en-us
-    pic: "./profile_picture.png"
-    filename: "ashlee-lee"
-
+name: 'Ashley J. Lee'
+title: 'Associate Attorney'
+education:
+    - J.D., DePaul University College of Law (Chicago, IL), 2018
+    - B.S., Social Work, University of Illinois Urbana-Champaign (Champaign, IL), 2013
+admitted:
+    - California (2019)
+    - U.S. District Court for the Central District of California
+awards:
+    - Recipient, Lawyers of Distinction Award in Labor Law (2020)
+    - CALI Award Recipient for work at the DePaul University Family Law Clinic (2018)
+order: 2
+type: 'person'
+locale: en-us
+pic: './profile_picture.png'
+filename: 'ashlee-lee'
 ---
 
-Ms. Lee is an associate attorney at Lee Law Offices. She graduated with a bachelor's degree in social work from the University of Illinois Urbana-Champaign, and a juris doctorate from DePaul University in Chicago, Illinois. 
+Ashley Lee concentrates her practice in matters involving harassment, retaliation, wrongful termination, wage-and-hour class actions, and business litigation. She is experienced in representing both plaintiffs and defendants in employment-related matters, giving her a balanced perspective when evaluating a case for trial or settlement.
 
-She has a long history working in social work, non-profit organizations, domestic violence and family law clinics in the Chicagoland area and was the CALI Award Recipient in 2018 for her work at the DePaul University Family Law Clinic. Her background in social work has allowed her to bring a unique skill of making clients feel heard and zealously defending and advocating for their livelihood. 
+Ms. Lee has extensive experience in social work, non-profit organizations, domestic violence, and family law clinics in the Chicagoland area. This background gives her the ability to make clients feel heard while zealously defending and advocating for their livelihood.
 
-Ms. Lee’s practice is dedicated to representing both plaintiffs and defendants in harassment, retaliation and wrongful termination actions, wage-and-hour class actions, commercial & business litigation cases. Her experience in representing both plaintiffs and defendants, particularly employers and employees, brings a unique advantage that allows her to evaluate a case from all angles. 
-
-Ms. Lee is admitted to the State of California and the United States District Court for the Central District of California.  She is a recipient of the Lawyers of Distinction (2020) in labor law.
-
+While working as a law clerk volunteer at the Domestic Violence Legal Clinic (2017 to 2018), she gained an understanding of family law, immigration, and sexual harassment matters. During this time, she interviewed clients, wrote affidavits, and prepared petitions for emergency protection orders under the supervision of licensed attorneys. While attending law school, Ms. Lee received the CALI Award for her work at the DePaul University Family Law Clinic.

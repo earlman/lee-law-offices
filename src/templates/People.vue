@@ -1,7 +1,14 @@
 <template>
 	<PageLayout title="Attorney" :bgImage="bgImage">
 		<template slot="sidebar">
-			<a href="/attorney-search">⬅&nbsp;&nbsp;&nbsp;Back to search</a>
+			<ul>
+				<li>
+					<a :href="this.$tp('/people/dan-lee')">Dan Lee, Managing Partner</a>
+				</li>
+				<li>
+					<a :href="this.$tp('/people/ashley-lee')">Ashley Lee, Associate</a>
+				</li>
+			</ul>
 		</template>
 		<div class="people">
 			<div class="person">

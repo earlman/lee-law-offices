@@ -1,7 +1,14 @@
 <template>
 	<PageLayout title="Attorney" :bgImage="bgImage">
 		<template slot="sidebar">
-			<a href="/attorney-search">⬅&nbsp;&nbsp;&nbsp;Back to search</a>
+			<ul>
+				<li>
+					<a :href="this.$tp('/people/dan-lee')">Dan Lee, Managing Partner</a>
+				</li>
+				<li>
+					<a :href="this.$tp('/people/ashley-lee')">Ashley Lee, Associate</a>
+				</li>
+			</ul>
 		</template>
 		<div class="people">
 			<div class="person">
@@ -43,16 +50,17 @@
 </template>
 <page-query>
 query ($id: ID!) {
-    people(id: $id) {
-        name
-        title
-        education
-        admitted
-        awards
-        content
-        locale
-        # pic (width: 720, height: 200, quality: 90)
-    }
+   people(id: $id) {
+      name
+      title
+      education
+      admitted
+      awards
+      content
+      locale
+      pic (width: 300, height: 400, quality: 90)
+      
+   }
 }
 </page-query>
 
@@ -100,6 +108,9 @@ export default {
 
    &--name
       min-width: 200px
+
+   &--arm
+      font-size: var(--d-sm)
 
    &--body
       @include md

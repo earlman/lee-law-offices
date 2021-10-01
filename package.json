@@ -22,7 +22,8 @@
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "netlify-cms": "^2.10.74",
         "node-sass": "^4.0.0",
-        "vue-navigation-bar": "^4.1.0"
+        "vue-navigation-bar": "^4.1.0",
+        "vue-svg-loader": "^0.16.0"
     },
     "devDependencies": {
         "eslint": "^7.15.0",

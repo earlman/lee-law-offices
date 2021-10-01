@@ -56,6 +56,7 @@
 							Figueroa Street, Suite 3065, Los Angeles, CA 90017
 						</li>
 					</ul>
+					<Social addStyle="white" />
 				</div>
 			</nav>
 			<hr />
@@ -69,6 +70,17 @@
 		</footer>
 	</div>
 </template>
+
+<script>
+import Social from '@/components/Social.vue';
+
+export default {
+	components: {
+		Social,
+	},
+};
+</script>
+
 <style lang="sass" scoped>
 @import '@/styles/04 - Layout/_media.sass'
 

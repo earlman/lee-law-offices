@@ -6,9 +6,8 @@
 				<p>The webpage you are trying to access no longer exists.</p>
 				<g-link class="button ba" :to="$tp('/')">
 					<span>
-						{{ $t('nav.home') }}
-					</span>
-					<svg
+						{{ $t('nav.home') }} </span
+					><svg
 						width="29"
 						height="29"
 						viewBox="0 0 29 29"

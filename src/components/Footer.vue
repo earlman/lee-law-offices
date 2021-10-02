@@ -31,9 +31,6 @@
 							<g-link :to="$tp('/practice-areas')">{{ $t('nav.pa') }}</g-link>
 						</li>
 						<li>
-							<g-link :to="$tp('/attorney-search')">{{ $t('nav.wwa') }}</g-link>
-						</li>
-						<li>
 							<g-link :to="$tp('/contact-us')">{{ $t('nav.ca') }}</g-link>
 						</li>
 						<li>
